@@ -1,0 +1,109 @@
+
+
+/* Left and right column */
+.column-left {
+/*    background-color: aqua;*/
+    float: left;
+    width: 20%;
+}
+
+/* Middle column */
+.column-middle {
+/*    background-color: bisque;*/
+    float: right;
+    width: 80%;
+}
+.column-center {
+    float: right;
+    width: 50%;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+h2, h3, h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16px;
+    width: 75%;
+    text-align: justify
+}
+
+a {
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16px;
+}
+a:hover {
+    color: green;
+}
+a:link {
+    text-decoration: none;
+    font-size: 12px
+}
+
+img {
+    width: 75%;
+/*    background-color: powderblue;*/
+}
+
+
+
+/* Style the tab */
+.row.column.tab {
+    float: left;
+    border: none;
+    background-color: none;
+    width: 30%;
+    height: 10%;
+}
+
+
+
+/* Formatting Menu List */
+        
+        /* Main Level */
+        ul{
+/*        background-color: aqua;*/
+          padding-left: 0px;
+          padding-top: 0px;
+        }
+
+        /* Second Level */
+        ul ul{
+          margin-left:10px;
+        }
+
+        /* Third Level */
+        ul ul ul{
+          margin-left:20px;
+        }
+        li {
+            list-style-type: none;
+        }
+
+contact.column-middle {
+    text-align: center
+}
