@@ -4,13 +4,27 @@
     <meta charset="utf-8">
     <title>Eric Rannestad</title>
     <link href="layout.css" media="all" rel="stylesheet" type="text/css" />
+    
+    <!-- LOAD JQUERY-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    
+        <!-- TOGGLE FUNCTION -->
+            <script>
+                $(document).ready(function(){
+                    $('.toggler').click(function() {
+                      $('.dropdown').toggle();
+                    });
+                });
+            </script>
+    
 </head>
 <body>
     
-<div id="row" class="row">
+  <div id="row" class="row">
         
-<!-- MENU-->
-    <div id="Menu" class="column-left">
+      <!-- MENU-->
+      <div id="Menu" class="column-left">
      <ul>
          <li><a href="index.html"><u><b>Eric Rannestad</b></u></a></li>
          <br>
@@ -29,20 +43,21 @@
     </div>
         
         
-<!-- CONTENT-->
+        <!-- CONTENT-->
         <div id="Where_The_Rain_Seeps_Through" class="column-middle">
-<!--        <h2>Where the Rain Seeps Through</h2>-->
+            
+            <!-- INITIAL CONTENT -->
             <p>Compartmentalizing the way environments are constructed, measured, and grow, <b><i>Where the Rain Seeps Through</i></b> reflects a shifting balance between the natural world and built environment. Sections of material adapt a measured and contained aesthetic, while others resist this uniformity and reflect growth, variety, and decay. This tension characterizes the erosion and eventual failure of systems used to organize and quantify our world.</p>
               <a href="web_wideangle-left.jpg"><img src="images/web_wideangle-left.jpg"></a>
+            
             <br>
             <br>
-            
-            
-            
-<!--            Details             -->
-                <input type="button" name="answer" value="details" onclick="showDiv()" />
-                <div id="welcomeDiv"  style="display:none;" class="answer_list" > 
-                   
+
+            <!-- SHOW MORE -->
+            <a class="toggler">Show More</a>
+                    <br>
+                    <br>
+                <div class="dropdown"> 
                     <a href="web_wideangle-left.jpg"><img src="images/WTRST-edits/detail2.jpg"></a>
 
                     <a href="web_wideangle-left.jpg"><img src="images/WTRST-edits/detail6.jpg"></a>
@@ -56,20 +71,7 @@
                     <a href="web_wideangle-left.jpg"><img src="images/WTRST-edits/detail7.jpg"></a>
 
                     <a href="web_wideangle-left.jpg"><img src="images/WTRST-edits/Long%20Exposure.jpg"></a>
-        
                 </div>
-           
-               
-            
-            <script>
-            
-            function showDiv() {
-                document.getElementById('welcomeDiv').style.display = "block";}
-            </script>
-            
-<!--            Details             -->
-     
-            
         </div>
     </div>
 </body>

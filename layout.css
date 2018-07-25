@@ -1,4 +1,5 @@
-
+/*************************************************/
+/******************* COLUMNS *********************/
 
 /* Left and right column */
 .column-left {
@@ -17,6 +18,46 @@
     float: right;
     width: 50%;
 }
+
+
+
+/*************************************************/
+/********************** MENU *********************/
+        
+        /* Main Level */
+        ul{
+          padding-left: 0px;
+          padding-top: 0px;
+        }
+
+            /* Second Level */
+            ul ul{
+              margin-left:10px;
+            }
+
+                /* Third Level */
+                ul ul ul{
+                  margin-left:20px;
+                }
+        li {
+            list-style-type: none;
+        }
+
+
+/*************************************************/
+/************ DROPDOW -- SHOW MORE ***************/
+
+.dropdown {
+    display: none;
+}
+
+a:hover {
+     cursor: pointer;
+}
+
+
+/*************************************************/
+/********************* Fonts *********************/
 
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -56,6 +97,11 @@ a {
 	font-weight: 500;
 	line-height: 16px;
 }
+
+
+/*************************************************/
+/**************** Link Properties ****************/
+
 a:hover {
     color: green;
 }
@@ -64,6 +110,11 @@ a:link {
     font-size: 12px
 }
 
+
+
+/*************************************************/
+/****************** Image Styling ****************/
+
 img {
     width: 75%;
 /*    background-color: powderblue;*/
@@ -71,7 +122,8 @@ img {
 
 
 
-/* Style the tab */
+/*
+ Style the tab 
 .row.column.tab {
     float: left;
     border: none;
@@ -79,51 +131,8 @@ img {
     width: 30%;
     height: 10%;
 }
-
-
-
-/* Formatting Menu List */
-        
-        /* Main Level */
-        ul{
-/*        background-color: aqua;*/
-          padding-left: 0px;
-          padding-top: 0px;
-        }
-
-        /* Second Level */
-        ul ul{
-          margin-left:10px;
-        }
-
-        /* Third Level */
-        ul ul ul{
-          margin-left:20px;
-        }
-        li {
-            list-style-type: none;
-        }
+*/
 
 contact.column-middle {
     text-align: center
-}
-
-
-input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
-    border-color: none;
-    border-style: none;
-    border-width: 0px;
-    padding: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 16px;
-    width: 75%;
-    text-align: right
-}
-
-input[type="button" i]:hover, input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
-    color: green;
 }
