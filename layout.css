@@ -45,6 +45,23 @@
 
 
 /*************************************************/
+/***************** VIDEO IFRAME ******************/
+
+.video {
+    width: 100%;
+    height: auto;
+    background-color: aquamarine
+}
+
+iframe {
+    position: relative;
+    align-content: middle;
+   
+    background-color: cadetblue
+}
+
+
+/*************************************************/
 /************ DROPDOW -- SHOW MORE ***************/
 
 .dropdown {
