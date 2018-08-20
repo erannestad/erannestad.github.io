@@ -4,7 +4,7 @@
 <head>
     <title>Market Box</title>
         <!-- meta tags -->
-            <div>
+        <div>
                 <meta name="description" content="Eric Rannestad is a Walla Walla based artist making work in a wide range of media including sculpture, painting, installation, and digital media. The work stems from an interest in the way our environments are built, measured, and degrade his work aims to reflect the externalities and symbiotic intricacies that occur at the intersection of nature and the built environment.">
                 <meta name="keywords" content="Eric Rannestad, Environmental Art, Environmental Art, Art and Technology, Subjective Mapping, Whitman College, New Contemporaries">
                 <meta name="author" content="Eric Rannestad">
@@ -25,6 +25,22 @@
     
         <link href="layout.css" media="all" rel="stylesheet" type="text/css" />
         <meta charset="utf-8">
+    
+    
+        <!-- LOAD JQUERY-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        </script>
+        <!-- LOAD JQUERY-->
+    
+        <!-- TOGGLE FUNCTION -->
+            <script>
+                $(document).ready(function(){
+                    $('.toggler').click(function() {
+                      $('.dropdown').toggle();
+                    });
+                });
+            </script>
+        <!-- TOGGLE FUNCTION -->
 </head>
     
 <body>
@@ -53,12 +69,35 @@
 <!-- CONTENT-->
      <div id="Market_Boxes" class=column-middle>
 <!--      <h2>Market Boxes</h2>-->
-          <p>The Market Box is an attempt to capture a relationship between industry and the natural world. More specifically, these boxes are an embodiment of the quantification and valuation of our natural resources. Non-market valuation techniques assign monetary value to parts of nature that are not ordinarily bought and sold within our current market system. What is the price of a standing forest? The watershed services it might provide? The value of a quiet recreation on public land? Assigning tangible monetary value to our world’s natural resources offers nature a chance to withstand the forces of industry. However, in this process, we ignore the ethical nuances and complications that arise when we try to describe our world through money and an inherently anthropocentric perspective.</p>
           
           <a href="web_installation_full.jpg"><img src="images/web_installation_full.jpg"></a>
-       
-          <p>Completed at the Glasgow School of Art, Scotland in  2017.</p>
-        </div>
+         
+            <br>
+            <br>
+         
+         
+         <!-- SHOW MORE -->
+         <a class="toggler">Show More</a>
+                    <br>
+                    <br>
+                <div class="dropdown"> 
+                    <p>The Market Box is an attempt to capture a relationship between industry and the natural world. More specifically, these boxes are an embodiment of the quantification and valuation of our natural resources. Non-market valuation techniques assign monetary value to parts of nature that are not ordinarily bought and sold within our current market system. What is the price of a standing forest? The watershed services it might provide? The value of a quiet recreation on public land? Assigning tangible monetary value to our world’s natural resources offers nature a chance to withstand the forces of industry. However, in this process, we ignore the ethical nuances and complications that arise when we try to describe our world through money and an inherently anthropocentric perspective.</p>
+                    
+                    <a href="lil-greenies"><img src="images/lil-greenies.jpg"></a>
+                    <br>
+<!--
+                    <a href="Market-Box-II"><img src="images/Market-Box-II.jpg"></a>
+                    <br>
+                    <a href="Market-Box-II"><img src="images/Market-Box-III.jpg"></a>
+                    <br>
+-->
+                    <p>Completed at the Glasgow School of Art, Scotland in  2017.</p>
+                </div>
+         <br>
+         <br>
+         <br>
+         <br>
+    </div>
 
 </body>
 </html>
