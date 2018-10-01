@@ -54,10 +54,8 @@
 }
 
 iframe {
-    position: relative;
+    position: absolute;
     align-content: middle;
-   
-    background-color: cadetblue
 }
 
 
