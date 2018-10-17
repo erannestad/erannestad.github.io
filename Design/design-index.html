@@ -9,8 +9,8 @@
                 <meta name="author" content="Eric Rannestad">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </div>
-        <!-- meta tags -->
-    
+    <!-- meta tags -->
+    <div>
         <!-- Google Analytics -->
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,12 +27,16 @@
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
+        <script src="design-script.js"></script>
+        
         <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
         <meta charset="utf-8">
+    </div>
+    <!-- meta tags -->
 </head>
     
 <body> 
-  <script src="design-script.js"></script>
+  
          <!-- MENU -->
   <div id="row1" class="navigation">
       
@@ -41,7 +45,7 @@
       
           <button id="about" class="tablinks main" onclick="openPage(event, 'about-content')"> about </button>
       
-          <button id="projects" class="tablinks main dropbtn" onclick="openPage(event, 'projects-content')" onclick="myFunction ()" >/projects</button>
+          <button id="projects" class="tablinks main dropbtn" onclick="openPage(event, 'projects-content')" onclick = "openDrop() " >/projects</button>
      
           <button id="contact" class="tablinks main" onclick="openPage(event, 'contact-content')">contact</button>
      </div>       
@@ -91,6 +95,5 @@
     </div>
   </div>
       <!-- FOOTER -->
-<script type="text/javascript" src="design-script.js"></script>
 </body>
 </html>

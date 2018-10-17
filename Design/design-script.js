@@ -1,5 +1,3 @@
-src="jquery-3.3.1.min.js"
-
 //MAIN NAV JS//
 
     "use strict"; 
@@ -33,30 +31,37 @@ src="jquery-3.3.1.min.js"
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 
-function myFunction () {
-    document.getElementById("projects-nav").classList.toggle("show");
-}
+//function openDrop() {
+// document.getElementById("dropdown").classList.toggle("show");
+//}
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+//window.onclick = function(event) {
+//  if (!event.target.matches('.dropbtn')) {
+//
+//    var dropdowns = document.getElementById("dropdown");
+//    var i;
+//    for (i = 0; i < dropdowns.length; i++) {
+//      var openDropdown = dropdowns[i];
+//      if (openDropdown.classList.contains('show')) {
+//        openDropdown.classList.remove('show');
+//      }
+//    }
+//  }
+//}
 
-    var dropdowns = document.getElementsByClassName("projects-nav");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+//another try from stack exchange
+
+function openDrop() {
+  var dropdown = document.getElementById('tab1 tab2 tab3');    
+  
+  if(dropdown.style.display == "block") { // if is menuBox displayed, hide it
+    dropdown.style.display = "none";
+  }
+  else { // if is menuBox hidden, display it
+    dropdown.style.display = "block";
   }
 }
 
 
-//goin' it alone...
-$(document).ready(function(){
-  if ( $('button#projects').hasClass('active') ) {
-    $('.projects-nav').addClass('show');
-  }
-});
 
