@@ -25,10 +25,18 @@
 
 .projects-nav {
 /*    overflow: hidden;*/
-    position: static; /* Set the navbar to fixed position */
-    display: block;
+    position: relative; /* Set the navbar to fixed position */
     left:0;
     height: 33.333%;
+/*    display: none*/
+    
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show{display:block !important;}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
 }
 
 button {
@@ -42,7 +50,6 @@ button {
     cursor: pointer;
     transition:.3s;
 }
-
 button.tablinks {
     float: left;
     position: relative;
@@ -54,7 +61,6 @@ button.tablinks {
     width:30%;
     font-size: 2.5vw;
 }
-
 button.back {
     float: left;
     position: relative;
@@ -67,7 +73,6 @@ button.back {
     width:10%;
     font-size: 2.5vw;
 }
-
 button.project {
     float: left;
     position: relative;
@@ -85,7 +90,6 @@ button#back {
     background-color: yellow;
     color: black;
 }
-    
 button#about {
     background-color: violet; 
     color:black;
@@ -98,8 +102,6 @@ button#contact {
     background-color: deepskyblue; 
     color:black;
 }
-
-
 button.main:hover{
     background: black !important;
     color: white !important;
@@ -108,7 +110,6 @@ button.back:hover{
     background: black !important;
     color: white !important;
 }
-
 button.project:hover{
     background: grey !important;
     color: white !important;
@@ -121,15 +122,11 @@ button.project:hover{
     background: none;
     width: 100%;
     height: 100%;
-    margin-top: 7.5em;
+    margin-top: 15.1vh;
     margin-left: none;
     margin-right: none;
-    display: none
+    display: none;
     }
-
-.active {
-    background-color: black;
-}
 
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -139,11 +136,24 @@ h1 {
 	font-weight: 500;
     align-items: center;
     vertical-align: center;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     color: black;
 }
 
 img {
     width: 100%;  
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+    text-decoration: none;
+	font-variant: normal;
+	font-weight: 500;
+    align-items: center;
+    vertical-align: center;
+    font-size: 2.5vw;
+    color: black;
+    
 }
 
