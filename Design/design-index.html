@@ -23,22 +23,25 @@
         <!-- End Google Analytics -->
     
         <link href="design-layout.css" media="all" rel="stylesheet" type="text/css" />
+        
+    
         <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
         <meta charset="utf-8">
 </head>
     
 <body> 
-      <!-- MENU -->
+  <script src="design-script.js"></script>
+         <!-- MENU -->
   <div id="row1" class="navigation">
       
      <div id="row1" class="main-nav">
-          <button id="back" class="back">back</button>
+          <button id="back" class="back" href="../index.html" >back</button>
       
-          <button id="about" class="main">about</button>
+          <button id="about" class="tablinks" onclick="openPage(event, 'about-content')"> about </button>
       
-          <button id="projects" class="main">/projects</button>
+          <button id="projects" class="tablinks" onclick="openPage(event, 'projects-content')">/projects</button>
      
-          <button id="contact" class="main">contact</button>
+          <button id="contact" class="tablinks" onclick="openPage(event, 'contact-content')">contact</button>
      </div>    
     
    <div id="row2" class="projects-nav">
@@ -57,10 +60,16 @@
 
     
       <!-- CONTENT -->
-<div class=content>
-    <div class="photo"><a href="catalog" class="photo"><img src="design-portfolio/exhibition-catalog/Catalog.jpg"></a></div>
-    <div class="photo"><a href="catalog" class="photo"><img src="design-portfolio/exhibition-catalog/Catalog.jpg"></a></div>
-    <div class="photo"><a href="catalog" class="photo"><img src="design-portfolio/exhibition-catalog/Catalog.jpg"></a></div>
+<div id="about-content" class="tabcontent">
+    <br><br><br><br><br><br><h1> Eric Rannestad </h1>
+    <p>Eric Rannestad is a designer and artist based in the Pacific Northwest.Eric Rannestad is a designer and artist based in the Pacific Northwest.</p><br><br><br><br><br><br><p>Eric Rannestad is a designer and artist based in the Pacific Northwest.Eric Rannestad is a designer and artist based in the Pacific Northwest.</p>
+    <img href="design-portfolio/exhibition-catalog/Catalog.jpg"><img>  
+</div>
+<div id="contact-content" class="tabcontent">
+    <p>instagram: erannestad</p>
+    <p>email: ericrannestad@gmail.com</p>
+    <p>phone: 860.391.9518</p>
+    <img href="../images/portraits/portrait2.jpg"><img>  
 </div>
       <!-- CONTENT -->
       
@@ -72,6 +81,6 @@
     </div>
   </div>
       <!-- FOOTER -->
-    
+<script type="text/javascript" rel="design-script"></script>
 </body>
 </html>
