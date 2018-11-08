@@ -195,3 +195,18 @@ p {
     color: black;
 }
 
+/* On screens that are 600px wide or greater, make text size smaller */
+@media screen and (min-width: 600px) {
+    p {
+        font-size: 2vw;
+    }
+    h1 {
+        font-size: 3vw;
+    }
+}
+
+/* On screens that are 600px wide or greater, make text size smaller */
+@media screen and (min-width: 1200px) {
+.card {
+        width:45%;
+    }
