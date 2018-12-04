@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mapping The Firmament</title>
+    <title>Firmament</title>
         <!-- meta tags -->
-            <div>
+        <div>
                 <meta name="description" content="Eric Rannestad is a Walla Walla based artist making work in a wide range of media including sculpture, painting, installation, and digital media. The work stems from an interest in the way our environments are built, measured, and degrade his work aims to reflect the externalities and symbiotic intricacies that occur at the intersection of nature and the built environment.">
                 <meta name="keywords" content="Eric Rannestad, Environmental Art, Environmental Art, Art and Technology, Subjective Mapping, Whitman College, New Contemporaries">
                 <meta name="author" content="Eric Rannestad">
-</div>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </div>
         <!-- meta tags -->
     
         <!-- Google Analytics -->
@@ -23,26 +24,31 @@
         <!-- End Google Analytics -->
     
         <link href="layout.css" media="all" rel="stylesheet" type="text/css" />
-        <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        <!-- LOAD JQUERY-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        </script>
+        <!-- LOAD JQUERY-->
+    
+        <!-- TOGGLE FUNCTION -->
+            <script>
+                $(document).ready(function(){
+                    $('.toggler').click(function() {
+                      $('.dropdown').toggle();
+                    });
+                });
+            </script>
+        <!-- TOGGLE FUNCTION -->
 </head>
-<body> 
-<!-- background image -->
-<!--
-    <style> 
-        body {
-            background-image: url("images/background3.jpg");
-            background-position: center;
-            background-size: 2400px;
-            background-repeat: repeat;
-        }
-    </style>
--->
+
+<body>
     
   <div id="row" class="row">
-    <!-- MENU-->
-    <div id="Menu" class="column-left">
+        
+      <!-- MENU-->
+      <div id="Menu" class="column-left">
      <ul>
          <li><a href="index.html"><u><b>Eric Rannestad</b></u></a></li>
          <br>
@@ -55,23 +61,44 @@
 <!--         <li><a href="Experiment.html">New Media Sketches</a></li>-->
          <li><a href="Schwoop.html">Schwoop</a></li>
          <li><a href="Pod.html">Pod</a></li>
-         <br>
          
-         <li><a href="Mapping-The-Firmament.html">Mapping the Firmament</a></li>
+         <br>
+         <li><a href="Firmament.html">Firmament</a></li>
+         <li><a href="Mapping-The-Firmament.html">Mapping the Firmament</a></li>  
          
          <br>
          <li><a href="Contact.html">Contact</a></li>
-     </ul> 
+     </ul>
+      
     </div>
-    
-        <div id="maps" class="column-middle">
-             <br><br><br><br>
-                 <div>
-                 <iframe src="https://ericrannestad.com/Map_1/" width="75%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                 </div>
+        
+        
+        <!-- CONTENT-->
+        <div id="Firmament" class="column-middle">
+            
+            <!-- INITIAL CONTENT -->
+            
+              <a href="geodome.jpg"><img src="images/geodome.jpg"></a>
+            
+            <br>
+            <br>
 
+            
+                    
+            <!-- SHOW MORE -->
+            <a class="toggler">Show More</a>
+                    <br>
+                    <br>
+                <div class="dropdown"> 
+                    <p>blah blah blah blah... something about flat earth... blah blah blah... greenhouses, climate change, food systems... blah blah blah... genesis, geodesic domes as our future firmaments, blah blah blah we're all doomed lol.</p>
+                    
+                    <row-2>
+                    <a href="shard1.jpg"><img class="row-2" src="images/Shard1.jpg"></a>
+                    <a  href="shard2.jpg"><img class="row-2" src="images/Shard2.jpg"></a>
+                    </row-2>
+                    
+                </div>
         </div>
-  </div>
-    
+    </div>
 </body>
 </html>

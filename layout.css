@@ -157,3 +157,14 @@ img {
 contact.column-middle {
     text-align: center
 }
+
+.row-2 {
+    width: 37.5% !important;
+}
+
+row-2 {
+/*    background-color: bisque;*/
+    float: right;
+    width: 100%;
+    display: block;
+}
