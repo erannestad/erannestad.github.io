@@ -13,6 +13,36 @@
 #art:checked ~ .filter-item > :not(.art) { 
     display:none; }
 
+/*STYLE TAGS*/
+input:checked + label {
+  background-color: seagreen;
+  color: white
+}
+
+input {
+  position: absolute;
+  left: -9999px;
+}
+label {
+    background: lightgray;
+    padding: 1vw;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+    text-decoration: none;
+	font-variant: normal;
+	font-weight: 500;
+    border-radius: 1vw;
+    align-items: center;
+    vertical-align: center;
+    font-size: 2vw;
+    color: black;
+}
+
+/*END TAGS*/
+
+
+
+
 /* Left and right column */
 .navigation {
 /*    overflow: hidden;*/
