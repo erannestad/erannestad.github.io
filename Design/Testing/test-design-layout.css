@@ -1,6 +1,18 @@
 /*************************************************/
 /******************* COLUMNS *********************/
 
+/*TAG FILTER*/
+#all:checked ~ .filter-item > :not(.highlights) { 
+    display:none; }
+#print:checked ~ .filter-item > :not(.print) { 
+    display:none; }
+#environmental:checked ~ .filter-item > :not(.environmental) { 
+    display:none; }
+#economics:checked ~ .filter-item > :not(.economics) { 
+    display:none; }
+#art:checked ~ .filter-item > :not(.art) { 
+    display:none; }
+
 /* Left and right column */
 .navigation {
 /*    overflow: hidden;*/
@@ -11,7 +23,7 @@
     width: 100%;
     height: 15%;
     z-index: 100;
-}
+} 
 
 .main-nav {
     overflow: hidden;
@@ -195,6 +207,9 @@ p {
     color: black;
 }
 
+
+
+
 /* On screens that are 600px wide or greater, make text size smaller */
 @media screen and (min-width: 600px) {
     p {
@@ -210,3 +225,8 @@ p {
 .card {
         width:45%;
     }
+    
+
+
+
+
