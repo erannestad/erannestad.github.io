@@ -208,6 +208,7 @@ img {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+    
 }
 
 .card {
@@ -224,6 +225,30 @@ img {
 .card-padding {
     padding: 1%;
     }
+
+
+/*PADDLES*/
+/*
+.paddles {
+}
+.paddle {
+	position: relative;
+	top: -7vw;
+    margin: 1vw;
+    border-radius: 1.5vw;
+	bottom: 0;
+	width: 3vw;
+    height: 3vw
+}
+.left-paddle {
+	float: left;
+}
+.right-paddle {
+	float: right;
+}
+*/
+
+
 
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

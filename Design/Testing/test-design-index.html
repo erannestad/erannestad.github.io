@@ -81,7 +81,7 @@
   <div id="projects-content" class="tabcontent">
     
     
-    <input type="radio" id="highlights" class="filter-input" name="filter"/>
+    <input type="radio" id="highlights" class="filter-input" name="filter" checked/>
       <label for="highlights" class="filter-label" onclick>all</label>
     <input type="radio" id="environmental" class="filter-input" name="filter"/>
       <label for="environmental" class="filter-label" onclick>environmental</label>
@@ -98,14 +98,22 @@
     <div class="all print environmental">
     <h1>Walla Walla County Conservation District</h1> 
     <p>A series of design and outreach material, including: booklet about the new Voluntary Stewardship Program in Washington State, project summarys, and infographics for the 2019 annual report.</p>
+    <div id="horizontalwrapper" class="horizontalwrapper">
      <div id="WWCCD" class="scrolling-wrapper-flexbox">
        <div class="card"><img src="../design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg"></div>
        <div class="card"><img src="../design-portfolio/WWCCD/McCaw_one-pager.jpg"></div>
        <div class="card"><img src="../design-portfolio/WWCCD/VSP-Booklet1.jpg"></div>
        <div class="card"><img src="../design-portfolio/WWCCD/VSP-Booklet4.jpg"></div>
      </div>
+<!--
+        <div>
+        <button id="leftpaddle" class="left-paddle paddle"> &lt;</button>
+        <button id="rightpaddle" class="right-paddle paddle"> &gt; </button>
+        </div>
+-->
+	</div>
     </div>
-       
+    
     <div class="all print art"> 
     <h1>Exhibition Catalog</h1>
     <p>Publication documenting the 2018 Whitman Thesis Exhibition: <i><b>Best Thing Since Sliced Bread</b></i>. Design, photography, layout by Eric Rannestad and Zoe Guckenheimer. Financial assistance by Whitman Faculty. Photography contributions from Kerr Cirrilo and Anna Dawson. Logistical contributions by Mercer Hannau. Printed May 2018.</p>  
@@ -168,5 +176,10 @@
       <!-- FOOTER -->
     <script src="test-design-script.js"></script>
     <script src="test-design-script2.js"></script>
+    <script src="paddle-scroll.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    
 </body>
 </html>
