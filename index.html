@@ -24,6 +24,7 @@
         <!-- End Google Analytics -->
     
         <link href="layout.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="mobile-menu.js" media="all" rel="script" type="text/js" />
         <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
         <meta charset="utf-8">
 </head>
@@ -37,10 +38,40 @@
             background-repeat: repeat;
         }
     </style>
+    <script>
+          function myFunction(x) {x.classList.toggle("change");}
+          
+//        function openNav() {
+//            var element = document.getElementById("Menu");
+//            element.classList.toggle("menuToggle");
+//            }
+          
+        
+          function openNav() {
+              var menu = document.getElementById("Menu");
+              var shiftContent = document.getElementsByClassName("columnMiddle")
+          if (menu.style.width < "1") {
+              menu.style.display = "block";
+              menu.style.width = "50%"
+              shiftContent.style.width = "0%"
+          } else {
+              menu.style.display = "none";
+              menu.style.width = "0%";
+              shiftContent.style.width = "100%"
+              }
+          }         
+      </script>
     
   <div id="row" class="row">
     <!-- MENU-->
+        <div class="container" onclick="myFunction(this); openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+      
     <div id="Menu" class="column-left">
+        
      <ul>
          <li><a href="index.html"><u><b>Eric Rannestad</b></u></a></li>
          <br>
@@ -64,11 +95,10 @@
      </ul> 
     </div>
     
-        <div id="New-image" class="column-middle">
+        <div id="New-image" class="shiftContent column-middle">
             <br><br><br><br>
              <a href="Schwoop.html"><img src="images/schwoop.jpg"></a>
         </div>
- 
     </div>
     
 </body>
