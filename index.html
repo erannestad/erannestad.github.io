@@ -24,7 +24,7 @@
         <!-- End Google Analytics -->
     
         <link href="layout.css" media="all" rel="stylesheet" type="text/css" />
-        <link href="mobile-menu.js" media="all" rel="script" type="text/js" />
+        <script src="mobile-menu.js"></script>
         <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
         <meta charset="utf-8">
 </head>
@@ -38,29 +38,6 @@
             background-repeat: repeat;
         }
     </style>
-    <script>
-          function myFunction(x) {x.classList.toggle("change");}
-          
-//        function openNav() {
-//            var element = document.getElementById("Menu");
-//            element.classList.toggle("menuToggle");
-//            }
-          
-        
-          function openNav() {
-              var menu = document.getElementById("Menu");
-              var shiftContent = document.getElementsByClassName("columnMiddle")
-          if (menu.style.width < "1") {
-              menu.style.display = "block";
-              menu.style.width = "50%"
-              shiftContent.style.width = "0%"
-          } else {
-              menu.style.display = "none";
-              menu.style.width = "0%";
-              shiftContent.style.width = "100%"
-              }
-          }         
-      </script>
     
   <div id="row" class="row">
     <!-- MENU-->

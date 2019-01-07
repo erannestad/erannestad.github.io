@@ -8,9 +8,6 @@
     width: 20%;
     height: 100%;
 }
-#Menu {
-    display: block;
-    }
 
 /* Middle column */
 .column-middle {
@@ -21,6 +18,14 @@
 .column-center {
     float: right;
     width: 50%;
+}
+
+#Menu {
+    display: block;
+    }
+
+.row {
+    overflow-x: hidden;
 }
 
 
@@ -252,7 +257,7 @@ img {
 .column-middle {
 /*    background-color: bisque;*/
     float: right;
-    width: 90%;
+    width: 100%;
     margin-left: 100px;
 }
 .column-center {
