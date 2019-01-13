@@ -12,6 +12,8 @@
     display:none; }
 #art:checked ~ .filter-item > :not(.art) { 
     display:none; }
+#identity:checked ~ .filter-item > :not(.identity) { 
+    display:none; }
 
 /*STYLE TAGS*/
 input:checked + label {
