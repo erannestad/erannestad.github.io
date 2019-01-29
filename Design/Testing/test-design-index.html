@@ -27,6 +27,11 @@
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
+        <!--parallax scrolling-->
+        <!--documentation: http://pixelcog.github.io/parallax.js/-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="../parallax.js-1.5.0/parallax.js"></script>
+        <!--parallax scrolling-->
         
         <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
         <meta charset="utf-8">
@@ -42,13 +47,14 @@
      <div id="row1" class="main-nav">
 <!--          <div id="back" class="back" href="../index.html" >Rannestad</div>-->
       
-          <div id="about" class="tablinks main active" onclick="openPage(event, 'about-content')">eric rannestad</div>
+          <div id="about" class="tablinks main active" onclick="openPage(event, 'about-content', 'about-banner')">eric rannestad</div>
       
           <div id="projects" class="tablinks dropdown main" onclick="openPage(event, 'projects-content')" onclick = "openDrop(event, projectContainer)" >/projects</div>
      
           <div id="contact" class="tablinks main" onclick="openPage(event, 'contact-content')">/contact</div>
      </div>       
    
+<!--
      <div id="projectContainer" class="projectNav">
      
           <button id="tab1" class="project"> digital</button>
@@ -58,6 +64,7 @@
           <button id="tab3" class="project"> economics</button>
        
      </div>
+-->
      
   </div>
  
@@ -65,20 +72,31 @@
 
     
       <!-- CONTENT -->
-<div class="content"> 
+  <div id="about-banner" class="tabcontent">
+    <div id="banner1" class="banner">
+        <img src="../design-portfolio/geothermal/geo11.jpg">
+    </div>
+  </div>
     
-  <div id="about-content" class="tabcontent" style="display: block">
-    <h1> About </h1>
+    
+<div class="content"> 
+    <div class="background">
+      <div id="about-content" class="tabcontent">
+       <h1> About </h1>
        <div class="card">
-           <p>I am an artist and designer based in the Pacific Northwest. Projects for organizations include: The Nature Conservancy, ECONorthwest, the Washington Association of Conservation Districts, the Washington State Conservavation Commission and the Michael Scott Paper Company. Collaborators include Clement Valla, Zoe Guckenheimer, and Michael Mandiberg. </p>
+           <p>I am an artist and designer based in the Pacific Northwest. Projects for organizations include: The Nature Conservancy, ECONorthwest, the Washington Association of Conservation Districts, the Washington State Conservavation Commission and the Tri-State Steelheaders.</p>
        </div>
-       <div style="float:left; margin-bottom: 5%;" class="card">
+          <div style="float:left; margin-bottom: 5%;" class="card background">
            <img src= "../../images/portraits/portrait2.jpg">
+          </div>
+          <div class="card">
+           <p>HTML, CSS, Javascript <br> Photoshop, Illustrator, inDesign <br> Processing, P5.js, Leaflet <br> After Effects, Premiere</p>
        </div>
+      </div>
     </div>
     
     
-  <div id="projects-content" class="tabcontent">
+  <div id="projects-content" class="tabcontent nobanner">
     
     
     <input type="radio" id="highlights" class="filter-input" name="filter" checked/>
@@ -196,7 +214,7 @@
 
     
     
-  <div id="contact-content" class="tabcontent">
+  <div id="contact-content" class="tabcontent nobanner">
     <p>instagram: erannestad</p>
     <p>email: ericrannestad@gmail.com</p>
     <p>phone: 860.391.9518</p>

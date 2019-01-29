@@ -1,7 +1,7 @@
 //MAIN NAV JS//
 
     "use strict"; 
-    function openPage(evt, tabName) {
+    function openPage(evt, tabName, tabName2) {
     // Declare all variables
     // use strict is an addition
     //tabName is the ID tag of div
@@ -23,8 +23,20 @@
 
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
+    document.getElementById(tabName2).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
+
+
+
+
+
+
+
+
+
 
 ///////////////////////////////submenu/////////////////////////////////////
 
