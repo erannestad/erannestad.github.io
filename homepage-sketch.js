@@ -1,7 +1,8 @@
 function setup() {
-  createCanvas(720, 400);
-  stroke(255);
-  noFill();
+    createCanvas(720, 400);
+    canvas.parent('sketch');
+    stroke(255);
+    noFill();
 }
 
 function draw() {
