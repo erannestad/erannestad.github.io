@@ -174,7 +174,7 @@ div.main p {
 
 #about-banner {
     margin-top: 5vh;
-    width: 103%;
+    width: 100%;
     margin-left: -8px;
     display: block;
     position: fixed;
@@ -182,11 +182,16 @@ div.main p {
 
 #about-content {
     width: 100%;
-    margin-left: 8px;
+    margin-left: 4vw;
     display: block;
     margin-top:80vw;
 /*    background-color: white;*/
 /*    height: 100vh;*/
+}
+
+.background{
+    background-color: white;
+    margin-left: -4vw; 
 }
 
 .content {
@@ -236,12 +241,6 @@ img {
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
-
-.background{
-    background-color: white;
-    margin-left: -8px;
-  
 }
 
 .card {
