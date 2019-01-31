@@ -237,7 +237,10 @@ row-2 {
 img {
     width: 90%;
 /*    background-color: powderblue;*/
-}    
+}   
+p {
+    width: 90%;    
+  }
 }
 
 
@@ -314,5 +317,12 @@ p {
 
 .shiftContent {
     width: 100%;
+    }
+}
+
+/******* On screens that are 1000px or larger ******/
+@media screen and (min-width: 1000px) {
+    #portrait {
+        max-width: 50%;
     }
 }
