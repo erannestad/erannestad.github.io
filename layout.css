@@ -92,9 +92,20 @@
     background-color: aquamarine
 }
 
-iframe {
-    position: absolute;
-    align-content: middle;
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 75%;
 }
 
 
@@ -244,15 +255,32 @@ row-2 {
     float: right;
     width: 70%;
 }
-
+    
 img {
     width: 90%;
 /*    background-color: powderblue;*/
 }   
 p {
-    width: 90%;    
+    width: 90%; 
   }
+    
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 }
+
+.iframe-container iframe {
+   border: 0;
+   height: 90%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 90%;
+}
+}
+
+
 
 
 /******* On screens that are 600px or smaller ******/
@@ -330,6 +358,21 @@ p {
 .shiftContent {
     width: 100%;
     }
+    
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
 }
 
 /******* On screens that are 1000px or larger ******/
