@@ -32,14 +32,8 @@
         </script>
         <!-- LOAD JQUERY-->
     
-        <!-- TOGGLE FUNCTION -->
-            <script>
-                $(document).ready(function(){
-                    $('.toggler').click(function() {
-                      $('.dropdown').toggle();
-                    });
-                });
-            </script>
+         <!-- TOGGLE FUNCTION -->
+        <script src="dropdown.js"></script>
         <!-- TOGGLE FUNCTION -->
 </head>
 
@@ -85,23 +79,26 @@
         <div id="Where_The_Rain_Seeps_Through" class="column-middle">
             
             <!-- INITIAL CONTENT -->
-              <a href="schwoop.jpg"><img src="images/schwoop.jpg"></a>
+              <img src="images/schwoop.jpg">
             
             <br>
             <br>
 
                   
             <!-- SHOW MORE -->
-            <a class="toggler">Show More</a>
+            <div class="content toggle-container">
+                <a class="show-more toggler">- Show More -</a>
+                <a class="show-less toggler">- Show Less -</a>
+            </div>
                     <br>
                     <br>
-                <div class="dropdown"> 
+                <div class="load-me-later dropdown"> 
 <!--
                         <div>
                         <iframe src="images/GIF-MAPS/GIF_ouput/index.html" width="75%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
                         </div>
 -->
-                        <a href="pod_II.jpg"><img src="images/Pod_II.jpg"></a>
+                        <img src="images/Pod_II.jpg">
 <!--                    <a href="schwoop2.jpg"><img src="images/schwoop2.jpg"></a>-->
                 </div>
             <br><br><br><br>

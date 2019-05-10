@@ -33,14 +33,8 @@
         </script>
         <!-- LOAD JQUERY-->
     
-        <!-- TOGGLE FUNCTION -->
-            <script>
-                $(document).ready(function(){
-                    $('.toggler').click(function() {
-                      $('.dropdown').toggle();
-                    });
-                });
-            </script>
+         <!-- TOGGLE FUNCTION -->
+        <script src="dropdown.js"></script>
         <!-- TOGGLE FUNCTION -->
 </head>
     
@@ -86,18 +80,20 @@
           
           <a href="web_installation_full.jpg"><img src="images/web_installation_full.jpg"></a>
          
-            <br>
-            <br>
+          <br>
+          <p>The Market Box embodies a systematic quantification of the world's natural resources. Monetary values are assigned to anything -- even that which is not bought or sold within a market. We assign prices to a standing forests, the watershed services they provide, and quantify the value public land. These values are tangible to capitalist decision-making but ignore the ethical nuances and complications that arise when describing the world through money and an inherently anthropocentric perspective.</p>
          
          
          <!-- SHOW MORE -->
-         <a class="toggler">Show More</a>
+            <div class="content toggle-container">
+                <a class="show-more toggler">- Show More -</a>
+                <a class="show-less toggler">- Show Less -</a>
+            </div>
                     <br>
                     <br>
-                <div class="dropdown"> 
-                    <p>The Market Box embodies a systematic quantification of the world's natural resources. Monetary values are assigned to anything -- even that which is not bought or sold within a market. We assign prices to a standing forests, the watershed services they provide, and quantify the value public land. These values are tangible to capitalist decision-making but ignore the ethical nuances and complications that arise when describing the world through money and an inherently anthropocentric perspective.</p>
+                <div class="load-me-later dropdown"> 
                     
-                    <a href="lil-greenies"><img src="images/lil-greenies.jpg"></a>
+                    <img src="images/lil-greenies.jpg">
                     <br>
 <!--
                     <a href="Market-Box-II"><img src="images/Market-Box-II.jpg"></a>

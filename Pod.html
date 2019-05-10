@@ -32,14 +32,8 @@
         </script>
         <!-- LOAD JQUERY-->
     
-        <!-- TOGGLE FUNCTION -->
-            <script>
-                $(document).ready(function(){
-                    $('.toggler').click(function() {
-                      $('.dropdown').toggle();
-                    });
-                });
-            </script>
+         <!-- TOGGLE FUNCTION -->
+        <script src="dropdown.js"></script>
         <!-- TOGGLE FUNCTION -->
 </head>
 
@@ -90,14 +84,17 @@
             <br>
             
             <!-- SHOW MORE -->
-            <a class="toggler">Show More</a>
+            <div class="content toggle-container">
+                <a class="show-more toggler">- Show More -</a>
+                <a class="show-less toggler">- Show Less -</a>
+            </div>
                     <br>
                     <br>
-                <div class="dropdown"> 
+                <div class="load-me-later dropdown"> 
                         <div>
                            
-                           <a href="pod.jpg"><img src="images/Pod_angle.jpg"></a>
-                            <a href="pod.jpg"><img src="images/Pod_bend.jpg"></a> 
+                           <img src="images/Pod_angle.jpg">
+                            <img src="images/Pod_bend.jpg">
                         </div>
 <!--                    <a href="schwoop2.jpg"><img src="images/schwoop2.jpg"></a>-->
                 </div>
