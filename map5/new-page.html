@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapping The Firmament</title>
+        <link rel="stylesheet" href="../leaflet/leaflet.css"/>
+        <script src="../leaflet/leaflet-src.js"></script>
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-122918514-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+        <script src="mobile-menu.js"></script>
+        <link href="../layout.css" media="all" rel="stylesheet" type="text/css" />
+    
+    
+        <link rel="stylesheet" href="../leaflet/leaflet.css"/>
+        <script src="../leaflet/leaflet-src.js"></script>
+    
+        <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- TOGGLE FUNCTION -->
+        <script src="../dropdown.js"></script>
+        <!-- TOGGLE FUNCTION -->
+</head>
+    
+
+    
+<body>
+    
+    
+    
+    
+    
+    <div id="row" class="row">
+    <!-- MENU-->
+        <div class="container" onclick="myFunction(this); openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+      
+    <div id="Menu" class="column-left">
+        
+     <ul>
+         <li><a href="index.html"><u><b>Eric Rannestad</b></u></a></li>
+         <br>
+         <br>
+         <li><a href="about.html">About</a></li>
+         <br>
+         
+         <li><a href="Arch.html">Firmament Arch</a></li>
+         <li><a href="Where-the-Rain-Seeps-Through.html">Where The Rain Seeps Through</a></li>
+         <li><a href="Market-Box.html">Market Box</a></li>
+<!--         <li><a href="Experiment.html">New Media Sketches</a></li>-->
+         <li><a href="Schwoop.html">Schwoop</a></li>
+         <li><a href="Pod.html">Pod</a></li>
+         <br>
+         
+         <li><a href="Firmament.html">Firmament</a></li>
+         <li><a href="Mapping-The-Firmament.html">Mapping the Firmament</a></li>
+         <li>
+         <li><a href="new-page.html">New Page</a></li>
+         <li>
+         <a href="FieldNotes/FieldNotes_index.html">Field Notes</a></li>
+         
+         <br>
+         <li><a href="Contact.html">Contact</a></li>
+         <li class="footer"><a href="Design/Testing/test-design-index.html">Design Website</a></li>
+     </ul> 
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="shift-content column-middle">
+
+  <div id="map">
+        <div class='filter-container'>
+<!--    <img src="filter1.svg" class="svg" >-->
+    </div>
+  </div>
+    
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Mhe0bnI35xvyjk7t1JDwCTpCTOgydOs&callback=initMap" type="text/javascript"></script>
+
+<script>
+
+  // initialize the map
+  var map = L.map('map').setView([77.15625, -155.90], 7);
+      
+    
+ ////////// tile url of 1st tile     http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}
+ ////////// tile url of 1st tile     src="http://mt0.google.com/vt/lyrs=s&x=4956&y=6060&z=14"
+ ///UPDATED tile url of 1st tile     a.google.com/vt/lyrs=s&x=4956&y=6060&z=13:1
+ ///UPDATED tile url of 1st tile     c.google.com/vt/lyrs=s&x=2478&y=3029&z=13:1
+      
+    L.TileLayer.NewURL = L.TileLayer.extend({
+    getTileUrl: function(coords) {
+//      Returns a random number between min (inclusive) and max (exclusive)
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        
+        /**
+         * Returns a random integer between min (inclusive) and max (inclusive).
+         * The value is no lower than min (or the next integer greater than min.
+         * if min isn't an integer) and no greater than max (or the next integer.
+         * lower than max if max isn't an integer).
+         * Using Math.round() will give you a non-uniform distribution!
+         */
+        
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        
+        var i = getRandomInt(0, 3);
+        var j = getRandomInt(0, 2);
+        
+        // increment our x/y coords by 1 so they match our tile naming scheme
+        coords.x = coords.x + i;
+        coords.y = coords.y + j;
+
+        // pass the new coords on through the original getTileUrl
+        // see http://leafletjs.com/examples/extending/extending-1-classes.html 
+        // for calling parent methods
+        return L.TileLayer.prototype.getTileUrl.call(this, coords);
+    }
+});
+
+//// static factory as recommended by http://leafletjs.com/reference-1.0.3.html#class
+L.tileLayer.NewURL = function(templateUrl, options) {
+    return new L.TileLayer.NewURL(templateUrl, options);
+}
+
+// create the layer and add it to the map
+L.tileLayer.NewURL('http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&tilesize={tileSize}', {
+    tms: false,
+    detectRetina: true,
+    continuousWorld: 'true',
+    noWrap: true,
+    tileSize: 128,
+    defaultRadius:1,
+}).addTo(map);
+    
+    setInterval(function(){map.panBy([100, 10], {animate: true, duration: 10});}, 1000);
+
+    
+
+    
+
+    
+var tiles = new L.GridLayer();
+tiles.createTile = function(coords) {
+  var tile = L.DomUtil.create('canvas', 'leaflet-tile');
+  var ctx = tile.getContext('2d');
+  var size = this.getTileSize()
+  tile.width = size.x
+  tile.height = size.y
+  
+  // calculate projection coordinates of top left tile pixel
+  var nwPoint = coords.scaleBy(size)
+  
+  // calculate geographic coordinates of top left tile pixel
+  var nw = map.unproject(nwPoint, coords.z)
+  
+//  ctx.fillStyle = 'white';
+//  ctx.fillRect(0, 0, size.x, 50);
+//  ctx.fillStyle = 'black';
+//  ctx.fillText('x: ' + coords.x + ', y: ' + coords.y + ', zoom: ' + coords.z, 20, 20);
+//  ctx.fillText('lat: ' + nw.lat + ', lon: ' + nw.lng, 20, 40);
+     function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var a = getRandomInt(0, 256);
+        var b = getRandomInt(0, 256);
+        var c = getRandomInt(0, 256);
+        var d = getRandomInt(0, 256);
+    
+//  ctx.strokeStyle = 'white';
+//  ctx.beginPath();
+//  ctx.moveTo(0, 0);
+//  ctx.lineTo(size.x, 0);
+//  ctx.lineTo(size.x, size.y);
+//  ctx.lineTo(0, size.y);
+//  ctx.closePath();
+//  ctx.stroke();
+    
+          ctx.strokeStyle = 'white';
+          ctx.beginPath();
+          ctx.moveTo(a, b);
+          ctx.lineTo(c, d);
+//          ctx.lineTo(size.x, size.y);
+//          ctx.lineTo(0, size.y);
+          ctx.closePath();
+          ctx.stroke();
+ 
+  return tile;
+  
+}
+    
+tiles.addTo(map);
+    
+document.getElementsByClassName('leaflet-control-container').appendChild( document.getElementsByTagName('body'));
+
+
+
+//    
+//    var imageUrl = 'filter1.svg',
+//    imageBounds = [[90, -180.00], [0, 0]];
+//    var className = 'image';
+//    L.imageOverlay(imageUrl, imageBounds, className).addTo(map);
+    </script>
+    </div>
+
+    <style>
+        .leaflet-overlay-pane{
+            mix-blend-mode: exclusion;
+            z-index: 1000;
+        }
+        
+        .svg {
+            width: 200vw;
+            overflow: hidden;
+        }
+        
+        .filter-container {
+            width: 100%;
+            height: 100%;
+            background: url(filter1.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            z-index: 1000;
+            mix-blend-mode: hard-light;
+            pointer-events: none;
+        }
+        
+        div.column-middle{
+            perspective: 100vw;
+            perspective-origin: 50% 50%;
+        }
+        
+        #map{
+/*                position: absolute;*/
+                margin: auto;
+                top: 0px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 70vw; width: 70vw;
+/*
+                max-height: 70vh;
+                max-width: 70vh;
+*/
+/*            transform: rotate3d(0, 0, 1, 0deg) rotateX(0deg) rotateZ(0deg);*/
+        }
+    
+
+       
+        #map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div > a {
+            display: none;
+        }
+    </style>
+</body>
+
+    
+</html>
