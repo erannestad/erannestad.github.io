@@ -85,9 +85,9 @@
     
     
     
-    <div class="shift-content column-middle">
+<div class="shift-content column-middle">
 
-  <div id="map">
+      <div id="map">
         <div class='filter-container'>
 <!--    <img src="filter1.svg" class="svg" >-->
     </div>
@@ -98,7 +98,7 @@
 <script>
 
   // initialize the map
-  var map = L.map('map').setView([77.15625, -155.90], 7);
+  var map = L.map('map').setView([77.15625, -155.90], 10);
       
     
  ////////// tile url of 1st tile     http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}
@@ -128,7 +128,7 @@
         }
         
         var i = getRandomInt(0, 3);
-        var j = getRandomInt(0, 2);
+        var j = getRandomInt(0, 3);
         
         // increment our x/y coords by 1 so they match our tile naming scheme
         coords.x = coords.x + i;
@@ -215,8 +215,7 @@ tiles.createTile = function(coords) {
 }
     
 tiles.addTo(map);
-    
-document.getElementsByClassName('leaflet-control-container').appendChild( document.getElementsByTagName('body'));
+
 
 
 
@@ -226,20 +225,20 @@ document.getElementsByClassName('leaflet-control-container').appendChild( docume
 //    var className = 'image';
 //    L.imageOverlay(imageUrl, imageBounds, className).addTo(map);
     </script>
-        </div>
-    </div>
-
+    
     <style>
         .leaflet-overlay-pane{
             mix-blend-mode: exclusion;
             z-index: 1000;
         }
         
+/*
         .svg {
             width: 200vw;
             overflow: hidden;
         }
         
+*/
         .filter-container {
             width: 100%;
             height: 100%;
@@ -251,9 +250,7 @@ document.getElementsByClassName('leaflet-control-container').appendChild( docume
             pointer-events: none;
         }
         
-        div.column-middle{
-            perspective: 100vw;
-            perspective-origin: 50% 50%;
+        body{
         }
         
         #map{
@@ -263,10 +260,10 @@ document.getElementsByClassName('leaflet-control-container').appendChild( docume
                 right: 0;
                 bottom: 0;
                 left: 0;
-                height: 70vw; width: 70vw;
-                max-height: 70vh;
-                max-width: 70vh;
-            transform: rotate3d(0, 0, 1, 0deg) rotateX(0deg) rotateZ(0deg);
+                height: 300px; width: 300px;
+                max-height: 300px;
+                max-width: 300px;
+/*            transform: rotate3d(0, 0, 1, 0deg) rotateX(45deg) rotateZ(45deg);*/
         }
     
 
@@ -275,6 +272,9 @@ document.getElementsByClassName('leaflet-control-container').appendChild( docume
             display: none;
         }
     </style>
+    
+</div>
+</div>
 </body>
 
     
