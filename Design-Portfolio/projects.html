@@ -27,26 +27,31 @@
     <ul class="menu-header"><a href="info.html">info</a></ul>
 <!--    <ul class="menu-header"><a href="#">artwork</a></ul>-->
 </div>
-<div class="container" onclick="myFunction(this); openNav()">
+<div id='navBarContainer' class="container" onclick="myFunction(this); openNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
 </div>
-<wrapper class="project-content">
+
     
     <div id='menu-side'>
-            <a href="projects.html" class="project active">all projects</a>
+<!--            <a href="design-index.html">eric rannestad</a>-->
+
+            <a href="projects.html" onclick="closeNav();" class="project active">all projects</a>
             
             <br>
             
-            <a href="#" onclick="loadThis('exhibitionCatalog');" class="project">exhibition catalog</a>
-            <a href="#" onclick="loadThis('firmamentArch');" class="project">firmament arch</a>
-            <a href="#" onclick="loadThis('wwccdLogo');" class="project">wwccd logo</a>
-            <a href="#" onclick="loadThis('precisionRestoration');" class="project">precision restoration</a>
-            <a href="#" onclick="loadThis('geothermal');"class="project">geothermal</a>
-            <a href="#" onclick="loadThis('forYourIdeas');" class="project">for your ideas</a>
+            <a href="#" onclick="closeNav(); loadThis('exhibitionCatalog');" class="project">exhibition catalog</a>
+            <a href="#" onclick="closeNav(); loadThis('firmamentArch');" class="project">firmament arch</a>
+            <a href="#" onclick="closeNav(); loadThis('wwccdLogo');" class="project">wwccd logo</a>
+            <a href="#" onclick="closeNav(); loadThis('printArena');" class="project">print are.na</a>
+            <a href="#" onclick="closeNav(); loadThis('precisionRestoration');" class="project">precision restoration</a>
+            <a href="#" onclick="closeNav(); loadThis('geothermal');"class="project">geothermal</a>
+            <a href="#" onclick="closeNav(); loadThis('conservationVideos');" class="project">conservation videos</a>
+            <a href="#" onclick="closeNav(); loadThis('wwccdWebsite');" class="project">wwwccd website</a>
+            <a href="#" onclick="closeNav(); loadThis('forYourIdeas');" class="project">for your ideas</a>
     </div>
-    
+<wrapper class="project-content">
     
     <div id='content'> 
 <!--      content appears here      -->

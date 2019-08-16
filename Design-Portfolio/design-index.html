@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro|Source+Serif+Pro|Space+Mono&display=swap" rel="stylesheet">
     <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="mobile-menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
     
@@ -14,7 +15,7 @@
 <div id="menu-top">
     <ul class="page-title"><a href="design-index.html">eric rannestad</a></ul>
     <ul class="menu-header"><a href="projects.html">projects</a></ul>
-    <ul class="menu-header"><a href="#">info</a></ul>
+    <ul class="menu-header"><a href="info.html">info</a></ul>
 <!--    <ul class="menu-header"><a href="#">artwork</a></ul>-->
 </div>
 
@@ -24,58 +25,66 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
 </div>
+
+
+    
+    <div id='menu-side' class="hideFullScreen">
+        <a href="projects.html" onclick="closeNav();" class="project active">all projects</a>
+
+        <br>
+
+        <a href="#" onclick="closeNav(); loadThis('exhibitionCatalog');" class="project">exhibition catalog</a>
+        <a href="#" onclick="closeNav(); loadThis('firmamentArch');" class="project">firmament arch</a>
+        <a href="#" onclick="closeNav(); loadThis('wwccdLogo');" class="project">wwccd logo</a>
+        <a href="#" onclick="closeNav(); loadThis('precisionRestoration');" class="project">precision restoration</a>
+        <a href="#" onclick="closeNav(); loadThis('geothermal');"class="project">geothermal</a>
+        <a href="#" onclick="closeNav(); loadThis('forYourIdeas');" class="project">for your ideas</a>
+    </div>
+
 <wrapper class='landing-content'>
-<!--
-<div id='menu-side'>
-    <ul class="category project"><a href="projects.html">projects</a></ul>
-        <ul class="project"><a href="exhibition-catalog.html">exhibition catalog</a></ul>
-        <ul class="project"><a href="wwccd-logo.html">wwccd logo</a></ul>
-        <ul class="project"><a href="geothermal.html">geothermal</a></ul>
-        <ul class="project"><a href="nurse-log-journals.html">nurse log journals</a></ul>
-</div>
--->
-
+<!--<div class='margin-top-mobile'>   -->
     
-<h1 class="intro">hello, I am a(n) __ </h1>
+    <h1 class="intro">hello, I am a(n) __ </h1>
 
-<!--    design     -->
-<div class="landing-design">
-    <h3 class="heading-design">design </h3>
-    <p>I work at the intersection of art, design, and economics. Many of my projects respond to, and are centered around, environmental issues. How can art and design extend the reach of others? How can art and design inform and direct other disciplines? I am forever learning and looking to collaborate with others. </p>
-</div>
-        
-<div class='landing-img landing-design-img'>
-    <img src="design-portfolio/exhibition-catalog/Catalog.jpg">
-    <div class='subtext design-img'>Whitman College Degree Show Exhibition Catalog. 2018. </div>
-</div>
-    
-<img class='gradient-design' src="assets/pink-gradient-01.svg">
 
-<!--    art     -->
-<div class="landing-art">
-    <h3 class="heading-art">art</h3>
-    <p>The work is an effort to describe the constructed qualities of climate change and landscape. Sections of material adopt a measured and contained aesthetic, while other sections resist this unity and reflect growth, variety, and decay. The gridded and organic components of my work suggest that the natural and built worlds are intertwined but are part of a precarious system on the verge of collapse. Like a scientific or economic model, my artwork is a collection of elements: materials, data, aesthetic components -- each contributing to the built environment it comes to represent. </p>
-</div>
-    
-<div class='landing-img landing-art-img'>
-    <img src="design-portfolio/VSC/plants1.jpg">
-    <div class='subtext design-img'>Firmament Arch, Vermont Studio Center. 2019</div>
-</div>
-    
-<img class='gradient-art' src="assets/pink-gradient-01.svg">
+    <!--    design     -->
+    <div class="landing-design">
+        <h3 class="heading-design">design </h3>
+        <p>I work at the intersection of art, design, and economics. Many of my projects respond to, and are centered around, environmental issues. How can art and design extend the reach of others? How can art and design inform and direct other disciplines? I am forever learning and looking to collaborate with others. </p>
+    </div>
 
-<!--    economics     -->
-<div class="landing-economics">
-    <h3 class="heading-economics">economics</h3>
-    <p>The work is an effort to describe the constructed qualities of climate change and landscape. Sections of material adopt a measured and contained aesthetic, while other sections resist this unity and reflect growth, variety, and decay. The gridded and organic components of my work suggest that the natural and built worlds are intertwined but are part of a precarious system on the verge of collapse. Like a scientific or economic model, my artwork is a collection of elements: materials, data, aesthetic components -- each contributing to the built environment it comes to represent. </p>
-</div>   
+    <div class='landing-img landing-design-img'>
+        <img src="design-portfolio/exhibition-catalog/Catalog.jpg">
+        <div class='subtext design-img'>Whitman College Degree Show Exhibition Catalog. 2018. </div>
+    </div>
 
-<div class='landing-img landing-economics-img'>
-    <img src="design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg">
-    <div class='subtext design-img'>Geothermal Energy Along the US Pacific Coast. 2017</div>
-</div> 
-    
-<img class='gradient-economics' src="assets/pink-gradient-01.svg">
+    <img class='gradient-design' src="assets/pink-gradient-01.svg">
+
+    <!--    art     -->
+    <div class="landing-art">
+        <h3 class="heading-art">art</h3>
+        <p>The work is an effort to describe the constructed qualities of climate change and landscape. Sections of material adopt a measured and contained aesthetic, while other sections resist this unity and reflect growth, variety, and decay. The gridded and organic components of my work suggest that the natural and built worlds are intertwined but are part of a precarious system on the verge of collapse. Like a scientific or economic model, my artwork is a collection of elements: materials, data, aesthetic components -- each contributing to the built environment it comes to represent. </p>
+    </div>
+
+    <div class='landing-img landing-art-img'>
+        <img src="design-portfolio/VSC/plants1.jpg">
+        <div class='subtext design-img'>Firmament Arch, Vermont Studio Center. 2019</div>
+    </div>
+
+    <img class='gradient-art' src="assets/pink-gradient-01.svg">
+
+    <!--    economics     -->
+    <div class="landing-economics">
+        <h3 class="heading-economics">economics</h3>
+        <p>The work is an effort to describe the constructed qualities of climate change and landscape. Sections of material adopt a measured and contained aesthetic, while other sections resist this unity and reflect growth, variety, and decay. The gridded and organic components of my work suggest that the natural and built worlds are intertwined but are part of a precarious system on the verge of collapse. Like a scientific or economic model, my artwork is a collection of elements: materials, data, aesthetic components -- each contributing to the built environment it comes to represent. </p>
+    </div>   
+
+    <div class='landing-img landing-economics-img'>
+        <img src="design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg">
+        <div class='subtext design-img'>Geothermal Energy Along the US Pacific Coast. 2017</div>
+    </div> 
+
+    <img class='gradient-economics' src="assets/pink-gradient-01.svg">
 
 </wrapper>
         

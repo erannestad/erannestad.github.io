@@ -62,5 +62,32 @@ var ProjectList = [
         description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound.",
         image: ['design-portfolio/journals/orange.jpg','design-portfolio/journals/brown2.jpg','design-portfolio/journals/brown.jpg','design-portfolio/journals/arrangement.jpg','design-portfolio/journals/all-spines.jpg'],
         imageSubtext: ["Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.", '','','','','','','']
+    },{
+        title: 'Print Are.na',
+        id: 'printArena',
+        client: 'Clement Valla',
+        categories: ['print', ' web'],
+        date: 'July, 2018',
+        description: "Tool to make books from Are.na Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/'>Binder.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p>",
+        image: ['design-portfolio/print-arena/arenaChannel1-2.jpg','design-portfolio/print-arena/arenaChannel2-2.jpg','design-portfolio/print-arena/arenaChannel3-2.jpg','design-portfolio/print-arena/arenaChannel4-2.jpg'],
+        imageSubtext: ['','','','','','','']
+    },{
+        title: 'About the Conservation Reserve Enhancement Program',
+        id: 'conservationVideos',
+        client: 'Walla Walla County Conservation District',
+        categories: ['video'],
+        date: 'December, 2018',
+        description: '<div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div><div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>',
+        image: [''],
+        imageSubtext: ['','','','','','','']
+    },{
+        title: 'Website: Walla Walla Conservation District',
+        id: 'wwccdWebsite',
+        client: 'Walla Walla County Conservation District',
+        categories: ['web', ' branding'],
+        date: 'January, 2018',
+        description: '',
+        image: ['design-portfolio/WWCCD/web1.jpeg'],
+        imageSubtext: ['','','','','','','']
     }
 ];
