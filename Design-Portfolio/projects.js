@@ -89,5 +89,14 @@ var ProjectList = [
         description: '',
         image: ['design-portfolio/WWCCD/web1.jpeg'],
         imageSubtext: ['','','','','','','']
+    },{
+        title: 'everything is going to have to be put back.',
+        id: 'everythingIsGoingToHaveToBePutBack',
+        client: 'Shell House Arts',
+        categories: ['web', ' mapping', ' art', ' environment'],
+        date: 'August, 2019',
+        description: '<div class="resp-container"><iframe class="resp-iframe" src="http://erannestad.com/my_EverythingMustBePutBack/map5/index.php" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div></p><p>Start with the leaves, the small twigs, and the nests that have been shaken, ripped, or broken off by the fall; these must be gathered and attached once again to their respective places. It is not arduous work, unless major limbs have been smashed or mutilated. If the fall was carefully and correctly planned, the chances of anything of the kind happening will have been reduced. Again, much depends upon the size, age, shape, and species of the tree. Still, you will be lucky if you can get through this stages without having to use machinery. Even in the best of circumstances it is a labor that will make you wish often that you had won the favor of the universe of ants, the empire of mice, or at least a local tribe of squirrels, and could enlist their labors and their talents. But no, they leave you to it. They have learned, with time. This is men\'s work.',
+        image: ['design-portfolio/maps/images/map_img1.jpg','design-portfolio/maps/images/map_img2.jpg','design-portfolio/maps/images/map_img3.jpg','design-portfolio/maps/images/map_img4.jpg'],
+        imageSubtext: ['','','','','','','']
     }
 ];
