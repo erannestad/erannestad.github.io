@@ -1,0 +1,158 @@
+/*************************************************/
+/******************* COLUMNS *********************/
+
+/* Left and right column */
+.navigation {
+/*    overflow: hidden;*/
+/*    background-color: yellow;*/
+    position: fixed; /* Set the navbar to fixed position */
+    left:0;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    height: 15%;
+}
+
+.main-nav {
+    overflow: hidden;
+    position: static;  
+    display: block;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 67.77777%;
+}
+
+
+#dropdown {
+/*  overflow: hidden;*/
+    position: relative; /* Set the navbar to fixed position */
+    left:0;
+    height: 33.333%;
+    display: none;  
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show{display:block!important;}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+    text-decoration: none;
+	font-variant: normal;
+	font-weight: 500;
+    align-items: center;
+    vertical-align: center;
+    cursor: pointer;
+    transition:.3s;
+}
+button.tablinks {
+    float: left;
+    position: relative;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width:30%;
+    font-size: 2.5vw;
+}
+button.back {
+    float: left;
+    position: relative;
+    border: none;
+    color: dimgray;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    height: 100%;
+    width:10%;
+    font-size: 2.5vw;
+}
+button.project {
+    float: left;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    border-bottom: black 2px !important;
+    height: 100%;
+    width:33.333%;
+    font-size: 1.5vw;
+    }
+
+
+button#back {
+    background-color: yellow;
+    color: black;
+}
+button#about {
+    background-color: violet; 
+    color:black;
+}
+button#projects {
+    background-color: white; 
+    color:black;
+}
+button#contact {
+    background-color: deepskyblue; 
+    color:black;
+}
+button.main:hover{
+    background: black !important;
+    color: white !important;
+}
+button.back:hover{
+    background: black !important;
+    color: white !important;
+}
+button.project:hover{
+    background: grey !important;
+    color: white !important;
+}
+
+
+/* Main content */
+.tabcontent {
+    position:static;
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 15.1vh;
+    margin-left: none;
+    margin-right: none;
+    display: none;
+    }
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+    text-decoration: none;
+	font-variant: normal;
+	font-weight: 500;
+    align-items: center;
+    vertical-align: center;
+    font-size: 3.5vw;
+    color: black;
+}
+
+img {
+    width: 100%;  
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+    text-decoration: none;
+	font-variant: normal;
+	font-weight: 500;
+    align-items: center;
+    vertical-align: center;
+    font-size: 2.5vw;
+    color: black;
+    
+}
+
