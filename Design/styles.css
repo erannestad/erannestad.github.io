@@ -152,6 +152,10 @@ p {
     font-size: 18px;
 }
 
+a {
+    color: #3D9970;
+}
+
 img{
     width: 100%;
 }

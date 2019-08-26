@@ -168,7 +168,7 @@ var ProjectList = [
         categories: ['web', ' branding'],
         related: ['wwccdInfographics', 'wwccdLogo', 'birthday'],
         date: 'January, 2018',
-        thumbnail:'design-portfolio/WWWCCD/web-thumbnail.jpg',
+        thumbnail:'design-portfolio/WWCCD/web-thumbnail.jpg',
         //////////////////
         description: '',
         //////////////////
