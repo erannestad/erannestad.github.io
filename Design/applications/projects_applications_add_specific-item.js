@@ -30,29 +30,18 @@ function loadThis(itemName) {
         
         
         
-        //add related items
-        var relatedItems = ProjectList.filter(obj => {
-            return obj.id === iObj.related[0];
-            });
-        relatedItems.push(ProjectList.filter(obj => {
-            return obj.id === iObj.related[1];
-            })[0]);
-        relatedItems.push(ProjectList.filter(obj => {
-            return obj.id === iObj.related[2];
-            })[0]);
-        relatedItems.push(ProjectList.filter(obj => {
-            return obj.id === iObj.related[3];
-            })[0]);
-        relatedItems.push(ProjectList.filter(obj => {
-            return obj.id === iObj.related[4];
-            })[0]);
-        relatedItems.push(ProjectList.filter(obj => {
-            return obj.id === iObj.related[5];
-            })[0]);
-        console.log(relatedItems);
+        //add next and previous items
+//        var a = fruits.indexOf("Apple");
+        var currentItem = ProjectList.indexOf(iObj);
+        var previousItem = currentItem - 1;
+        var nextItem = currentItem + 1;
+//        console.log(previousItem) 
+//        console.log(currentItem);
+//        console.log(nextItem);
         
-        var addRelatedItems = function(){
-            var iObj = relatedItems[i];
+        var addNextPreviousItem = function(){
+            var nextObj = ProjectList[nextItem];
+            var previousObj = ProjectList[previousItem];
             var content = document.querySelector("#content");
             var allCatagories = iObj.categories.toString();
             var br = '';
@@ -64,19 +53,20 @@ function loadThis(itemName) {
                 }
             };
             subtextBreak();
-            ///write inner html
-            content.innerHTML += "<item class='overview' onclick= 'loadThis(\"" + iObj.id + "\");'><p class='overview'>" + iObj.title + " </p><div class='filter'><img class='overview' src='" + iObj.thumbnail + "'></div><p class='subtext overview'>" + iObj.client + br + allCatagories + " | " + iObj.date + "</p></item>";
-            $("img[src='undefined']").remove();
+            
+            if (currentItem > 0 && nextObj !== undefined) {
+                ///write inner html
+                content.innerHTML += "<div class='previous'><p><- previous</p><item class='overview' onclick= 'loadThis(\"" + previousObj.id + "\");'><p class='overview'>" + previousObj.title + " </p><div class='filter'><img class='overview' src='" + previousObj.thumbnail + "'></div><p class='subtext overview'>" + previousObj.client + br + allCatagories + " | " + previousObj.date + "</p></item></div><div class='next'><p>next -></p><item class='overview' onclick= 'loadThis(\"" + nextObj.id + "\");'><p class='overview'>" + nextObj.title + " </p><div class='filter'><img class='overview' src='" + nextObj.thumbnail + "'></div><p class='subtext overview'>" + nextObj.client + br + allCatagories + " | " + nextObj.date + "</p></item></div>";
+            } if (currentItem == 0){
+                ///write inner html
+                content.innerHTML += "<div class='next'><p>next -></p><item class='overview' onclick= 'loadThis(\"" + nextObj.id + "\");'><p class='overview'>" + nextObj.title + " </p><div class='filter'><img class='overview' src='" + nextObj.thumbnail + "'></div><p class='subtext overview'>" + nextObj.client + br + allCatagories + " | " + nextObj.date + "</p></item></div>";
+            } if  (nextObj === undefined){
+                content.innerHTML += "<div class='previous'><p><- previous</p><item class='overview' onclick= 'loadThis(\"" + previousObj.id + "\");'><p class='overview'>" + previousObj.title + " </p><div class='filter'><img class='overview' src='" + previousObj.thumbnail + "'></div><p class='subtext overview'>" + previousObj.client + br + allCatagories + " | " + previousObj.date + "</p></item></div>";
+            };
         };
-
-        var loadRelated = function() {
-            content.innerHTML += "<h4 class='related'>Related Items</h4>";
-            for (i=0; i < 6; i++){
-                addRelatedItems(i);
-            }
-        }
-        loadRelated();
+        
         $("img[src='undefined']").remove();
+        addNextPreviousItem();
     };
     
     addSpecificItem();

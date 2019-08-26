@@ -9,7 +9,7 @@ var ProjectList = [
         date: 'July, 2018',
         thumbnail:'../../design-portfolio/print-arena/arenaChannel4-2.jpg',
         //////////////////
-        description: "Tool to make books from Are.na Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/'>Binder.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p>",
+        description: "Tool to make books from Are.na Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p>",
         //////////////////
         image: ['../../design-portfolio/print-arena/arenaChannel1-2.jpg','../../design-portfolio/print-arena/arenaChannel2-2.jpg','../../design-portfolio/print-arena/arenaChannel3-2.jpg','../../design-portfolio/print-arena/arenaChannel4-2.jpg'],
         //////////////////

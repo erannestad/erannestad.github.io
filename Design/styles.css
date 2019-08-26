@@ -156,6 +156,10 @@ a {
     color: #3D9970;
 }
 
+a.black-link {
+    color: black;
+}
+
 img{
     width: 100%;
 }
@@ -437,6 +441,16 @@ h4 {
     margin-top: 0px;
 }
 
+div.previous{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+div.next{
+    text-align: center;
+    grid-column: 3/4;
+}
+
 .load-more>a{
     display: grid;
     font-family: 'Source Sans Pro', sans-serif;
@@ -620,7 +634,17 @@ h4 {
         margin-top: 0%;
     }  
     #application-heading {
-        grid-column: 1/4;
+        grid-column: 1/3;
+    }
+    
+    div.previous{
+    grid-column: 1/2;
+    text-align: center;
+    }
+
+    div.next{
+        text-align: center;
+        grid-column: 2/3;
     }
 
     
