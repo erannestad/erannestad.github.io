@@ -351,10 +351,6 @@ item.overview {
     grid-column: 1/4;
 }
 
-.filter {
-/*    background-color: #3D9970;*/
-}   
-
 img.overview {
     z-index: 1;
 /*
