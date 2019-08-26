@@ -212,8 +212,7 @@ text{
 
 .landing-img{
     grid-column: 1/5;
-    box-shadow: 10px;
-    box-shadow: 200px 20px 20px 20px #f4f4f4;
+    opacity: 1;
 }
 
 .heading-text{
@@ -317,9 +316,65 @@ text{
 
 .project-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10%;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-gap: 0px;
 }
+
+#content {
+    grid-column: 2/4;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px
+}
+
+item.overview {
+    display: inline-grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    align-items: center;
+    border: solid;
+    border-color: black;
+    background-color: #FFEFD5;
+    padding: 8px;
+    color: black;
+    cursor: pointer;
+}
+.overview:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.related{
+    grid-column: 1/4;
+}
+
+.filter {
+/*    background-color: #3D9970;*/
+}   
+
+img.overview {
+    z-index: 1;
+/*
+    filter: grayscale(0%) brightness(100%) contrast(100%);
+    mix-blend-mode: multiply;
+*/
+}
+
+img.overview:hover {
+    filter: grayscale(0%) brightness(100%) contrast(100%);
+    mix-blend-mode: normal;
+}
+
+img.overview:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 150, 0, 0.75);
+}
+
 
 #menu-side{
     grid-column: 1/2; 
@@ -354,17 +409,13 @@ text{
     color: #3D9970;
 }
 
-#content {
-    display: grid;
-    grid-column: 2/6;
-}
-
 #content > div > h4{
     margin-top: 0px;
 }
 
-item{
-    margin-bottom: 100px
+item.full-project{
+    margin-bottom: 100px;
+    grid-column: 1/4;
 }
 
 p.subtext {
@@ -410,6 +461,7 @@ h4 {
     height: 100%;
     border: 0;
 }
+
 
 
 
@@ -526,11 +578,21 @@ h4 {
         grid-row: 2/3;
         font-size: 24px;
     }
-
-    #content {
-        grid-column: 1/5;
-        margin-top: 30%;
+    
+/*
+    .project-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
     }
+*/
+    
+    #content {
+        grid-column: 1/4;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px
+}
     
     .landing-content, .info-content {
         margin-top: 30%;
@@ -550,8 +612,6 @@ h4 {
         margin-top: 0%;
     }  
 
-    
-    
     
 }
     

@@ -1,9 +1,17 @@
-//$(document).ready ( function(){
-//   TweenMax.to(".design-ImgContainer", 2, {boxShadow:"0px 0px 20px red", color:"#FC0", ease:Power2.easeInOut, repeat:-1, delay:2});
-//});
+$(document).ready (function(){
+    TweenMax.from(".landing-img", .5, {opacity: '0', ease:Power2.easeInOut, repeat:0, delay:1});
+    
+    TweenMax.from('.landing-img > img', .5, {marginTop: '-100px', ease:Power2.easeInOut, repeat:0, delay:1});
+    
+    TweenMax.from('.heading-text', .5, {marginTop: '100px', ease:Power2.easeInOut, repeat:0, delay:1});
+    
+    TweenMax.from('.title', 1.5, {opacity: '0', marginLeft: '-100px' ,ease:Power2.easeInOut, repeat:0, delay:1});   
+});
 
 
-//$(document).ready ( function(){
-//   TweenMax.to(".heading-design", 2, {fontSize: '44vw', color:"#FC0", ease:Power2.easeInOut, repeat:-1, delay:2});
-//});
+
+
+
+
+
 
