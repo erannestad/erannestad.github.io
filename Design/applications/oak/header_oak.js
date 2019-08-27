@@ -1,7 +1,7 @@
 var OakApplication = {
-        heading1:'Oak Studios',
+        heading1:'Oak Studio',
         heading2:'Internship Application',
-        body:'Attached is the portfolio section of my application. The reviewer(s) can navigate to the main site <a href="../../projects.html">here</a> should they like to explore further.'
+        body:'Attached is the portfolio section of my application. The reviewer(s) can navigate to the main site <a href="../../projects.html">here</a> should they like to explore further.<br><br>Thank you for your consideration.'
     };
 
 

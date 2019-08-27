@@ -133,7 +133,7 @@ body{
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: auto 120px 120px;
+    grid-template-columns: auto 120px 180px;
 }
 
 #menu-top{
@@ -476,6 +476,7 @@ div.next{
     
 .resp-iframe {
     position: absolute;
+    background-color: lightgrey;
     top: 0;
     left: 0;
     width: 100%;

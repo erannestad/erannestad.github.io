@@ -67,6 +67,8 @@ function loadThis(itemName) {
         
         $("img[src='undefined']").remove();
         addNextPreviousItem();
+        $('a.active').removeClass( 'active' );
+        $('#' + iObj.id ).addClass( 'active' );
     };
     
     addSpecificItem();
@@ -79,4 +81,5 @@ function loadThis(itemName) {
 $( 'a.project' ).on( 'click', function() {
     $('a.active').removeClass( 'active' );
     $( this ).addClass( 'active' );
+    $('#' + iObj.id ).addClass( 'active' );
     });
