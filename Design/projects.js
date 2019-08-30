@@ -186,7 +186,7 @@ var ProjectList = [
         categories: ['web', ' mapping', ' art', ' environment'],
         related: ['firmamentArch', 'WTRST', 'exhibitionCatalog'],
         date: 'August, 2019',
-        thumbnail:'design-portfolio/maps/images/map_img2.jpg',
+        thumbnail:'design-portfolio/maps/pan1_background-thumbnail.gif',
         //////////////////
         description: '<div class="resp-container"><iframe class="resp-iframe" src="http://erannestad.com/my_EverythingMustBePutBack/map5/index.php" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div></p><p>Start with the leaves, the small twigs, and the nests that have been shaken, ripped, or broken off by the fall; these must be gathered and attached once again to their respective places. It is not arduous work, unless major limbs have been smashed or mutilated. If the fall was carefully and correctly planned, the chances of anything of the kind happening will have been reduced. Again, much depends upon the size, age, shape, and species of the tree. Still, you will be lucky if you can get through this stages without having to use machinery. Even in the best of circumstances it is a labor that will make you wish often that you had won the favor of the universe of ants, the empire of mice, or at least a local tribe of squirrels, and could enlist their labors and their talents. But no, they leave you to it. They have learned, with time. This is men\'s work.',
         //////////////////
@@ -247,5 +247,46 @@ var ProjectList = [
         image: ['design-portfolio/geothermal/RiskGraphs.gif', 'design-portfolio/geothermal/infographic1.gif'],
         //////////////////
         imageSubtext: ['','','','','','','']
+    },
+    
+    
+    
+    
+    
+    {
+        title: 'Posters: Voluntary Stewardship Program',
+        id: 'posters',
+        client: '',
+        categories: ['infographic',' print'],
+        related: ['exhibitionCatalog', 'conservationVideos', 'wwccdInfographics'],
+        date: 'January, 2017',
+        thumbnail:'design-portfolio/wwccd/VSP-WorkPlan_WithBackground_thumbnail.png',
+        //////////////////
+        description:'',
+        //////////////////
+        image: ['design-portfolio/wwccd/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/wwccd/VSP-CriticalAreas_WithBackground_web.png'],
+        //////////////////
+        imageSubtext: ['','','','','','','']
+    },
+    
+    
+    
+    
+    
+    
+    {
+        title: 'Illustration',
+        id: 'illustration',
+        client: '',
+        categories: ['illustration'],
+        related: ['birthday', 'forYourIdeas'],
+        date: '2014 - present',
+        thumbnail:'design-portfolio/illustrations/SheSaysMyNameInEnglish.jpg',
+        //////////////////
+        description:'Illustrator for the Whitman Wire (2014-2018) <br> Illustrator for Mangoprism (2019)',
+        //////////////////
+        image: ['design-portfolio/illustrations/SheSaysMyNameInEnglish.jpg', 'design-portfolio/illustrations/WhitmanIllustrations.jpg'],
+        //////////////////
+        imageSubtext: ['<br><b><u>She says my name in English</b></u><br>Text: Rachel Glover<br>Illustration: Eric Rannestad<br><br>A few years ago, I stood in the afternoon shadows of my family’s kitchen, peering over my mother’s head as she—gripping a knife in her small, sun-spot-covered hands—reached into a paper bag in the sink, pulled out a large, newly-dead fish, grasped it by its tail, rinsed it. With quick, sure, sweeping movements, she showed me how to remove its scales with the back of the knife. I tried not to flinch as scales and flesh juices and residual saltwater sprayed across our clothes and faces, splattering the window and walls. She cut into its belly from anus to gills, and there was blood and egg, and the softness of intestines and stomach and heart. These innards of another creature felt both intimate and alien. “Don’t ever cut this one,” she said, her accent tilting the English as she prodded with her long fingernail some innocuous-looking organ. “You cut this, you ruin it.” <br><br> She sheared away the gills with kitchen scissors, dressed the fish with the fresh garlic and scapes and onion and ginger and salt, some green herbs from the Veranda Asian market (a dirty place, smelling faintly of bamboo and sweat, filled with hundred-pound bags of rice and piles of odd animal parts—beef tongue, chicken feet, pig ears wrapped in cellophane), and put it on a baking sheet. When the fish emerged from the oven, we tore into its smooth white flesh—I with bare fingers, she with chopsticks. Salt and ginger and the savor of meat. The pile of picked-over bones on the table grew, and when it was almost gone, I watched her pop each fish eye into her mouth, one at a time.<br><br>***<br><br>I spent much of the first five years of my life in the presence of my mother. I don’t remember much about her from that time; I cannot picture her face or her words or the way she moved. I don’t remember feeling like something was missing, the way I did when I got older...<br><br>VIEW ARTICLE: <a href="https://mangoprism.com/2019/06/18/she-says-my-name-in-english/" target="_blank">She says my name in English</a>','<br><b><u>Three W\'s</b></u> (left)<br>VIEW ARTICLE: <a href="https://whitmanwire.com/feature/2015/03/05/the-3-ws-whitman-walla-walla-university-walla-walla-community-college/" target="_blank">Three W\'s</a><br><br><b><u>Third Annual “Who Do You Run For?"</b></u> (right)<br>VIEW ARTICLE: <a href="https://whitmanwire.com/sports/2015/11/30/3rd-annual-who-do-you-run-for-supports-cancer-battles-through-exercise/" target="_blank">Third Annual "Who Do You Run For?"</a>','','','','','']
     }
 ];
