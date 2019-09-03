@@ -264,7 +264,7 @@ var ProjectList = [
         //////////////////
         description:'',
         //////////////////
-        image: ['design-portfolio/wwccd/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/wwccd/VSP-CriticalAreas_WithBackground_web.png'],
+        image: ['design-portfolio/wwccd/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/wwccd/VSP-WorkPlan_WithBackground_web.png'],
         //////////////////
         imageSubtext: ['','','','','','','']
     },
