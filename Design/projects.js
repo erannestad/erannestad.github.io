@@ -6,7 +6,7 @@ var ProjectList = [
         categories: ['art'],
         related: ['WTRST', 'everythingIsGoingToHaveToBePutBack', 'exhibitionCatalog'],
         date: 'April, 2019',
-        thumbnail:'design-portfolio/VSC/Full1.2.jpg',
+        thumbnail:'design-portfolio/VSC/Full_thumbnail.jpg',
         //////////////////
         description: 'Firmament Arch is part of a growing series of work about the constructed qualities of climate change and our relationship to the natural world in the face of ecological collapse. <p class="subtext">The series reimagines cosmological structures of the past: the pillars of heaven, the firmament, the great deep, the ocean of heaven, etc. as architectural backbones of our future infrastructure and defining forces in our relationship to nature. <br><br> In religious cosmology, the sky was conceptualized as a physical structure – a firmament – that separated earth from the oceans of heavens. Firmament Arch references the architecture of our increasingly necessary biodomes and greenhouses and reimagines them as the firmament structures of tomorrow. The curved backbone of the work houses a network of tanks, tubes, pumps, and nozzles that form an aeroponic growing environment, allowing plants to grow in irregular and confined spaces with minimal water waste or reliance on natural light.</p>',
         //////////////////
@@ -23,7 +23,7 @@ var ProjectList = [
         categories: ['print'],
         related: ['forYourIdeas', 'printArena', ''],
         date: 'April, 2019',
-        thumbnail:'design-portfolio/exhibition-catalog/Catalog.jpg',
+        thumbnail:'design-portfolio/exhibition-catalog/Catalog_thumbnail.jpg',
         //////////////////
         description: 'Publication documenting the 2018 Whitman Thesis Exhibition: Best Thing Since Sliced Bread. The catalog is the first to document the artists and work of Whitman College\'s annual Senior Thesis Art Exhibition. Zoe Guckenheimer and I carried out the project with the generous financial support of the Whitman College Art Department. <p class="subtext">FULL CATALOG: <a href="../../design-portfolio/exhibition-catalog/bestthingsinceslicedbread_exhibitioncatalog_reducedsize.pdf" target="_blank">VIEW PDF</a> <br><br>CREDITS: <br>Design, photography, layout by Eric Rannestad and Zoe Guckenheimer. Photography contributions from Eric Rannestad, Kerr Cirrilo, and Anna Dawson. Printed May 2018 by Bridgetown Printing Company in Portland, OR.</p>',
         //////////////////
@@ -41,7 +41,7 @@ var ProjectList = [
         categories: ['print', ' branding', ' motion', ' economics'],
         related: ['infographic', 'precisionRestoration', 'everythingIsGoingToHaveToBePutBack'],
         date: 'December, 2017',
-        thumbnail:'design-portfolio/geothermal/geo11.jpg',
+        thumbnail:'design-portfolio/geothermal/geo11_thumbnail.jpg',
         //////////////////
         description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and report. <p class='subtext'>The final report exists as a technical apendix to the atmospheric installation and infographic. You can find the report <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>here</a><br><br>The complete installation was on display in December 2016.</p><br><br>",
         //////////////////
@@ -59,7 +59,7 @@ var ProjectList = [
         categories: ['print',' brand'],
         related: ['conservationVideos', 'wwccdWebsite', 'wwccdInfographics'],
         date: 'January, 2019',
-        thumbnail:'design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-green.png',
+        thumbnail:'design-portfolio/WWCCD/WWCCDlogo/final/wwccdLogo_thumbnail.jpg',
         //////////////////
         description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and web redesigned.',
         //////////////////
@@ -77,7 +77,7 @@ var ProjectList = [
         categories: ['print',' infographics'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: 'November, 2018',
-        thumbnail:'design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg',
+        thumbnail:'design-portfolio/WWCCD/Conservation-Plans-Infographic_thumbnail.jpg',
         //////////////////
         description: 'A series of design and outreach material, including: booklet about the new Voluntary Stewardship Program in Washington State, project summarys, and infographics for the 2019 annual report.',
         //////////////////
@@ -95,7 +95,7 @@ var ProjectList = [
         categories: ['economics', ' infographic'],
         related: ['geothermal', 'infographic', 'wwccdInfographics'],
         date: 'August 2018',
-        thumbnail:'design-portfolio/The-Nature-Conservancy/Market-Analysis-Report.jpg',
+        thumbnail:'design-portfolio/The-Nature-Conservancy/Market-Analysis-Report_thumbnail.jpg',
         //////////////////
         description: "Collection of marketing and outreach material for The Nature Conservancy's Precision Restoration Project. The suite includes an infographic that tells the larger story of Precision Restoration, a still and animated GIF that depicts how one of the seed treatments work, and an animated fire map that was built in ArcGIS. I worked with staff at the economic consulting firm ECONorthwest to researched write a market analysis and feasibility report for the Oregon Nature Conservancy. Market problems, trends, and supply chain of native seed are addressed. The document continues to serve as a technical appendix for the The Nature Conservancy as they bring Precision Restoration Technologies to a larger production scale.",
         //////////////////
@@ -113,7 +113,7 @@ var ProjectList = [
         categories: ['print'],
         related: ['printArena', 'exhibitionCatalog', ''],
         date: 'July, 2016',
-        thumbnail:'design-portfolio/journals/all-spines.jpg',
+        thumbnail:'design-portfolio/journals/all-spines_thumbnail.jpg',
         //////////////////
         description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound.",
         //////////////////
@@ -131,7 +131,7 @@ var ProjectList = [
         categories: ['print', ' web'],
         related: ['everythingIsGoingToHaveToBePutBack', 'forYourIdeas', 'exhibitionCatalog'],
         date: 'July, 2018',
-        thumbnail:'design-portfolio/print-arena/arenaChannel4-2.jpg',
+        thumbnail:'design-portfolio/print-arena/arenaChannel4-2_thumbnail.jpg',
         //////////////////
         description: "Tool to make printable books from <a href='https://are.na' target='_blank'>Are.na</a> Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/' target='_blank'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p><p class='subtext'><br>The Print Are.na tool wraps stripped-down html with new wrappers. The included css file then styles the manipulated html for an easy, customizable, and print-friendly layout.</p>",
         //////////////////
@@ -167,7 +167,7 @@ var ProjectList = [
         categories: ['web', ' branding'],
         related: ['wwccdInfographics', 'wwccdLogo', 'birthday'],
         date: 'January, 2018',
-        thumbnail:'design-portfolio/WWCCD/web-thumbnail.jpg',
+        thumbnail:'design-portfolio/WWCCD/web_thumbnail.jpg',
         //////////////////
         description: '',
         //////////////////
@@ -203,7 +203,7 @@ var ProjectList = [
         categories: ['web', 'illustration'],
         related: ['wwccdWebsite', 'forYourIdeas', ''],
         date: 'August, 2019',
-        thumbnail:'design-portfolio/happy-birthday-website/full-screenshot.jpg',
+        thumbnail:'design-portfolio/happy-birthday-website/full-screenshot_thumbnail.jpg',
         //////////////////
         description:'',
         //////////////////
@@ -221,7 +221,7 @@ var ProjectList = [
         categories: ['art',' installation'],
         related: ['firmamentArch', 'geothermal', 'shipwreck'],
         date: 'May, 2018',
-        thumbnail:'design-portfolio/builtscape/web_wideangle-left.jpg',
+        thumbnail:'design-portfolio/builtscape/WTRST_thumbnail.jpg',
         //////////////////
         description:'Compartmentalizing the way environments are constructed, measured, and grow, <i>Where the Rain Seeps Through</i> reflects a shifting balance between the natural world and built environment. Sections of material adapt a measured and contained aesthetic, while others resist this uniformity and reflect growth, variety, and decay. This tension characterizes the erosion and eventual failure of systems used to organize and quantify our world.',
         //////////////////
@@ -277,7 +277,7 @@ var ProjectList = [
         categories: ['illustration'],
         related: ['birthday', 'forYourIdeas'],
         date: '2014 - present',
-        thumbnail:'design-portfolio/illustrations/SheSaysMyNameInEnglish.jpg',
+        thumbnail:'design-portfolio/illustrations/SheSaysMyNameInEnglish_thumbnail.jpg',
         //////////////////
         description:'Illustrator for the Whitman Wire (2014-2018) <br> Illustrator for Mangoprism (2019)',
         //////////////////
