@@ -259,11 +259,11 @@ var ProjectList = [
         categories: ['infographic',' print'],
         related: ['exhibitionCatalog', 'conservationVideos', 'wwccdInfographics'],
         date: 'January, 2017',
-        thumbnail:'design-portfolio/wwccd/VSP-WorkPlan_WithBackground_thumbnail.png',
+        thumbnail:'design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_thumbnail.png',
         //////////////////
         description:'',
         //////////////////
-        image: ['design-portfolio/wwccd/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/wwccd/VSP-CriticalAreas_WithBackground.png'],
+        image: ['design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/WWCCD/VSP-CriticalAreas_WithBackground.png'],
         //////////////////
         imageSubtext: ['','','','','','','']
     },
