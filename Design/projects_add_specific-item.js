@@ -77,6 +77,8 @@ function loadThis(itemName) {
         }
         loadRelated();
         $("img[src='undefined']").remove();
+        $('a.active').removeClass( 'active' );
+        $('#' + iObj.id ).addClass( 'active' );
     };
     
     addSpecificItem();
@@ -86,7 +88,7 @@ function loadThis(itemName) {
 };
 
 
-$( 'a.project' ).on( 'click', function() {
+$('a.project' ).on( 'click', function() {
     $('a.active').removeClass( 'active' );
     $( this ).addClass( 'active' );
     });
