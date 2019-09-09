@@ -14,9 +14,15 @@
     <script src='mobile-menu.js'></script>
     <script src='sticky-menu.js'></script>
     
+    
     <!--GREENSOCK-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="animation.js"></script>
+    
+    <!--SCROLL TO ELEM-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src='scroll-to-element.js'></script>
 
 </head>
 
@@ -48,12 +54,41 @@
         
     <wrapper class='landing-content'>
         <wrapper class="project-highlights">
-            <h4>Featured Projects</h4>
+            <h4>featured projects</h4>
             <div id='content'> 
             <!--content appears here -->
             <script src="projects_add_overview.js"></script>
            <script src="applications/projects_applications_add_specific-item.js"></script> <script>loadHighlights('firmamentArch', 'exhibitionCatalog', 'geothermal', 'wwccdLogo', 'printArena', 'everythingIsGoingToHaveToBePutBack');</script>
             </div>
+            <p style="text-align: right;"><a href='projects.html'>view all projects</a></p>
+
+        </wrapper>
+        
+        <wrapper class="info-container">
+            <wrapper class='info-content'>
+            <h4>info</h4>
+            <div class="info-text">
+
+                <p>Eric Rannestad is a design strategist, researcher and artist. His work uses design as a tool to translate complex ideas into engaging and usable information. <br><br>
+
+                Eric is an alumnus of the <a href='http://www.artspracticum.org' target='_blank'>New York Arts Practicum</a>. He has attended residencies at <a href='https://shellhousearts.org/' target='_blank'>Shell House Arts</a>, <a href='https://vermontstudiocenter.org' target='_blank'>Vermont Studio Center</a>, and <a href='https://ncascades.org/' target='_blank'>North Cascades Institute</a>. Eric holds a BA in Economics and Studio Art from <a href='https://whitman.edu/' target='_blank'>Whitman College</a> in Washington (US) and has studied at the <a href='http://www.gsa.ac.uk/' target='_blank'>Glasgow School of Art</a> (UK). <br><br>
+
+                Eric lives in the Pacific Northwest where he has worked for <a href='https://econw.com/' target='_blank'>ECONorthwest</a>, <a href='https://www.nature.org/en-us/' target='_blank'>The Nature Conservancy</a>, and <a href='http://www.wwccd.net/' target='_blank'>Washington State Conservation Districts</a>. <br><br>
+
+                Feel free to get in touch and say hello. 
+                </p>
+            </div>
+            <div class='landing-img landing-design-img'>
+                <img src="portraits/portrait4">
+                <div class='subtext design-img'>plants &#127807;&#127807;&#127807;</div>
+            </div>
+            <div class="landing-design">
+                <p class="subtext">
+                    email: ericrannestad@gmail.com <br>
+                    instagram: erannestad
+                </p>
+            </div>
+            </wrapper>
         </wrapper>
     </wrapper>
     
@@ -63,7 +98,7 @@
     <div class='white' id="menu-top">
         <ul class="page-title"><a class='white' href="index.html">eric rannestad</a></ul>
         <ul class="menu-header"><a class='white' href="projects.html">projects</a></ul>
-        <ul class="menu-header"><a class='white'  href="info.html">info</a></ul>
+        <ul class="menu-header"><a class='white' onclick='scrollToElem(".info-content");' href=#>info</a></ul>
     </div>
     
     
