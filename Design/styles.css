@@ -314,6 +314,7 @@ text{
     max-width: 1200px;
     margin: 16px;
     margin-top: 10%;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
