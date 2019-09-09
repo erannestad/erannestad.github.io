@@ -88,7 +88,15 @@ function loadThis(itemName) {
 };
 
 
+var loadThisHighlight = function(itemName) {
+    window.location.href = 'www.ericrannestad.com/Design/projects.html';
+    var itemName = highlightName;
+    loadThis(itemName);
+};
+
+
 $('a.project' ).on( 'click', function() {
     $('a.active').removeClass( 'active' );
     $( this ).addClass( 'active' );
     });
+

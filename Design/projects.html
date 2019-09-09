@@ -39,7 +39,7 @@
 
     
     <div id='menu-side'>
-<!--            <a href="design-index.html">eric rannestad</a>-->
+        <!--<a href="design-index.html">eric rannestad</a>-->
             
             <a href="projects.html" onclick="closeNav(); loadOverview();" class="project active">overview</a>
 <!--
@@ -69,9 +69,11 @@
     <div id='content'> 
 <!--      content appears here      -->
         <script src='projects_add.js'></script>
-        <script src="applications/projects_applications_add_specific-item.js"></script>
+        
         <script src="projects_add_overview.js"></script>
         <script>loadOverview();</script>
+        <script src="applications/projects_applications_add_specific-item.js"></script>
+        <script>addSpecificHighlight();</script>
     </div>
     
 </wrapper>
@@ -86,6 +88,7 @@
 </div>
 </footer>
 
+<!--
 <script>
   function loadMore() {
     event.preventDefault();
@@ -94,6 +97,7 @@
     addAllItems();
 }
 </script>
+-->
 
 
 

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html class='background'>
+
+<html>
+
 <head>
     <title>Eric Rannestad</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro|Source+Serif+Pro|Space+Mono&display=swap" rel="stylesheet">
     <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
-    <script src="mobile-menu.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src='projects.js'></script>
+    <script src='mobile-menu.js'></script>
+    <script src='sticky-menu.js'></script>
     
     <!--GREENSOCK-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -14,84 +20,54 @@
 
 </head>
 
-    
+
 <body>
-    
-
-<wrapper class='landing-content'>
-    <div class="heading-text">
-        <p class='title'>Northwest designer and strategic communicator working to solve environmental issues.</p>
-        <!--Eric specializes in design with an environmental focus.-->
-        <br><br>
-        <p class='subtitle'>Providing brand identity, web, and editorial design services to groups and individuals with an environmental focus. </p>
-        
-    </div>
-    <div class='arrowContainer'>
-            <a class='arrow' href='projects.html'>&darr;</a>
-    </div>
-   
-    <!--
-    <div class="design">
-       <div class='landing-img'>
-            <img src="design-portfolio/exhibition-catalog/Catalog.jpg"> 
-            <div class='heading-text'>
-                <h3 class="title">hello, </h3>
-                <h3 class='title'>designer and strategic communicator focusing on solving environmental issues. <br> Providing brand identity, web, and editorial design. Eric specializes in design with an environmental focus.</h3>
-                <br>
-                <a href='projects.html' class='project subtext'> + view projects</a> 
-            </div>
-        </div>  
-    </div>
-    -->
-</wrapper>
-
-    
-    
-<div class='white' id="menu-top">
-    <ul class="page-title"><a class='white' href="index.html">eric rannestad</a></ul>
-    <ul class="menu-header"><a class='white' href="projects.html">projects</a></ul>
-    <ul class="menu-header"><a class='white'  href="info.html">info</a></ul>
-<!--    <ul class="menu-header"><a href="#">artwork</a></ul>-->
-</div>
-
-
-<div class="container" onclick="myFunction(this); openNav()">
+<div class='background'></div>
+  
+<!--
+    <div class="container" onclick="myFunction(this); openNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-</div>
-
-
-    
-    <div id='menu-side' class="hideFullScreen">
-        <a href="projects.html" onclick="closeNav();" class="project active">all projects</a>
-
-        <br>
-
-        <a href="#" onclick="closeNav(); loadThis('exhibitionCatalog');" class="project">exhibition catalog</a>
-        <a href="#" onclick="closeNav(); loadThis('firmamentArch');" class="project">firmament arch</a>
-        <a href="#" onclick="closeNav(); loadThis('wwccdLogo');" class="project">wwccd logo</a>
-        <a href="#" onclick="closeNav(); loadThis('precisionRestoration');" class="project">precision restoration</a>
-        <a href="#" onclick="closeNav(); loadThis('geothermal');"class="project">geothermal</a>
-        <a href="#" onclick="closeNav(); loadThis('forYourIdeas');" class="project">for your ideas</a>
     </div>
-
-<!--<img id='full-svg' src="assets/icons-01.svg">-->
-
-
-
-        
-<!--
-<footer>
-    <div id="menu-footer">
-    <ul class="footer-title"><a href="index.html">eric rannestad</a></ul>
-    <ul class="footer-header"><a href="projects.html">projects</a></ul>
-    <ul class="footer-header"><a href="#">info</a></ul>
-</div>
-</footer>
 -->
     
-<!--scripts-->
+
+    <wrapper class='landing-heading'>
+        <div class="heading-text">
+            <p class='title'>Northwest designer and strategic communicator working to solve environmental issues.</p>
+            <!--Eric specializes in design with an environmental focus.-->
+            <br><br>
+            <p class='subtitle'>Providing brand identity, web, and editorial design services to groups and individuals with an environmental focus. </p>
+
+        </div>
+        <div class='arrowContainer'>
+                <a class='arrow' href='projects.html'>&darr;</a>
+        </div>
+    </wrapper>
+        
+    <wrapper class='landing-content'>
+        <wrapper class="project-highlights">
+            <h4>Featured Projects</h4>
+            <div id='content'> 
+            <!--content appears here -->
+            <script src="projects_add_overview.js"></script>
+           <script src="applications/projects_applications_add_specific-item.js"></script> <script>loadHighlights('firmamentArch', 'exhibitionCatalog', 'geothermal', 'wwccdLogo', 'printArena', 'everythingIsGoingToHaveToBePutBack');</script>
+            </div>
+        </wrapper>
+    </wrapper>
+    
+
+
+
+    <div class='white' id="menu-top">
+        <ul class="page-title"><a class='white' href="index.html">eric rannestad</a></ul>
+        <ul class="menu-header"><a class='white' href="projects.html">projects</a></ul>
+        <ul class="menu-header"><a class='white'  href="info.html">info</a></ul>
+    </div>
+    
+    
+
 <script src='projects_add.js'></script>
 
 
