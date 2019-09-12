@@ -4,9 +4,9 @@ var scrollToElem = function(element){
     $(window).scrollTo(document.querySelector(element), 1500, {easing:'easeInOutExpo'});
 };
 
-var scrollArrow = function() {
-    $(window).scrollTo(document.querySelector('100px'), 1500, {easing:'easeInOutExpo'});
-};
+//var scrollArrow = function() {
+//    $(window).scrollTo(document.querySelector('100px'), 1500, {easing:'easeInOutExpo'});
+//};
 
 
 
