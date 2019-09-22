@@ -1,6 +1,6 @@
 /*GRID FIX FOR SAFARI, EDGE*/
 
-@supports not (display:grid) {
+@supports not (display:grid) and (not(display:ms-grid)) {
     #content{
     display: inline-block;
     max-width: 1200px;

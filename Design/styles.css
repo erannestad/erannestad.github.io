@@ -344,7 +344,7 @@ text{
 #content {
     grid-column: 2/4;
     display: inline-grid;
-    display: -ms-inline-grid;
+    display: -ms-grid;
     max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 8px;
@@ -352,7 +352,7 @@ text{
 
 item.overview {
     display: inline-grid;
-    display: -ms-inline-grid;
+    display: -ms-grid;
     grid-template-rows: auto auto auto;
     text-align: center;
     align-items: center;
@@ -646,7 +646,7 @@ div.next{
     #content {
         grid-column: 1/4;
         display: inline-grid;
-        display: -ms-inline-grid;
+        display: -ms-grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 8px
     }
