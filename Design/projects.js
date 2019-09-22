@@ -63,7 +63,7 @@ var ProjectList = [
         //////////////////
         description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and web redesigned.',
         //////////////////
-        image: ['design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg','design-portfolio/WWCCD/WWCCDlogo/final/Logo_full-Background.jpg','design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
+        image: ['design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg','design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-Background.jpg','design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','']
     },
