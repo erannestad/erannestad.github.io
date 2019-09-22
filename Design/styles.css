@@ -14,6 +14,7 @@ accent-pink: #FFEFD5
 
 
 
+
     
     
 /*menu styles*/
@@ -429,15 +430,8 @@ text{
     display: inline-grid;
     max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8px
-}
-
-item.transition {
-    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
-    opacity: 0;
-    margin-top: 30px;
-    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
-}
+    grid-gap: 8px;
+    }
 
 item.overview {
     display: inline-grid;
@@ -454,6 +448,13 @@ item.overview {
 .overview:hover {
     background-color: white;
     cursor: pointer;
+}
+
+item.transition {
+    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
+    opacity: 0;
+    margin-top: 30px;
+    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
 }
 
 .related{
@@ -490,6 +491,7 @@ img.overview:after {
     display: block;
     position: fixed;
     margin-left: 0px;
+    z-index: 10;
 /*    left: 0px;*/
 }
 
@@ -688,6 +690,7 @@ div.next{
         margin-left: -100%;
         padding-top: 200px;
         margin-top: -100px;
+        z-index: 10;
     }
     
     #menu-top{
@@ -720,7 +723,6 @@ div.next{
     }
     
     #content {
-/*        margin-top: 30%;*/
         grid-column: 1/4;
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
