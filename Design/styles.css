@@ -425,30 +425,6 @@ text{
     grid-gap: 0px;
 }
 
-
-@supports not (display:grid) {
-    #content{
-    width: 80%;
-    height: 100px;
-    float: right;
-/*    background-color: blue;*/
-    }
-    
-    item.overview {
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    width: 40%;
-    margin: 2%;
-    border: solid;
-    border-color: black;
-    background-color: #FFEFD5;
-    padding: 8px;
-    color: black;
-    cursor: pointer;
-    }
-}
-
 #content {
     grid-column: 2/4;
     display: inline-grid;
@@ -515,6 +491,7 @@ img.overview:after {
     display: block;
     position: fixed;
     margin-left: 0px;
+    z-index: 10;
 /*    left: 0px;*/
 }
 
@@ -713,6 +690,7 @@ div.next{
         margin-left: -100%;
         padding-top: 200px;
         margin-top: -100px;
+        z-index: 10;
     }
     
     #menu-top{
@@ -745,7 +723,6 @@ div.next{
     }
     
     #content {
-/*        margin-top: 30%;*/
         grid-column: 1/4;
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
