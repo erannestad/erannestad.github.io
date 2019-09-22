@@ -321,6 +321,7 @@ text{
     display: grid;
     display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .landing-img{
@@ -334,35 +335,73 @@ text{
 /*project styles*/
 /****************/
 
-.project-content {
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: 1fr 1.5fr 1.5fr;
-    grid-gap: 0px;
-}
 
-#content {
-    grid-column: 2/4;
-    display: inline-grid;
-    display: -ms-grid;
-    max-width: 1200px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8px;
-    }
+            .project-content {
+                display: grid;
+                display: -ms-grid;
+                grid-template-columns: 1fr 1.5fr 1.5fr;
+                -ms-grid-columns: 1fr 1.5fr 1.5fr;
+                grid-gap: 0px;
+            }
 
-item.overview {
-    display: inline-grid;
-    display: -ms-grid;
-    grid-template-rows: auto auto auto;
-    text-align: center;
-    align-items: center;
-    border: solid;
-    border-color: black;
-    background-color: #FFEFD5;
-    padding: 8px;
-    color: black;
-    cursor: pointer;
-}
+            #content {
+                grid-column: 2/4;
+                display: inline-grid;
+                display: -ms-grid;
+                max-width: 1200px;
+                grid-template-columns: 1fr 1fr 1fr;
+                -ms-grid-columns: 1fr 1fr 1fr;
+                grid-gap: 8px;
+                }
+
+            item.overview {
+                text-align: center;
+                align-items: center;
+                border: solid;
+                border-color: black;
+                background-color: #FFEFD5;
+                padding: 8px;
+                color: black;
+                cursor: pointer;
+            }
+
+
+/*
+            .project-content {
+                width: 100%;
+            }
+
+            .project-content > #content {
+                display: flex;
+                float: right;
+                flex-wrap: wrap;
+                width: 70%;
+                justify-content: center;
+                }
+
+            item.overview {
+                width: calc(30%);
+                box-sizing: border-box;
+                margin-left: 4px;
+                margin-right: 4px;
+                margin-bottom: 8px;
+                text-align: center;
+                align-items: center;
+                border: solid;
+                border-color: black;
+                background-color: #FFEFD5;
+                padding: 8px;
+                color: black;
+                cursor: pointer;
+                }
+*/
+
+
+
+
+
+
+
 .overview:hover {
     background-color: white;
     cursor: pointer;
