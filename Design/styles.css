@@ -346,6 +346,7 @@ text{
 
             #content {
                 grid-column: 2/4;
+                -ms-grid-column: 2/4;
                 display: inline-grid;
                 display: -ms-grid;
                 max-width: 1200px;
