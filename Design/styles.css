@@ -14,6 +14,7 @@ accent-pink: #FFEFD5
 
 
 
+
     
     
 /*menu styles*/
@@ -424,20 +425,37 @@ text{
     grid-gap: 0px;
 }
 
+
+@supports not (display:grid) {
+    #content{
+    width: 80%;
+    height: 100px;
+    float: right;
+    background-color: blue;
+    }
+    
+    item.overview {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    margin: 2%;
+    border: solid;
+    border-color: black;
+    background-color: #FFEFD5;
+    padding: 8px;
+    color: black;
+    cursor: pointer;
+    }
+}
+
 #content {
     grid-column: 2/4;
     display: inline-grid;
     max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8px
-}
-
-item.transition {
-    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
-    opacity: 0;
-    margin-top: 30px;
-    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
-}
+    grid-gap: 8px;
+    }
 
 item.overview {
     display: inline-grid;
@@ -454,6 +472,13 @@ item.overview {
 .overview:hover {
     background-color: white;
     cursor: pointer;
+}
+
+item.transition {
+    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
+    opacity: 0;
+    margin-top: 30px;
+    /*uses animation.js to staggerTo opacity 100, margin-top 0*/
 }
 
 .related{
