@@ -35,7 +35,6 @@ var loadOverview = function() {
 }
 
 
-
 //// ADD HIGHLIGHTS
 //
 //        
@@ -68,5 +67,5 @@ var loadOverview = function() {
 //            }
 //
 //        };
-//
-//        
+
+        
