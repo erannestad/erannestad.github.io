@@ -66,13 +66,13 @@ a:hover {
     text-decoration: underline;
 }
 
-.intro{
+.intro {
     grid-column: 1/5;
 }
 
 
 
-h1{
+h1 {
     font-family: 'Source Serif Pro', serif;
     font-size: 60px;
     font-weight: 800;
@@ -81,7 +81,7 @@ h1{
 /*    margin-bottom: -20px;  */
 }
 
-h2{
+h2 {
     font-family: 'Source Serif Pro', serif;
     font-size: 48px;
     margin: 0px;
@@ -92,7 +92,7 @@ h4{
     font-size: 32px;
 }
 
-.menu-header{
+.menu-header {
     font-family: 'Source Serif Pro', serif;
     font-size: 32px;
     text-align: right;
@@ -100,13 +100,12 @@ h4{
     margin-top: 0px;
 }
 
-.page-title{
+.page-title {
     font-family: 'Source Serif Pro', serif;
     font-size: 32px;
     text-align: left;
     margin-bottom: 0px;
     margin-top: 0px;
-
 }
 
 ul{
@@ -147,6 +146,13 @@ body{
     grid-template-columns: auto 120px 180px;
 }
 
+#menu-footer{
+    margin-top: 100px;
+    border-top: solid;
+    border-color: #3D9970;
+    height: 50px;
+}
+
 #menu-top{
     border-bottom: solid;
     margin-bottom: 20px;
@@ -178,13 +184,6 @@ img{
 .subtext{
     font-family: 'Space Mono', monospace;
     font-size: 12px;
-}
-
-footer{
-    margin-top: 100px;
-    border-top: solid;
-    border-color: #3D9970;
-    height: 50px;
 }
 
 .footer-header{
@@ -334,7 +333,7 @@ text{
 
 /*project styles*/
 /****************/
-
+ 
 
             .project-content {
                 display: grid;
@@ -365,11 +364,6 @@ text{
                 color: black;
                 cursor: pointer;
             }
-
-
-
-
-
 
 
 .overview:hover {
