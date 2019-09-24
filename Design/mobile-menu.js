@@ -5,14 +5,14 @@ document.getElementsByClassName('project').addEventListener("click", closeNav, f
     function openNav() {
               var menu = document.getElementById("menu-side");
               var shift = document.getElementById("content")
-          if (menu.style.marginLeft < "0%") {
+          if (menu.style.marginLeft < "100%") {
               menu.style.display = "block";
               menu.style.width = "100%";
-              menu.style.marginLeft = "0%";
+              menu.style.marginLeft = "100%";
           } else {
               menu.style.display = "block";
               menu.style.width = "100%";
-              menu.style.marginLeft = "-100%";  
+              menu.style.marginLeft = "0%";  
               }
           }  
 

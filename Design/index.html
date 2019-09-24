@@ -48,18 +48,25 @@
 <body>
 <div class='background'></div>
   
-<!--
-    <div class="container" onclick="myFunction(this); openNav()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-    </div>
--->
-    
+    <!--MOBILE MENU-->
+    <wrapper class='mobile-menu-wrapper'>
+        <div id='navBarContainer' class="container" onclick="myFunction(this); openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+        </div>
+        <div id='menu-side'>     
+            
+                <ul class="menu-top-mobile"><a class='' href="index.html">eric rannestad</a></ul>
+                <ul class="menu-top-mobile"><a class='menu-top-mobile' href="projects.html">projects</a></ul>
+                <ul class="menu-top-mobile"><a class='menu-top-mobile' onclick='scrollToElem(".info-content");' href=#>info</a></ul>
+            
+        </div>
+    </wrapper>
 
     <wrapper class='landing-heading'>
         <div class="heading-text">
-            <p class='title'>Northwest designer and strategic communicator working to solve environmental issues.</p>
+            <p class='title'>Eric is a designer and research strategist working to solve environmental issues.</p>
             <!--Eric specializes in design with an environmental focus.-->
             <br><br>
             <p class='subtitle'>Providing brand identity, web, and editorial design services to groups and individuals with an environmental focus. </p>

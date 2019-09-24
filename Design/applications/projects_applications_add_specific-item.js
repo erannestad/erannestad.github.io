@@ -56,12 +56,12 @@ function loadThis(itemName) {
             
             if (currentItem > 0 && nextObj !== undefined) {
                 ///write inner html
-                content.innerHTML += "<div class='previous'><p><- previous</p><item class='overview' onclick= 'loadThis(\"" + previousObj.id + "\");'><div class='filter'><img class='overview' src='" + previousObj.thumbnail + "'></div><p class='subtext overview'>" + previousObj.client + br + allCatagories + " | " + previousObj.date + "</p></item></div><div class='next'><p>next -></p><item class='overview' onclick= 'loadThis(\"" + nextObj.id + "\");'><div class='filter'><img class='overview' src='" + nextObj.thumbnail + "'></div><p class='subtext overview'>" + nextObj.title + br + allCatagories + " | " + nextObj.date + "</p></item></div>";
+                content.innerHTML += "<div class='previous'><p><- previous</p><item class='overview' onclick= 'loadThis(\"" + previousObj.id + "\");'><div class='filter'><img class='overview' src='" + previousObj.thumbnail + "'></div><p class='subtext overview'>" + previousObj.title + "<br>" + allCatagories + " | " + previousObj.date + "</p></item></div><div class='next'><p>next -></p><item class='overview' onclick= 'loadThis(\"" + nextObj.id + "\");'><div class='filter'><img class='overview' src='" + nextObj.thumbnail + "'></div><p class='subtext overview'>" + nextObj.title + "<br>" + allCatagories + " | " + nextObj.date + "</p></item></div>";
             } if (currentItem == 0){
                 ///write inner html
-                content.innerHTML += "<div class='next'><p>next -></p><item class='overview' onclick= 'loadThis(\"" + nextObj.id + "\");'><div class='filter'><img class='overview' src='" + nextObj.thumbnail + "'></div><p class='subtext overview'>" + nextObj.title + br + allCatagories + " | " + nextObj.date + "</p></item></div>";
+                content.innerHTML += "<div class='next'><p>next -></p><item class='overview' onclick= 'loadThis(\"" + nextObj.id + "\");'><div class='filter'><img class='overview' src='" + nextObj.thumbnail + "'></div><p class='subtext overview'>" + nextObj.title + "<br>" + allCatagories + " | " + nextObj.date + "</p></item></div>";
             } if  (nextObj === undefined){
-                content.innerHTML += "<div class='previous'><p><- previous</p><item class='overview' onclick= 'loadThis(\"" + previousObj.id + "\");'><div class='filter'><img class='overview' src='" + previousObj.thumbnail + "'></div><p class='subtext overview'>" + previousObj.title + br + allCatagories + " | " + previousObj.date + "</p></item></div>";
+                content.innerHTML += "<div class='previous'><p><- previous</p><item class='overview' onclick= 'loadThis(\"" + previousObj.id + "\");'><div class='filter'><img class='overview' src='" + previousObj.thumbnail + "'></div><p class='subtext overview'>" + previousObj.title + "<br>" + allCatagories + " | " + previousObj.date + "</p></item></div>";
             };
         };
         
