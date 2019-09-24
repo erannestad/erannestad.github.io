@@ -90,8 +90,9 @@ h1 {
 
 h2 {
     font-family: 'Source Serif Pro', serif;
-    font-size: 48px;
-    margin: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 2em;
 }
 
 h4{
