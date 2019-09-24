@@ -500,7 +500,11 @@ p.subtext {
 }
 
 h4 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 48px;
+    margin-bottom: 0px;
     margin-top: 0px;
+    font-weight: normal;
 }
 
 div.previous{
