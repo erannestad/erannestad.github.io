@@ -327,14 +327,9 @@ text{
     margin: 16px;
     margin-top: 10%;
     margin-bottom: 10%;
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .landing-img{
-    grid-column: 1/5;
     opacity: 1;
 }
 
@@ -360,6 +355,7 @@ text{
             float: right;
             flex-wrap: wrap;
             justify-content: space-between;
+            max-width: 1200px;
             width:100%;
         }
 
@@ -380,7 +376,10 @@ text{
 
 
 .overview:hover {
-    background-color: white;
+/*    background-color: #FFEFD5;*/
+/*    margin-bottom: 10px;*/
+/*    transition: 0.2s ease;*/
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -391,9 +390,6 @@ item.transition {
     /*uses animation.js to staggerTo opacity 100, margin-top 0*/
 }
 
-.related{
-    grid-column: 1/4;
-}
 
 img.overview {
     z-index: 1;
@@ -420,7 +416,7 @@ img.overview:after {
 
 
 #menu-side{
-    grid-column: 1/2; 
+/*    grid-column: 1/2; */
     height: auto;
     display: block;
     position: fixed;
@@ -459,13 +455,15 @@ img.overview:after {
     margin-top: 0px;
 }
 
+/*
 #application-heading {
     grid-column: 1/4;
 }
+*/
 
 item.full-project{
     margin-bottom: 100px;
-    grid-column: 1/4;
+    width: 100%;
 }
 
 p.subtext {
@@ -481,13 +479,13 @@ h4 {
 }
 
 div.previous{
-    grid-column: 1/2;
     text-align: center;
+    width: 48%;
 }
 
 div.next{
+    width: 48%;
     text-align: center;
-    grid-column: 3/4;
 }
 
 .load-more>a{
