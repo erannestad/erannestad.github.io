@@ -31,8 +31,8 @@ var loadOverview = function() {
     content.innerHTML = '';
     for (i=loadedOverview; i < itemsToLoadOverview; i++){
         addItemOverview(i);
-    }
-}
+    };
+};
 
 
 //// ADD HIGHLIGHTS

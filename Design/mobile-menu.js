@@ -1,4 +1,4 @@
-document.getElementsByClassName('project').addEventListener("click", closeNav, false);
+//document.getElementsByClassName('project').addEventListener("click", closeNav, false);
 
     function myFunction(x) {x.classList.toggle("change");}
           
