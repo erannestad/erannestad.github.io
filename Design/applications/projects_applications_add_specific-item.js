@@ -77,7 +77,7 @@ function loadThis(itemName) {
 
   addSpecificItem(); //adds a hash to the url
 
-  window.location.href = 'projects.html#' + itemName;
+  window.location.href = '#' + itemName;
   loaded = 0;
   TweenMax.from('item', 1, {
     opacity: '0',
