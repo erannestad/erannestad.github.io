@@ -195,6 +195,10 @@ img{
     font-size: 12px;
 }
 
+footer {
+    color: #3D9970;
+}
+
 .footer-header{
     text-align: right;
     font-family: 'Source Serif Pro', serif;

@@ -72,7 +72,7 @@ var ProjectList = [
     
     {
         title: 'Conservation Plans Infographic',
-        id: 'conservation plans',
+        id: 'conservationPlansInfographic',
         client: 'State Consercation Commission',
         categories: ['print'],
         related: ['wwccdLogo', 'wwccdWebsite', 'infographic', 'precisionRestoration'],
@@ -85,6 +85,8 @@ var ProjectList = [
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
+    
+    
     
     {
         title: 'Voluntary Stewardship Program',
@@ -105,7 +107,7 @@ var ProjectList = [
     
     {
         title: 'Tour Booklet',
-        id: 'tour-booklet',
+        id: 'tourBooklet',
         client: 'Walla Walla County Conservation District',
         categories: ['print'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
