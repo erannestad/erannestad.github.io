@@ -53,7 +53,7 @@ var ProjectList = [
     
     
     {
-        title: 'Walla Walla County Conservation District Logo Redesign',
+        title: 'WWCCD: Logo Redesign',
         id: 'wwccdLogo',
         client: 'Walla Walla County Conservation District',
         categories: ['print',' brand'],
