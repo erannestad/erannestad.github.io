@@ -249,21 +249,21 @@ var ProjectList = [
 //        imageSubtext: ['','','','','','','']
 //    },
     
-    {
-        title: 'Artwork',
-        id: 'artwork',
-        client: 'Eric Rannestad Fine Art',
-        categories: ['fine art'],
-        related: ['WTRST', 'everythingIsGoingToHaveToBePutBack', 'exhibitionCatalog'],
-        date: '2019',
-        thumbnail:'../../design-portfolio/VSC/Full1.2.jpg',
+{
+        title: 'About the Conservation Reserve Enhancement Program',
+        id: 'conservationVideos',
+        client: 'Walla Walla County Conservation District',
+        categories: ['video'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'infographic'],
+        date: '2018',
+        thumbnail:'../../design-portfolio/WWCCD/StreamRestorationThumbnail.gif',
         //////////////////
-        description: 'The work is an effort to describe the constructed qualities of climate change and landscape. Sections of material adopt a measured and contained aesthetic, while other sections resist this unity and reflect growth, variety, and decay. The gridded and organic components of my work suggest that the natural and built worlds are intertwined but are part of a precarious system on the verge of collapse. Like a scientific or economic model, my artwork is a collection of elements: materials, data, aesthetic components -- each contributing to the built environment it comes to represent.<br><br>View more artwork at <a href="ericrannestad.com">ericrannestad.com</a></p>',
+        description: '<div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div><div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>',
         //////////////////
-        image: ['../../design-portfolio/VSC/Full1.2.jpg', '../../design-portfolio/builtscape/web_wideangle-left.jpg','../../../images/web_installation_full.jpg'],
+        image: [''],
         //////////////////
-        imageSubtext: ['','','','','','','', '','','','','','','','', '','','','','','','']
-    }, 
+        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+    },
     
     
     
