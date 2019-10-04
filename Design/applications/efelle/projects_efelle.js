@@ -31,7 +31,7 @@ var ProjectList = [
         //////////////////
         description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and website redesigned.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
         //////////////////
-        image: ['../../design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg', '../../design-portfolio/WWCCD/web-thumbnail-large.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/Logo_full-Background.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
+        image: ['../../design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-Background.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','', '','','','','','','']
     },
@@ -115,7 +115,7 @@ var ProjectList = [
         //////////////////
         description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['../../design-portfolio/WWCCD/VSP-Booklet1.jpg','../../design-portfolio/WWCCD/VSP-Booklet4.jpg','../../design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_web.png','../../design-portfolio/WWCCD/VSP-CriticalAreas_WithBackground.png'],
+        image: ['../../design-portfolio/WWCCD/VSP-Booklet1.jpg','../../design-portfolio/WWCCD/VSP-Booklet4.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
@@ -130,7 +130,7 @@ var ProjectList = [
         date: '2019',
         thumbnail:'../../design-portfolio/WWCCD/tour-booklet/screenshots/cover.jpg',
         //////////////////
-        description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
+        description: 'The Tour Booklet was designed to highlight key projects and programs completed by the Walla Walla County Conservation District\'s and their partners. The booklet was distributed to Washington and Regional legislators, media personel, county landowners, and general public. The booklet was used as a guide for the September 18th event and is still used and distributed by the organization today.<br><br>',
         //////////////////
         image: ['../../design-portfolio/WWCCD/tour-booklet/screenshots/cover.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/about.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/4.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/6.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg',,'../../design-portfolio/WWCCD/tour-booklet/screenshots/14.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/16.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/18.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/20.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/back.jpg'],
         //////////////////
