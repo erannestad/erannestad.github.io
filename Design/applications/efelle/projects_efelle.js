@@ -21,7 +21,7 @@ var ProjectList = [
     
     
     {
-        title: 'Logo and Website Redesign',
+        title: 'Walla Walla CD Logo Redesign',
         id: 'wwccdLogo',
         client: 'Walla Walla County Conservation District',
         categories: ['print',' brand'],
@@ -32,6 +32,22 @@ var ProjectList = [
         description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and website redesigned.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
         //////////////////
         image: ['../../design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg', '../../design-portfolio/WWCCD/web-thumbnail-large.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/Logo_full-Background.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','', '','','','','','','','', '','','','','','','']
+    },
+    
+    {
+        title: 'Walla Walla CD Website',
+        id: 'wwccdWeb',
+        client: 'Walla Walla County Conservation District',
+        categories: ['print',' brand'],
+        related: ['conservationVideos', 'wwccdWebsite', 'wwccdInfographics'],
+        date: '2019',
+        thumbnail:'../../design-portfolio/WWCCD/web-thumbnail-large.jpg',
+        //////////////////
+        description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and website redesigned.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
+        //////////////////
+        image: ['../../design-portfolio/WWCCD/web1-2.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','', '','','','','','','']
     },
