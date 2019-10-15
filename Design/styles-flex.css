@@ -148,7 +148,6 @@ body{
 
 
 #menu-top, #menu-footer{
-    position: block;
     height: auto;
     width: 100%;
     display: flex;
@@ -156,10 +155,9 @@ body{
 }
 
 #menu-footer{
-    margin-top: 100px;
     border-top: solid;
     border-color: #3D9970;
-    height: 50px;
+    height: 50px;    
 }
 
 #menu-top{
@@ -197,6 +195,11 @@ img{
 
 footer {
     color: #3D9970;
+    width: 100%;
+    margin-top: calc(100vh - 180px);
+    height: auto;
+    margin-bottom: 16px;
+    z-index: 1;
 }
 
 .footer-header{
@@ -354,6 +357,7 @@ text{
                 flex-wrap: wrap;
                 width: 70%;
                 justify-content: space-between;
+                margin-bottom: 16px;
             }
         #content-highlights {
             display: flex;
@@ -366,14 +370,14 @@ text{
 
         item.overview {
             width: 32%;
-            margin-bottom: 2%; /* (100-32*3)/2 */
+            margin-bottom: 20px; /* (100-32*3)/2 */
             box-sizing: border-box;
             text-align: center;
             align-items: center;
 /*            border: solid;*/
             border-color: black;
 /*            background-color: #FFEFD5;*/
-            padding: 8px;
+            padding: 0px;
             color: black;
             cursor: pointer;
 /*            flex-grow: 1;*/
@@ -453,6 +457,29 @@ img.overview:after {
     margin-left: 0px;
     z-index: 10;
 /*    left: 0px;*/
+}
+
+#tagContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #3D9970;
+    padding: 1em;
+    z-index: 2;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    
+}
+.tag{    
+    margin: 8px
+}
+
+.tagHide{
+    display: none;
 }
 
 #menu-side < ul {

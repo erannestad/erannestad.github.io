@@ -1,9 +1,12 @@
 // ADD ALL ITEMS
+//var content = document.querySelector("#content");
+//content.innerHTML += "<div id='tag-container'><a href='projects.html' onclick='closeNav(); loadOverview();' class='tag'>art</a></div>";
 
 var addItemOverview = function(loaded){
     var iObj = ProjectList[loaded];
     var content = document.querySelector("#content");
     var allCatagories = iObj.categories.toString();
+    var tags = iObj.categories.join(' ');
     var br = '';
     var subtextBreak = function (){
         if (iObj.client=='') {
@@ -17,7 +20,7 @@ var addItemOverview = function(loaded){
     
     ///write inner html
    
-    content.innerHTML += "<item class='overview transition' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='subtext overview'>" + iObj.title + "<br>" + allCatagories + " | " + iObj.date + "</p></item>";
+    content.innerHTML += "<item class='overview transition " + tags + "' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='subtext overview'>" + iObj.title + "<br>" + allCatagories + " | " + iObj.date + "</p></item>";
     
     $("img[src='undefined']").remove();
 };
@@ -29,6 +32,7 @@ var loadedOverview = 0;
 
 var loadOverview = function() {
     content.innerHTML = '';
+    content.innerHTML = "<div id='tagContainer'></div>";
     for (i=loadedOverview; i < itemsToLoadOverview; i++){
         addItemOverview(i);
     };
