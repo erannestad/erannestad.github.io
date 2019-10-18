@@ -1,6 +1,6 @@
 //add tags to DOM
 
-var tags = ['all','art','print', 'web', 'graphic design'];
+var tags = ['all','art','print', 'web', 'graphic-design'];
 console.log(tags)
 
 var tagContainer = document.querySelector("#tagContainer");

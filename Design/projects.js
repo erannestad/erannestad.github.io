@@ -6,11 +6,11 @@ var ProjectList = [
         categories: ['print'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2019',
-        thumbnail:'design-portfolio/WWCCD/tour-booklet/screenshots/cover.jpg',
+        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
         //////////////////
         description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['design-portfolio/WWCCD/tour-booklet/screenshots/cover.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/about.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/4.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/6.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/14.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/16.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/18.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/20.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/back.jpg'],
+        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/about.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/4.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/6.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/14.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/16.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/18.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/20.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/back.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -326,5 +326,59 @@ var ProjectList = [
         image: ['design-portfolio/illustrations/SheSaysMyNameInEnglish.jpg', 'design-portfolio/illustrations/WhitmanIllustrations.jpg'],
         //////////////////
         imageSubtext: ['<br><b><u>She says my name in English</b></u><br>Text: Rachel Glover<br>Illustration: Eric Rannestad<br><br>A few years ago, I stood in the afternoon shadows of my family’s kitchen, peering over my mother’s head as she—gripping a knife in her small, sun-spot-covered hands—reached into a paper bag in the sink, pulled out a large, newly-dead fish, grasped it by its tail, rinsed it. With quick, sure, sweeping movements, she showed me how to remove its scales with the back of the knife. I tried not to flinch as scales and flesh juices and residual saltwater sprayed across our clothes and faces, splattering the window and walls. She cut into its belly from anus to gills, and there was blood and egg, and the softness of intestines and stomach and heart. These innards of another creature felt both intimate and alien. “Don’t ever cut this one,” she said, her accent tilting the English as she prodded with her long fingernail some innocuous-looking organ. “You cut this, you ruin it.” <br><br> She sheared away the gills with kitchen scissors, dressed the fish with the fresh garlic and scapes and onion and ginger and salt, some green herbs from the Veranda Asian market (a dirty place, smelling faintly of bamboo and sweat, filled with hundred-pound bags of rice and piles of odd animal parts—beef tongue, chicken feet, pig ears wrapped in cellophane), and put it on a baking sheet. When the fish emerged from the oven, we tore into its smooth white flesh—I with bare fingers, she with chopsticks. Salt and ginger and the savor of meat. The pile of picked-over bones on the table grew, and when it was almost gone, I watched her pop each fish eye into her mouth, one at a time.<br><br>***<br><br>I spent much of the first five years of my life in the presence of my mother. I don’t remember much about her from that time; I cannot picture her face or her words or the way she moved. I don’t remember feeling like something was missing, the way I did when I got older...<br><br>VIEW ARTICLE: <a href="https://mangoprism.com/2019/06/18/she-says-my-name-in-english/" target="_blank">She says my name in English</a>','<br><b><u>Three W\'s</b></u> (left)<br>VIEW ARTICLE: <a href="https://whitmanwire.com/feature/2015/03/05/the-3-ws-whitman-walla-walla-university-walla-walla-community-college/" target="_blank">Three W\'s</a><br><br><b><u>Third Annual “Who Do You Run For?"</b></u> (right)<br>VIEW ARTICLE: <a href="https://whitmanwire.com/sports/2015/11/30/3rd-annual-who-do-you-run-for-supports-cancer-battles-through-exercise/" target="_blank">Third Annual "Who Do You Run For?"</a>','','','','','','', '','','','','','','','','','','']
+    },
+    
+    
+    
+    {
+        title: 'Market Box',
+        id: 'marketBox',
+        client: 'Glasgow School of Art',
+        categories: ['art'],
+        related: ['WTRST', 'firmamentArch'],
+        date: '2017',
+        thumbnail:'design-portfolio/market-box/market-box-closeup-thumbnail.jpg',
+        //////////////////
+        description:'The Market Box embodies a systematic quantification of the world\'s natural resources. Monetary values are assigned to anything -- even that which is not bought or sold within a market. We assign prices to a standing forests, the watershed services they provide, and quantify the value public land. These values are tangible to capitalist decision-making but ignore the ethical nuances and complications that arise when describing the world through money and an inherently anthropocentric perspective.',
+        //////////////////
+        image: ['design-portfolio/market-box/market-box-installation.jpg'],
+        //////////////////
+        imageSubtext: ['Glasgow School of Art, 2017','','','','','','', '','','','','','','','','','','']
+    },
+    
+    
+    
+    {
+        title: 'Select Paintings',
+        id: 'paintings',
+        client: '',
+        categories: ['art'],
+        related: ['maretBox', 'firmamentArch'],
+        date: '2019',
+        thumbnail:'design-portfolio/paintings/paintings2.jpg',
+        //////////////////
+        description:'',
+        //////////////////
+        image: ['design-portfolio/paintings/firmament_I.jpg', 'design-portfolio/paintings/paintings2.jpg', 'design-portfolio/paintings/geodome2.jpg'],
+        //////////////////
+        imageSubtext: ['Vermont Studio Center, 2019, 2017 <br><br>','Shell House Arts, 2019, 2017 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
+    },
+    
+    
+    
+    {
+        title: 'Bell Creek Science Logo',
+        id: 'bellCreek',
+        client: '',
+        categories: ['graphic-design'],
+        related: ['wwccdLogo', ''],
+        date: '2019',
+        thumbnail:'design-portfolio/bell-creek/bell-creek-science-logo_background_thumbnail.jpg',
+        //////////////////
+        description:'',
+        //////////////////
+        image: ['bell-creek-science-logo_background.jpg', 'design-portfolio/paintings/paintings2.jpg', 'design-portfolio/paintings/geodome2.jpg'],
+        //////////////////
+        imageSubtext: ['Vermont Studio Center, 2019, 2017 <br><br>','Shell House Arts, 2019, 2017 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
     }
 ];
