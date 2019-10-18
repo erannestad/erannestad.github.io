@@ -377,8 +377,8 @@ var ProjectList = [
         //////////////////
         description:'',
         //////////////////
-        image: ['bell-creek-science-logo_background.jpg', 'design-portfolio/paintings/paintings2.jpg', 'design-portfolio/paintings/geodome2.jpg'],
+        image: ['design-portfolio/bell-creek/bell-creek-science-logo_background.jpg', 'design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg'],
         //////////////////
-        imageSubtext: ['Vermont Studio Center, 2019, 2017 <br><br>','Shell House Arts, 2019, 2017 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
+        imageSubtext: ['','','','','', '','','','','','','','','','','']
     }
 ];
