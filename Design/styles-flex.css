@@ -478,7 +478,8 @@ img.overview:after {
     padding: 1em;
     z-index: 2;
     box-sizing: border-box;
-    background-color: antiquewhite;
+    border-bottom: solid;
+    background-color: none;
     
 }
 .tag{    

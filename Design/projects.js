@@ -64,11 +64,11 @@ var ProjectList = [
         categories: ['print', ' branding', ' motion', ' economics'],
         related: ['infographic', 'precisionRestoration', 'everythingIsGoingToHaveToBePutBack'],
         date: '2017',
-        thumbnail:'design-portfolio/geothermal/geo11_thumbnail.jpg',
+        thumbnail:'design-portfolio/geothermal/new/geo-poster_mockup8_thumbnail.jpg',
         //////////////////
         description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and report. <p class='subtext'>The final report exists as a technical apendix to the atmospheric installation and infographic. You can find the report <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>here</a><br><br>The complete installation was on display in December 2016.</p><br><br>",
         //////////////////
-        image: ['design-portfolio/geothermal/geo_reportCover_withBackground.jpg'],
+        image: ['design-portfolio/geothermal/new/geo-poster-mockup.jpg'],
         //////////////////
         imageSubtext: ["<br><br>The installation is a collaboration between Mercer Hanau and Eric Rannestad residing on the lower level of Fouts Center for Visual Art. The installation frames a feasibility study on geothermal energy in the West.<br><br><img style='width:calc(50% - 4px); margin-right: 8px;' src='design-portfolio/geothermal/geo7.jpg'><img style='width: calc(50% - 4px)' src='design-portfolio/geothermal/geo11.jpg'><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/199297974' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div>",'','','','','','','', '','','','','','','','','','','']
     },
@@ -118,11 +118,11 @@ var ProjectList = [
         categories: ['print',' infographics'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2018',
-        thumbnail:'design-portfolio/WWCCD/VSP-Booklet1.jpg',
+        thumbnail:'design-portfolio/WWCCD/VSP-Booklet4_thumbnail.jpg',
         //////////////////
         description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['design-portfolio/WWCCD/VSP-Booklet1.jpg','design-portfolio/WWCCD/VSP-Booklet4.jpg'],
+        image: ['design-portfolio/WWCCD/VSP-Booklet1.jpg','design-portfolio/WWCCD/VSP-Booklet5.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
@@ -137,11 +137,11 @@ var ProjectList = [
         categories: ['economics', ' infographic'],
         related: ['geothermal', 'infographic', 'wwccdInfographics'],
         date: '2018',
-        thumbnail:'design-portfolio/The-Nature-Conservancy/Market-Analysis-Report_thumbnail.jpg',
+        thumbnail:'design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2_thumbnail.jpg',
         //////////////////
         description: "Collection of marketing and outreach material for The Nature Conservancy's Precision Restoration Project. The suite includes an infographic that tells the larger story of Precision Restoration, a still and animated GIF that depicts how one of the seed treatments work, and an animated fire map that was built in ArcGIS. I worked with staff at the economic consulting firm ECONorthwest to researched write a market analysis and feasibility report for the Oregon Nature Conservancy. Market problems, trends, and supply chain of native seed are addressed. The document continues to serve as a technical appendix for the The Nature Conservancy as they bring Precision Restoration Technologies to a larger production scale.",
         //////////////////
-        image: ['design-portfolio/The-Nature-Conservancy/Market-Analysis-Report.jpg','design-portfolio/The-Nature-Conservancy/TNC_Infographic_resize.jpg'],
+        image: ['design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2.jpg','design-portfolio/The-Nature-Conservancy/Market-Analysis-Report.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','']
     },
@@ -213,7 +213,7 @@ var ProjectList = [
         //////////////////
         description: '',
         //////////////////
-        image: ['design-portfolio/WWCCD/web1.jpeg'],
+        image: ['design-portfolio/WWCCD/web1-2.jpg'],
         //////////////////
         imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
     },
