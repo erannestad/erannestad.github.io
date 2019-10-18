@@ -740,6 +740,10 @@ div.next{
         font-size: 24px;
     }
     
+    footer {
+        margin-top: 10%;
+    }
+    
     #content {
         width: 100%;
     }
