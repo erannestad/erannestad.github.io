@@ -232,11 +232,9 @@ footer {
 /*landing styles*/
 /****************/
 
-/*
 .landing-img {
-    z-index: -1;
+    max-width: 500px;
 }
-*/
 
 .landing-heading {
     display: flex;
