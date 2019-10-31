@@ -362,7 +362,7 @@ text{
                 flex-wrap: wrap;
                 width: 70%;
                 justify-content: space-between;
-                margin-bottom: 16px;
+                margin-bottom: 4em;
             }
         #content-highlights {
             display: flex;
@@ -518,11 +518,10 @@ img.overview:after {
     margin-top: 0px;
 }
 
-/*
-#application-heading {
-    grid-column: 1/4;
+#application-heading > h2{
+    margin-bottom: 1em;
+    margin-top: 0em;
 }
-*/
 
 item.full-project{
     margin-bottom: 100px;
