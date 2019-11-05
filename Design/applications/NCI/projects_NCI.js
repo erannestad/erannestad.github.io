@@ -3,7 +3,7 @@ var ProjectList = [
      {
         title: 'Tour Booklet',
         id: 'tourBooklet',
-        client: 'Walla Walla Conservation District',
+        client: 'Walla Walla CD',
         categories: ['print'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2019',
@@ -11,7 +11,7 @@ var ProjectList = [
         //////////////////
         description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['../../design-portfolio/WWCCD/tour-booklet/cover2.jpg','../../design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg',],
+        image: ['../../design-portfolio/WWCCD/tour-booklet/cover2.jpg','../../design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg', '../../design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg', '../../design-portfolio/WWCCD/tour-booklet/screenshots/4.jpg','../../design-portfolio/WWCCD/tour-booklet/screenshots/6.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -19,13 +19,13 @@ var ProjectList = [
     {
         title: 'Exhibition Catalog',
         id: 'exhibitionCatalog',
-        client: 'Whitman College Art Department',
+        client: 'Sheehan Gallery',
         categories: ['print'],
         related: ['forYourIdeas', 'printArena', ''],
         date: '2019',
         thumbnail:'../../design-portfolio/exhibition-catalog/Catalog.jpg',
         //////////////////
-        description: 'Publication documenting the 2018 Whitman Thesis Exhibition: Best Thing Since Sliced Bread. The catalog is the first to document the artists and work of Whitman College\'s annual Senior Thesis Art Exhibition. Zoe Guckenheimer and I carried out the project with the generous financial support of the Whitman College Art Department. <p class="subtext">FULL CATALOG: <a href="../../design-portfolio/exhibition-catalog/bestthingsinceslicedbread_exhibitioncatalog_reducedsize.pdf" target="_blank">VIEW PDF</a> <br><br>CREDITS: <br>Design, photography, layout by Eric Rannestad and Zoe Guckenheimer. Photography contributions from Eric Rannestad, Kerr Cirrilo, and Anna Dawson. Printed May 2018 by Bridgetown Printing Company in Portland, OR.</p>',
+        description: 'Publication documenting the 2018 Whitman Thesis Exhibition: Best Thing Since Sliced Bread. In addition to my design and production role, I coordinated with Bridgetown Press throughout the printing process and worked with the Sheehan Gallery to create a budget for the catalog. <p class="subtext">FULL CATALOG: <a href="../../design-portfolio/exhibition-catalog/bestthingsinceslicedbread_exhibitioncatalog_reducedsize.pdf" target="_blank">VIEW PDF</a> <br><br>CREDITS: <br>Design, photography, layout by Eric Rannestad and Zoe Guckenheimer. Photography contributions from Eric Rannestad, and Anna Dawson. Printed May 2018 by Bridgetown Printing Company in Portland, OR.</p>',
         //////////////////
         image: ['../../design-portfolio/exhibition-catalog/Catalog.jpg','../../design-portfolio/exhibition-catalog/Catalog_layout.jpg','../../design-portfolio/exhibition-catalog/Catalog_spines.jpg'],
         //////////////////
@@ -37,13 +37,13 @@ var ProjectList = [
     {
         title: 'Logo Redesign',
         id: 'wwccdLogo',
-        client: 'Walla Walla Conservation District',
+        client: 'Walla Walla CD',
         categories: ['print',' brand'],
         related: ['conservationVideos', 'wwccdWebsite', 'wwccdInfographics'],
         date: '2019',
         thumbnail:'../../design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-green.png',
         //////////////////
-        description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and website redesigned.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
+        description: 'A brand identity redesign project for the Walla Walla County Conservation District. </p>',
         //////////////////
         image: ['../../design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg','../../design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-Background.jpg'],
         //////////////////
@@ -53,13 +53,13 @@ var ProjectList = [
     {
         title: 'Website',
         id: 'wwccdWeb',
-        client: 'Walla Walla Conservation District',
+        client: 'Walla Walla CD',
         categories: ['print',' brand'],
         related: ['conservationVideos', 'wwccdWebsite', 'wwccdInfographics'],
         date: '2019',
         thumbnail:'../../design-portfolio/WWCCD/web-thumbnail-large.jpg',
         //////////////////
-        description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and website redesigned.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
+        description: 'In an effort to modernize their communication strategy, I worked with Walla Walla Conservation District to update their online presence. The new website now meets accessibility standards, is far cleaner, and  prioritizes a responsive design for mobile use.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
         //////////////////
         image: ['../../design-portfolio/WWCCD/web1-2.jpg'],
         //////////////////
@@ -107,15 +107,15 @@ var ProjectList = [
     {
         title: 'Voluntary Stewardship Program',
         id: 'vsp',
-        client: 'Walla Walla Conservation District',
+        client: 'Walla Walla CD',
         categories: ['print',' infographics'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2018',
         thumbnail:'../../design-portfolio/WWCCD/VSP-Booklet4_thumbnail.jpg',
         //////////////////
-        description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
+        description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write, design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['../../design-portfolio/WWCCD/VSP-Booklet4.jpg','../../design-portfolio/WWCCD/VSP-Booklet1.jpg'],
+        image: ['../../design-portfolio/WWCCD/VSP-Booklet12.jpg', '../../design-portfolio/WWCCD/VSP-Booklet5.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
@@ -184,7 +184,7 @@ var ProjectList = [
         date: '2018',
         thumbnail:'../../design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2_thumbnail.jpg',
         //////////////////
-        description: "Collection of marketing and outreach material for The Nature Conservancy's Precision Restoration Project. The suite includes an infographic that tells the larger story of Precision Restoration, a still and animated GIF that depicts how one of the seed treatments work, and an animated fire map that was built in ArcGIS. I worked with staff at the economic consulting firm ECONorthwest to researched write a market analysis and feasibility report for the Oregon Nature Conservancy. Market problems, trends, and supply chain of native seed are addressed. The document continues to serve as a technical appendix for the The Nature Conservancy as they bring Precision Restoration Technologies to a larger production scale.",
+        description: "My role was to design a suite of outreach material for The Nature Conservancy’s Precision Restoration Project. This included a poster that describes the larger story of Precision Restoration, presentaion slides about the project, and an animated map of Oregon wildfires. I also Co-authored <i>Precision Restoration: Market and Situation Analysis</i>, a 100+ page technical report on the rangeland restoration seed market. The findings became a vital guide to The Oregon Nature Conservancy’s communication and funding strategy. ",
         //////////////////
         image: ['../../design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2_thumbnail.jpg','../../design-portfolio/The-Nature-Conservancy/Market-Analysis-Report.jpg'],
         //////////////////
@@ -304,24 +304,41 @@ var ProjectList = [
     
     
 
-    {
-        title: 'Print Are.na',
-        id: 'printArena',
-        client: 'Clement Valla Studio',
-        categories: ['print', ' web'],
-        related: ['everythingIsGoingToHaveToBePutBack', 'forYourIdeas', 'exhibitionCatalog'],
-        date: '2018',
-        thumbnail:'../../design-portfolio/print-arena/arenaChannel4-2.jpg',
+//    {
+//        title: 'Print Are.na',
+//        id: 'printArena',
+//        client: 'Clement Valla Studio',
+//        categories: ['print', ' web'],
+//        related: ['everythingIsGoingToHaveToBePutBack', 'forYourIdeas', 'exhibitionCatalog'],
+//        date: '2018',
+//        thumbnail:'../../design-portfolio/print-arena/arenaChannel4-2.jpg',
+//        //////////////////
+//        description: "Tool to make printable books from <a href='https://are.na' target='_blank'>Are.na</a> Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/' target='_blank'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p><p class='subtext'><br>The Print Are.na tool wraps stripped-down html with new wrappers. The included css file then styles the manipulated html for an easy, customizable, and print-friendly layout.</p>",
+//        //////////////////
+//        image: ['../../design-portfolio/print-arena/arenaChannel1-2.jpg','../../design-portfolio/print-arena/arenaChannel2-2.jpg','../../design-portfolio/print-arena/arenaChannel3-2.jpg','../../design-portfolio/print-arena/arenaChannel4-2.jpg'],
+//        //////////////////
+//        imageSubtext: ['','','','','','','','', '','','','','','','','', '','','','','','','']
+//    },
+    
+    
+    
+    
+    
+        {
+        title: 'Creative Residency',
+        id: 'NCI',
+        client: 'North Cascades Institute',
+        categories: ['art'],
+        related: ['', '', ''],
+        date: '2019',
+        thumbnail:'NCI-photos/event.JPG',
         //////////////////
-        description: "Tool to make printable books from <a href='https://are.na' target='_blank'>Are.na</a> Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/' target='_blank'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p><p class='subtext'><br>The Print Are.na tool wraps stripped-down html with new wrappers. The included css file then styles the manipulated html for an easy, customizable, and print-friendly layout.</p>",
+        description: "In 2019 I was a creative resident at NCI’s Learning and Environmental Center. I created a series of maps and paintings about the built infrastructure of the North Cascades. At the end of my residency I gave a presentation about my work. I also hosted a show where the community could experience the artwork firsthand, ask questions, and discuss its environmental themes.</p>",
         //////////////////
-        image: ['../../design-portfolio/print-arena/arenaChannel1-2.jpg','../../design-portfolio/print-arena/arenaChannel2-2.jpg','../../design-portfolio/print-arena/arenaChannel3-2.jpg','../../design-portfolio/print-arena/arenaChannel4-2.jpg'],
+        image: ['NCI-photos/event.JPG','NCI-photos/diablo-dam-painting_instal.jpg','NCI-photos/maps2.JPG'],
         //////////////////
         imageSubtext: ['','','','','','','','', '','','','','','','','', '','','','','','','']
     },
-    
-    
-    
     
     
     

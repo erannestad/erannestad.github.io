@@ -1,7 +1,7 @@
 var Application = {
         heading1:'North Cascades Institute',
         heading2:'Application: Marketing and Design Coordinator',
-        body:'The review committee can navigate to the main site <a href="../../index.html">here</a> should they like view additional projects.'
+        body:'The review committee may also navigate to the main site <a href="../../index.html">here</a> to view additional projects. Thank you for your consideration.'
     };
 
 
