@@ -8,7 +8,7 @@ var ProjectList = [
         date: '2019',
         thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
         //////////////////
-        description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
+        description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write, design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
         image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/about.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/4.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/6.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/14.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/16.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/18.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/20.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/back.jpg'],
         //////////////////
