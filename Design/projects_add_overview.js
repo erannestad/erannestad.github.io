@@ -20,7 +20,7 @@ var addItemOverview = function(loaded){
     
     ///write inner html
    
-    content.innerHTML += "<item class='overview transition " + tags + "' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='subtext overview'>" + iObj.title + "<br>" + allCatagories + " | " + iObj.date + "</p></item>";
+    content.innerHTML += "<item class='overview transition " + tags + "' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='subtext overview'>" + iObj.title + "<br>" + iObj.client + " | " + iObj.date + "</p></item>";
     
     $("img[src='undefined']").remove();
 };
