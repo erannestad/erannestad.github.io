@@ -2,8 +2,8 @@ var ProjectList = [
         {
         title: 'Tour Booklet',
         id: 'tourBooklet',
-        client: 'Walla Walla County Conservation District',
-        categories: ['print'],
+        client: 'Walla Walla CD',
+        categories: ['print', 'graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2019',
         thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
@@ -21,8 +21,8 @@ var ProjectList = [
     {
         title: 'Exhibition Catalog',
         id: 'exhibitionCatalog',
-        client: 'Whitman College Art Department',
-        categories: ['print'],
+        client: 'Sheehan Gallery',
+        categories: ['print', 'graphic-design'],
         related: ['forYourIdeas', 'printArena', ''],
         date: '2019',
         thumbnail:'design-portfolio/exhibition-catalog/Catalog_thumbnail.jpg',
@@ -41,7 +41,7 @@ var ProjectList = [
     {
         title: 'Firmament Arch',
         id: 'firmamentArch',
-        client: 'Clowes Fund, Vermont Studio Center',
+        client: 'Vermont Studio Center',
         categories: ['art'],
         related: ['WTRST', 'everythingIsGoingToHaveToBePutBack', 'exhibitionCatalog'],
         date: '2019',
@@ -60,8 +60,8 @@ var ProjectList = [
     {
         title: 'geothermal',
         id: 'geothermal',
-        client: '',
-        categories: ['print', ' branding', ' motion', ' economics'],
+        client: 'Student Project',
+        categories: ['print', 'graphic-design'],
         related: ['infographic', 'precisionRestoration', 'everythingIsGoingToHaveToBePutBack'],
         date: '2017',
         thumbnail:'design-portfolio/geothermal/new/geo-poster_mockup8_thumbnail.jpg',
@@ -76,10 +76,10 @@ var ProjectList = [
     
     
     {
-        title: 'WWCCD: Logo Redesign',
+        title: 'Logo Redesign',
         id: 'wwccdLogo',
-        client: 'Walla Walla County Conservation District',
-        categories: ['print',' brand'],
+        client: 'Walla Walla CD',
+        categories: ['print', 'graphic-design'],
         related: ['conservationVideos', 'wwccdWebsite', 'wwccdInfographics'],
         date: '2019',
         thumbnail:'design-portfolio/WWCCD/WWCCDlogo/final/wwccdLogo_thumbnail.jpg',
@@ -95,8 +95,8 @@ var ProjectList = [
     {
         title: 'Conservation Plans Infographic',
         id: 'conservationPlansInfographic',
-        client: 'State Consercation Commission',
-        categories: ['print'],
+        client: 'WA Conservation Commission',
+        categories: ['print', 'graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'infographic', 'precisionRestoration'],
         date: '2018',
         thumbnail:'design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg',
@@ -114,8 +114,8 @@ var ProjectList = [
     {
         title: 'Voluntary Stewardship Program',
         id: 'vsp',
-        client: 'Walla Walla County Conservation District, Washington Association of Conservation Districts',
-        categories: ['print',' infographics'],
+        client: 'Walla Walla CD',
+        categories: ['print','graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2018',
         thumbnail:'design-portfolio/WWCCD/VSP-Booklet4_thumbnail.jpg',
@@ -131,10 +131,10 @@ var ProjectList = [
     
     
     {
-        title: 'Precision Restoration: Market Analysis and Infographic',
+        title: 'Precision Restoration',
         id: 'precisionRestoration',
         client: 'The Nature Conservancy',
-        categories: ['economics', ' infographic'],
+        categories: ['print','graphic-design'],
         related: ['geothermal', 'infographic', 'wwccdInfographics'],
         date: '2018',
         thumbnail:'design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2_thumbnail.jpg',
@@ -151,7 +151,7 @@ var ProjectList = [
     {
         title: 'For Your Ideas',
         id: 'forYourIdeas',
-        client: '',
+        client: 'Student Project',
         categories: ['print'],
         related: ['printArena', 'exhibitionCatalog', ''],
         date: '2016',
@@ -169,7 +169,7 @@ var ProjectList = [
     {
         title: 'Print Are.na',
         id: 'printArena',
-        client: 'Clement Valla',
+        client: 'Clement Valla Studio',
         categories: ['print', ' web'],
         related: ['everythingIsGoingToHaveToBePutBack', 'forYourIdeas', 'exhibitionCatalog'],
         date: '2018',
@@ -185,9 +185,9 @@ var ProjectList = [
     
     
     {
-        title: 'About the Conservation Reserve Enhancement Program',
+        title: 'About Video + Community and Streams Video',
         id: 'conservationVideos',
-        client: 'Walla Walla County Conservation District',
+        client: 'Walla Walla CD',
         categories: ['video'],
         related: ['wwccdLogo', 'wwccdWebsite', 'infographic'],
         date: '2018',
@@ -203,10 +203,10 @@ var ProjectList = [
     
     
     {
-        title: 'Website: Walla Walla Conservation District',
+        title: 'Website',
         id: 'wwccdWebsite',
-        client: 'Walla Walla County Conservation District',
-        categories: ['web', ' branding'],
+        client: 'Walla Walla CD',
+        categories: ['web', 'graphic-design'],
         related: ['wwccdInfographics', 'wwccdLogo', 'birthday'],
         date: '2018',
         thumbnail:'design-portfolio/WWCCD/web_thumbnail.jpg',
@@ -241,7 +241,7 @@ var ProjectList = [
     {
         title: 'virtual birthday card',
         id: 'birthday',
-        client: '',
+        client: 'Personal Project',
         categories: ['web', 'illustration'],
         related: ['wwccdWebsite', 'forYourIdeas', ''],
         date: '2019',
@@ -260,7 +260,7 @@ var ProjectList = [
         title: 'Where The Rain Seeps Through',
         id: 'WTRST',
         client: 'Sheehan Gallery',
-        categories: ['art',' installation'],
+        categories: ['art','graphic-design'],
         related: ['firmamentArch', 'geothermal', 'shipwreck'],
         date: '2018',
         thumbnail:'design-portfolio/builtscape/WTRST_thumbnail.jpg',
@@ -277,7 +277,7 @@ var ProjectList = [
     {
         title: 'Geothermal Kinetic Infographic',
         id: 'infographic',
-        client: '',
+        client: 'Student Project',
         categories: ['infographic','  video', ' data-visualization'],
         related: ['geothermal', 'conservationVideos', 'wwccdInfographics'],
         date: '2017',
@@ -297,8 +297,8 @@ var ProjectList = [
     {
         title: 'Posters: Voluntary Stewardship Program',
         id: 'posters',
-        client: '',
-        categories: ['infographic',' print'],
+        client: 'Walla Walla CD',
+        categories: ['graphic-design',' print'],
         related: ['exhibitionCatalog', 'conservationVideos', 'wwccdInfographics'],
         date: '2017',
         thumbnail:'design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_thumbnail.png',
@@ -315,7 +315,7 @@ var ProjectList = [
     {
         title: 'Illustration',
         id: 'illustration',
-        client: '',
+        client: 'Mangoprism, Pio, etc...',
         categories: ['illustration'],
         related: ['birthday', 'forYourIdeas'],
         date: '2014 - present',
@@ -351,7 +351,7 @@ var ProjectList = [
     {
         title: 'Select Paintings',
         id: 'paintings',
-        client: '',
+        client: 'Eric Rannestad Art',
         categories: ['art'],
         related: ['maretBox', 'firmamentArch'],
         date: '2019',
@@ -367,9 +367,9 @@ var ProjectList = [
     
     
     {
-        title: 'Bell Creek Science Logo',
+        title: 'Logo',
         id: 'bellCreek',
-        client: '',
+        client: 'Bell Creek Science ',
         categories: ['graphic-design'],
         related: ['wwccdLogo', ''],
         date: '2019',
