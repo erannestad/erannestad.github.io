@@ -621,6 +621,12 @@ div.next{
 /*****************/
 
 
+.info-text {
+    width: 60%;
+    z-index: 100;
+}
+
+
 
 
 
