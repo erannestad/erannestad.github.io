@@ -22,7 +22,7 @@
                 };
                 subtextBreak();
                 ///write inner html
-                content.innerHTML += "<item class='overview' onclick= 'loadThisHighlight(\"" + iObj.id + "\");'><div class='filter'><img class='overview' src='" + iObj.thumbnail + "'></div><p class='subtext overview'>" + iObj.title + br + allCatagories + " | " + iObj.date + "</p></item>";
+                content.innerHTML += "<item class='overview' onclick= 'loadThisHighlight(\"" + iObj.id + "\");'><div class='filter'><img class='overview' src='" + iObj.thumbnail + "'></div><p class='mono overview'>" + iObj.title + br +  iObj.client + "</p></item>";
                 $("img[src='undefined']").remove();
             };
             

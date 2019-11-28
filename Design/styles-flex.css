@@ -179,7 +179,7 @@ body{
 }
 
 p {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Source Serif Pro', serif;
     font-size: 18px;
 }
 
@@ -195,8 +195,13 @@ img{
     width: 100%;
 }
 
-.subtext{
+.mono {
     font-family: 'Space Mono', monospace;
+    font-size: 12px;
+}
+
+.subtext{
+    font-family: 'Source Serif Pro', serif;
     font-size: 12px;
 }
 
@@ -312,6 +317,17 @@ footer {
     display: inline-block;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+
+.section-heading{
+    font-family: 'Source Serif Pro' !important;
+    margin-bottom: 1em;
+}
+
+.call-to-action {
+    text-align: center;
+    justify-content: center;
 }
 
 text{
@@ -357,12 +373,12 @@ text{
             }
 
         #content {
-                display: flex;
-                float: right;
-                flex-wrap: wrap;
-                width: 70%;
-                justify-content: space-between;
-                margin-bottom: 4em;
+            display: flex;
+            float: right;
+            flex-wrap: wrap;
+            width: 70%;
+            justify-content: space-between;
+            margin-bottom: 4em;
             }
         #content-highlights {
             display: flex;
@@ -370,7 +386,8 @@ text{
             flex-wrap: wrap;
             justify-content: space-between;
             max-width: 1200px;
-            width:100%;
+            width: 100%;
+            margin-bottom: 2em;
         }
 
         item.overview {
@@ -538,9 +555,15 @@ p.subtext {
 
 h4 {
     font-family: 'Source Serif Pro', serif;
-    font-size: 32px;
-    margin-bottom: 0px;
+    font-size: 64px;
+/*
+    border-bottom: double;
+    border-bottom-width: .25em;
+    border-bottom-color: lightgray;
+*/
+    margin-bottom: .5em;
     margin-top: 0px;
+    box-sizing: border-box;
     font-weight: normal;
 }
 

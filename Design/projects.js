@@ -10,7 +10,7 @@ var ProjectList = [
         //////////////////
         description: 'The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.',
         //////////////////
-        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/about.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/4.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/6.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/14.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/16.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/18.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/20.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/back.jpg'],
+        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -58,7 +58,7 @@ var ProjectList = [
     
     
     {
-        title: 'geothermal',
+        title: 'Geothermal',
         id: 'geothermal',
         client: 'Student Project',
         categories: ['print', 'graphic-design'],
@@ -66,7 +66,7 @@ var ProjectList = [
         date: '2017',
         thumbnail:'design-portfolio/geothermal/new/geo-poster_mockup8_thumbnail.jpg',
         //////////////////
-        description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and report. <p class='subtext'>The final report exists as a technical apendix to the atmospheric installation and infographic. You can find the report <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>here</a><br><br>The complete installation was on display in December 2016.</p><br><br>",
+        description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>feasability study </a>, which serves as a technical apendix to the atmospheric installation and infographic.</p>",
         //////////////////
         image: ['design-portfolio/geothermal/new/geo-poster-mockup.jpg'],
         //////////////////
@@ -76,7 +76,7 @@ var ProjectList = [
     
     
     {
-        title: 'Logo Redesign',
+        title: 'Logo and Styleguide',
         id: 'wwccdLogo',
         client: 'Walla Walla CD',
         categories: ['print', 'graphic-design'],
@@ -84,7 +84,7 @@ var ProjectList = [
         date: '2019',
         thumbnail:'design-portfolio/WWCCD/WWCCDlogo/final/wwccdLogo_thumbnail.jpg',
         //////////////////
-        description: 'A brand identity redesign project for the Walla Walla County Conservation District. Logo and web redesigned.',
+        description: 'A logo and style redesign for the Walla Walla County Conservation District. <br><br>The goal of the project was to add a modern touch to the vague old logo -- a default for all conservation districts -- and turn it something unique for the Walla Walla region. The new logo incorperates the abstract simplicity of the old design, spinning the old "c" into a representation of the rolling agricultural landscape of Walla Walla County.',
         //////////////////
         image: ['design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg','design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-Background.jpg','design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
         //////////////////
@@ -101,7 +101,7 @@ var ProjectList = [
         date: '2018',
         thumbnail:'design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg',
         //////////////////
-        description: 'Infographic commissioned for the 2018 annual report for Conservation Districts in Washington State. The report is distributed to policymakers, the general public, and every conservation district in Washington.',
+        description: 'The Infographic was commissioned by the Washington Constervation Commission for thier 2018 Annual Report on Washington State Conservation Districts. The final report was distributed to policymakers, the general public, and every conservation district in Washington.',
         //////////////////
         image: ['design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg','design-portfolio/WWCCD/Conservation-Plans_WithBackground.jpg'],
         //////////////////
@@ -122,7 +122,7 @@ var ProjectList = [
         //////////////////
         description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['design-portfolio/WWCCD/VSP-Booklet1.jpg','design-portfolio/WWCCD/VSP-Booklet5.jpg'],
+        image: ['../../design-portfolio/WWCCD/VSP-Booklet12.jpg','design-portfolio/WWCCD/VSP-Booklet5.jpg','design-portfolio/WWCCD/VSP-Booklet1.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
@@ -157,11 +157,11 @@ var ProjectList = [
         date: '2016',
         thumbnail:'design-portfolio/journals/all-spines_thumbnail.jpg',
         //////////////////
-        description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound.",
+        description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound. <br><br>Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.",
         //////////////////
         image: ['design-portfolio/journals/orange.jpg','design-portfolio/journals/brown2.jpg','design-portfolio/journals/brown.jpg','design-portfolio/journals/arrangement.jpg','design-portfolio/journals/all-spines.jpg'],
         //////////////////
-        imageSubtext: ["Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.", '','','','','','','','', '','','','','','','','','','','']
+        imageSubtext: ["", '','','','','','','','', '','','','','','','','','','','']
     },
     
     
@@ -175,7 +175,7 @@ var ProjectList = [
         date: '2018',
         thumbnail:'design-portfolio/print-arena/arenaChannel4-2_thumbnail.jpg',
         //////////////////
-        description: "Tool to make printable books from <a href='https://are.na' target='_blank'>Are.na</a> Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/' target='_blank'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p><p class='subtext'><br>The Print Are.na tool wraps stripped-down html with new wrappers. The included css file then styles the manipulated html for an easy, customizable, and print-friendly layout.</p>",
+        description: "Tool to make printable books from <a href='https://are.na' target='_blank'>Are.na</a> Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/' target='_blank'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p><p class='subtext'><br>The Print Are.na tool wraps stripped-down html with new wrappers. The included css file then styles the manipulated html for an easy, customizable, and print-friendly layout.</p>",
         //////////////////
         image: ['design-portfolio/print-arena/arenaChannel1-2.jpg','design-portfolio/print-arena/arenaChannel2-2.jpg','design-portfolio/print-arena/arenaChannel3-2.jpg','design-portfolio/print-arena/arenaChannel4-2.jpg'],
         //////////////////
@@ -185,7 +185,7 @@ var ProjectList = [
     
     
     {
-        title: 'About Video + Community and Streams Video',
+        title: 'Conservation Videos',
         id: 'conservationVideos',
         client: 'Walla Walla CD',
         categories: ['video'],
@@ -193,7 +193,7 @@ var ProjectList = [
         date: '2018',
         thumbnail:'design-portfolio/WWCCD/StreamRestorationThumbnail.gif',
         //////////////////
-        description: '<div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div><div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>',
+        description: '<div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>',
         //////////////////
         image: [''],
         //////////////////
@@ -221,7 +221,7 @@ var ProjectList = [
     
     
     {
-        title: 'shipwreck',
+        title: 'Shipwreck',
         id: 'everythingIsGoingToHaveToBePutBack',
         client: 'Shell House Arts',
         categories: ['web', ' mapping', ' art', ' environment'],
@@ -229,7 +229,7 @@ var ProjectList = [
         date: '2019',
         thumbnail:'design-portfolio/maps/pan1_background-thumbnail.gif',
         //////////////////
-        description: '<p><b><i>Shipwreck</i></b> is an interactive art project.</p><p class="subtext">Visit the website: <a href="http://erannestad.com/my_EverythingMustBePutBack/map5/index.php" target="_blank" >http://erannestad.com/my_EverythingMustBePutBack/map5/index.php</a><br><br>The online artwork uses the format of a tilemap to address and reflect on what is irreversably lost as our natural systems fail. In this instance the map is disassembled and its traditional function altered. Words from past visitors are adrift across the fragmented system, and new visitors can opt to contribute their own.What is irreversably lost as vast and interconnected natural systems fail? How do you unchop a tree?<br><br><p class="subtext" style="margin-left:20px; margin-right:20px;">"Start with the leaves, the small twigs, and the nests that have been shaken, ripped, or broken off by the fall; these must be gathered and attached once again to their respective places. It is not arduous work, unless major limbs have been smashed or mutilated. If the fall was carefully and correctly planned, the chances of anything of the kind happening will have been reduced. Again, much depends upon the size, age, shape, and species of the tree. Still, you will be lucky if you can get through this stages without having to use machinery. Even in the best of circumstances it is a labor that will make you wish often that you had won the favor of the universe of ants, the empire of mice, or at least a local tribe of squirrels, and could enlist their labors and their talents. But no, they leave you to it. They have learned, with time. This is men\'s work."<br><a href="https://designobserver.com/feature/unchopping-a-tree/7857" target="_blank" >- <i>Unchopping A Tree</i>, by M.S. Merwin</a></p> <br><br><div><img style="width:calc(50% - 4px); margin-right: 8px;" src="design-portfolio/maps/pan1_background.gif"><img style="width: calc(50% - 4px)" src="design-portfolio/maps/pan2_background.gif"></div>',
+        description: '<p><b><i>Shipwreck</i></b> is an <a href="http://erannestad.com/my_EverythingMustBePutBack/map5/index.php" target="_blank" >interactive art project</a>.</p><p>The online artwork uses the format of a tilemap to address and reflect on what is irreversably lost as our natural systems fail. In this instance the map is disassembled and its traditional function altered. Words from past visitors are adrift across the fragmented system, and new visitors can opt to contribute their own.What is irreversably lost as vast and interconnected natural systems fail? How do you unchop a tree?<br> <p class="subtext" style="margin-left:20px; margin-right:20px;">"Start with the leaves, the small twigs, and the nests that have been shaken, ripped, or broken off by the fall; these must be gathered and attached once again to their respective places. It is not arduous work, unless major limbs have been smashed or mutilated. If the fall was carefully and correctly planned, the chances of anything of the kind happening will have been reduced. Again, much depends upon the size, age, shape, and species of the tree. Still, you will be lucky if you can get through this stages without having to use machinery. Even in the best of circumstances it is a labor that will make you wish often that you had won the favor of the universe of ants, the empire of mice, or at least a local tribe of squirrels, and could enlist their labors and their talents. But no, they leave you to it. They have learned, with time. This is men\'s work."<br><a href="https://designobserver.com/feature/unchopping-a-tree/7857" target="_blank" >- <i>Unchopping A Tree</i>, by M.S. Merwin</a></p> <br><br><div><img style="width:calc(50% - 4px); margin-right: 8px;" src="design-portfolio/maps/pan1_background.gif"><img style="width: calc(50% - 4px)" src="design-portfolio/maps/pan2_background.gif"></div>',
         //////////////////
         image: ['design-portfolio/maps/images/map_img1.jpg','design-portfolio/maps/images/map_img2.jpg','design-portfolio/maps/images/map_img3.jpg','design-portfolio/maps/images/map_img4.jpg'],
         //////////////////
@@ -239,7 +239,7 @@ var ProjectList = [
     
     
     {
-        title: 'virtual birthday card',
+        title: 'Virtual Birthday Card',
         id: 'birthday',
         client: 'Personal Project',
         categories: ['web', 'illustration'],
@@ -249,7 +249,7 @@ var ProjectList = [
         //////////////////
         description:'',
         //////////////////
-        image: ['design-portfolio/happy-birthday-website/iphone-screenshot.jpg', 'design-portfolio/happy-birthday-website/full_content-screenshot.jpg', 'design-portfolio/happy-birthday-website/opening.gif'],
+        image: ['design-portfolio/happy-birthday-website/iphone-screenshot.jpg', 'design-portfolio/happy-birthday-website/opening.gif'],
         //////////////////
         imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
     },
@@ -295,7 +295,7 @@ var ProjectList = [
     
     
     {
-        title: 'Posters: Voluntary Stewardship Program',
+        title: 'Posters: VSP',
         id: 'posters',
         client: 'Walla Walla CD',
         categories: ['graphic-design',' print'],
@@ -321,7 +321,7 @@ var ProjectList = [
         date: '2014 - present',
         thumbnail:'design-portfolio/illustrations/SheSaysMyNameInEnglish_thumbnail.jpg',
         //////////////////
-        description:'Illustrator for the Whitman Wire (2014-2018) <br> Illustrator for Mangoprism (2019)',
+        description:'',
         //////////////////
         image: ['design-portfolio/illustrations/SheSaysMyNameInEnglish.jpg', 'design-portfolio/illustrations/WhitmanIllustrations.jpg'],
         //////////////////
@@ -361,13 +361,13 @@ var ProjectList = [
         //////////////////
         image: ['design-portfolio/paintings/firmament_I.jpg', 'design-portfolio/paintings/paintings2.jpg', 'design-portfolio/paintings/geodome2.jpg'],
         //////////////////
-        imageSubtext: ['Vermont Studio Center, 2019, 2017 <br><br>','Shell House Arts, 2019, 2017 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
+        imageSubtext: ['Vermont Studio Center, 2019 <br><br>','Shell House Arts, 2019 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
     },
     
     
     
     {
-        title: 'Logo',
+        title: 'Logo Design',
         id: 'bellCreek',
         client: 'Bell Creek Science ',
         categories: ['graphic-design'],
@@ -380,5 +380,6 @@ var ProjectList = [
         image: ['design-portfolio/bell-creek/bell-creek-science-logo_background.jpg', 'design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg'],
         //////////////////
         imageSubtext: ['','','','','', '','','','','','','','','','','']
-    }
+    },
+    
 ];
