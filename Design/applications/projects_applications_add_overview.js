@@ -17,7 +17,7 @@ var addItemOverview = function(loaded){
     
     ///write inner html
    
-    content.innerHTML += "<item class='overview transition' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='subtext overview'>" + iObj.title + "<br>" + iObj.client + "</p></item>";
+    content.innerHTML += "<item class='overview transition' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='mono overview'>" + iObj.title + "<br>" + iObj.client + "</p></item>";
     
     $("img[src='undefined']").remove();
 };
