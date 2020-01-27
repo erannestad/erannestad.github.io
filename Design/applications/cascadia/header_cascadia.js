@@ -1,7 +1,7 @@
 var Application = {
         heading1:'Cascadia Consulting',
         heading2:'Application: Policy and Planning Analyst',
-        body:'This is a curated list of relevant projects. The Cascadia Consulting review committee can navigate to the <a href="../../index.html">main site</a> to view <a href="../../projects.html">all projects</a> if they would like. <br><br> Thank you for your consideration.<br><br>'
+        body:'This is a curated list of relevant projects. The Cascadia Consulting review committee can navigate to the <a href="../../index.html">main site</a> and view <a href="../../projects.html">all projects</a> if they would like. <br><br> Thank you for your consideration.<br><br>'
     };
 
 
