@@ -75,6 +75,8 @@ var ProjectList = [
     
     
     
+    
+    
     {
         title: 'Logo and Styleguide',
         id: 'wwccdLogo',
@@ -91,6 +93,7 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','']
     },
     
+
     
     {
         title: 'Conservation Plans Infographic',
@@ -108,7 +111,21 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
     
-    
+        {
+        title: 'Portfolio Website',
+        id: 'portfolio-website',
+        client: 'ericrannestad.com',
+        categories: ['web', ' HTML, CSS, Javascript'],
+        related: ['wwccdWebsite'],
+        date: '2019',
+        thumbnail:'design-portfolio/portfolio-website/design-home_thumbnail.jpg',
+        //////////////////
+        description: 'Static site created with basic Javascript and hosted on Github pages. I have built a simple customized CMS for easy content creation. A Javascript object is updated locally and synced with the designated Github repository.',
+        //////////////////
+        image: ['design-portfolio/portfolio-website/design-home_full.jpg','design-portfolio/portfolio-website/design-projects_1.jpg',''],
+        //////////////////
+        imageSubtext: ['homepage: <a href="index.html" target="blank">www.ericrannestad.com/Design</a> <br><br>', 'projects page: <a href="projects.html" target="blank">www.ericrannestad.com/Design/projects.html</a>  <br><br>','','','','','','', '','','','','','','', '','','','','','','']
+    },
     
 
     {
@@ -260,7 +277,7 @@ var ProjectList = [
         title: 'Where The Rain Seeps Through',
         id: 'WTRST',
         client: 'Sheehan Gallery',
-        categories: ['art','graphic-design'],
+        categories: ['art',''],
         related: ['firmamentArch', 'geothermal', 'shipwreck'],
         date: '2018',
         thumbnail:'design-portfolio/builtscape/WTRST_thumbnail.jpg',
@@ -367,17 +384,17 @@ var ProjectList = [
     
     
     {
-        title: 'Logo Design',
+        title: 'Bell Creek Science Logo',
         id: 'bellCreek',
         client: 'Bell Creek Science ',
         categories: ['graphic-design'],
         related: ['wwccdLogo', ''],
         date: '2019',
-        thumbnail:'design-portfolio/bell-creek/bell-creek-science-logo_background_thumbnail.jpg',
+        thumbnail:'design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg',
         //////////////////
         description:'',
         //////////////////
-        image: ['design-portfolio/bell-creek/bell-creek-science-logo_background.jpg', 'design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg'],
+        image: ['design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg'],
         //////////////////
         imageSubtext: ['','','','','', '','','','','','','','','','','']
     },
