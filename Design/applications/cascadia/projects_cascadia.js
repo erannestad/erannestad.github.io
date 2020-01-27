@@ -4,7 +4,7 @@ var ProjectList = [
         title: 'Editorial Projects',
         id: 'infographics',
         client: 'WA Conservation Districts',
-        categories: ['print',' infographics'],
+        categories: ['Adobe CC',' Infographics'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: 'November, 2018',
         thumbnail:'../../design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
@@ -13,14 +13,14 @@ var ProjectList = [
         //////////////////
         image: ['../../design-portfolio/WWCCD/tour-booklet/cover2.jpg','../../design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg','../../design-portfolio/WWCCD/VSP-Booklet5.jpg','../../design-portfolio/WWCCD/McCaw_one-pager.jpg'],
         //////////////////
-        imageSubtext: ['', '','','','','','','', '','','','','','','', '','','','','','','']
+        imageSubtext: ['Tour Booklet <br>Walla Walla County Conservation District <br> 2019, 4.25 in x 8.5 in, 40 pgs. <br><br>', 'Infographic for the 2018 Annual Report <br> WA State Conservation Commission <br> 2018, 8.5 in x 11 in.<br><br>','Volunteer Stewardship Program (VSP) Booklet <br>Walla Walla County Conservation District <br> 2018, 4.25 in x 8.5 in, 22 pgs. <br><br>','Project \'One Pager\'<br>Walla Walla County Conservation District <br> 2018, 8.5 in x 11 in. <br><br>','','','','', '','','','','','','', '','','','','','','']
     },
     
     {
         title: 'Portfolio Website',
-        id: 'ericrannestad',
+        id: 'portfolio-website',
         client: 'ericrannestad.com',
-        categories: ['web'],
+        categories: ['HTML, CSS, Javascript'],
         related: ['wwccdWebsite'],
         date: '2019',
         thumbnail:'../../design-portfolio/portfolio-website/design-home_thumbnail.jpg',
@@ -29,7 +29,7 @@ var ProjectList = [
         //////////////////
         image: ['../../design-portfolio/portfolio-website/design-home_full.jpg','../../design-portfolio/portfolio-website/design-projects_1.jpg',''],
         //////////////////
-        imageSubtext: ['homepage <br><br>', 'projects page <br><br>','','','','','','', '','','','','','','', '','','','','','','']
+        imageSubtext: ['homepage: <a href="../../index.html" target="blank">www.ericrannestad.com/Design</a> <br><br>', 'projects page: <a href="../../projects.html" target="blank">www.ericrannestad.com/Design/projects.html</a>  <br><br>','','','','','','', '','','','','','','', '','','','','','','']
     },
     
     
@@ -53,23 +53,23 @@ var ProjectList = [
         title: 'Geothermal',
         id: 'geothermal',
         client: 'Student Project',
-        categories: ['After Effects, Photoshop'],
+        categories: ['Environmental Economics, Adobe CC, Art'],
         related: ['infographic', 'precisionRestoration', 'everythingIsGoingToHaveToBePutBack'],
         date: 'December, 2017',
         thumbnail:'../../design-portfolio/geothermal/new/geo-poster_mockup7_thumbnail.jpg',
         //////////////////
-        description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and report. <p class=''>The final report exists as a technical apendix to the atmospheric installation and infographic. You can find the report <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>here</a><br><br></p>",
+        description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials for the student project include a poster, projection mapped installation, kinetic infographic, and <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>report</a>.",
         //////////////////
-        image: ['../../design-portfolio/geothermal/new/geo-poster_mockup3.jpg',''],
+        image: ['../../design-portfolio/geothermal/new/geo-poster_mockup3.jpg','../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg','../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_Graph.jpg'],
         //////////////////
-        imageSubtext: ["<img style='width:calc(50% - 4px); margin-right: 8px;' src='../../design-portfolio/geothermal/infographic1.gif'><img style='width: calc(50% - 4px)' src='../../design-portfolio/geothermal/RiskGraphs.gif'><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/202665623' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div>", '','','','','','','','', '','','','','','','','', '','','','','','','']
+        imageSubtext: ["Poster for the Geothermal Project<br><br>",'','PDF Report: <a href="../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf" target="_blank">Costs and Risks of Geothermal Energy</a><br><br>',"<img style='width:calc(50% - 4px); margin-right: 8px;' src='../../design-portfolio/geothermal/infographic1.gif'><img style='width: calc(50% - 4px)' src='../../design-portfolio/geothermal/RiskGraphs.gif'><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/202665623' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div><p class='subtext'><i>Risk Sharing and Geothermal Energy</i> is a kenetic infographic that illustrates a more specific concept of the above report.", "<br><br><img style='width:calc(50% - 4px); margin-right: 8px;' src='../../design-portfolio/geothermal/geo7.jpg'><img style='width: calc(50% - 4px)' src='../../design-portfolio/geothermal/geo11.jpg'><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/199297974' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div><p class='subtext'>This projection mapped art installation is a inspired by the report above. It was a collaboration between Mercer Hanau and Eric Rannestad. Installed 2017 in Fouts Center for the Visual Arts. ",'','','','','','','', '','','','','','','','', '','','','','','','']
     },
     
     {
         title: 'Precision Restoration',
         id: 'precisionRestoration',
         client: 'The Nature Conservancy',
-        categories: ['Illustrator, Geographic Informations Systems (GIS)'],
+        categories: ['Excel, Geographic Informations Systems (GIS), Adobe CC'],
         related: ['geothermal', 'infographic', 'wwccdInfographics'],
         date: '2018',
         thumbnail:'../../design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2_thumbnail.jpg',
@@ -96,23 +96,23 @@ var ProjectList = [
         //////////////////
         image: ['../../design-portfolio/exhibition-catalog/Catalog.jpg','../../design-portfolio/exhibition-catalog/Catalog_layout.jpg','../../design-portfolio/exhibition-catalog/Catalog_spines.jpg'],
         //////////////////
-        imageSubtext: ['Best Thing Since Sliced Bread: Senior Thesis Art Exhibition Catalog, 2018, 6.5 x 8 in, 80 pgs.<br><br>', '','','','','','','','', '','','','','','','','', '','','','','','','']
+        imageSubtext: ['Best Thing Since Sliced Bread: Senior Thesis Art Exhibition Catalog, 2018, 6.5 x 8 in, 80 pgs.<br><br>', 'Detail Spread of Chris Belluschi\'s work<br><br>','Spine detail, 2018, 6.5 x 8 in, 80 pgs.<br><br>','','','','','','', '','','','','','','','', '','','','','','','']
     },
     
             {
         title: 'Fine Art',
         id: 'fineArt',
         client: 'Eric Rannestad',
-        categories: ['art'],
+        categories: ['Fine Art'],
         related: ['', '', ''],
         date: '2014 - current',
         thumbnail:'../../design-portfolio/VSC/top1.jpg',
         //////////////////
-        description: "The recent work is an effort to describe the qualities of the built environment. The work's geometric and organic tension suggests that the natural and built worlds are intertwined and part of a precarious system on the verge of collapse. Like a scientific or economic model, my artwork is a collection of elements: materials, data, aesthetic components -- each contributing to the built environment it comes to represent.</p>",
+        description: "Bio and Artist Statement: <br><br>Eric Rannestad (b. 1996, Connecticut) is a Washington based artist making work about the built environment and the systems humans use to compartmentalize the natural world. Eric received his BA in Art and Economics from Whitman College in Walla Walla, Washington. He has attended fellowships and residencies at the Vermont Studio Center, North Cascades Institute, New York Arts Practicum, and Shell House Residency. His research in environmental economics is critical to his art practice and Eric’s ongoing work for environmental and conservation groups is a strong influence in his work.</p><br>",
         //////////////////
         image: ['../../design-portfolio/VSC/Full1.2.jpg','../../design-portfolio/builtscape/web_wideangle-left.jpg','../../design-portfolio/paintings/geodome2.jpg', '../../design-portfolio/paintings/firmament_I.jpg'],
         //////////////////
-        imageSubtext: ['Sheehan Gallery, 2018 <br><br>','Vermont Studio Center, 2019 <br><br>','Brasserie Four, 2018 <br><br>','Shell House Arts, 2018 <br><br>','','','','', '','','','','','','','', '','','','','','','']
+        imageSubtext: ['<a href="../../../arch.html" target="_blank">Firmament Arch</a>, Vermont Studio Center, 2019 <br><br>','<a href="../../../where-the-rain-seeps-through.html" target="_blank">Where The Rain Seeps Through</a>, Sheehan Gallery, 2018 <br><br>','<a href="../../../firmament.html" target="_blank">Firmamentum</a>, Brasserie Four, 2018 <br><br>','<a href="../../../Great-Deep.html" target="_blank">The Great Deep</a>, Shell House Arts, 2018 <br><br>','','','','', '','','','','','','','', '','','','','','','']
     },
     
     
