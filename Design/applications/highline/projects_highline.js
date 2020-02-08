@@ -1,6 +1,10 @@
 
 var ProjectList = [
-         {
+       
+
+    
+    
+    {
         title: 'Editorial Projects',
         id: 'infographics',
         client: 'WA Conservation Districts',
@@ -99,6 +103,22 @@ var ProjectList = [
         imageSubtext: ['Best Thing Since Sliced Bread: Senior Thesis Art Exhibition Catalog, 2018, 6.5 x 8 in, 80 pgs.<br><br>', 'Detail Spread of Chris Belluschi\'s work<br><br>','Spine detail, 2018, 6.5 x 8 in, 80 pgs.<br><br>','','','','','','', '','','','','','','','', '','','','','','','']
     },
     
+        {
+        title: 'Website and Logo',
+        id: 'wwccdWeb',
+        client: 'Walla Walla CD',
+        categories: ['Wordpress/PHP, HTML/CSS, Illustrator'],
+        related: ['conservationVideos', 'wwccdWebsite', 'wwccdInfographics'],
+        date: '2018',
+        thumbnail:'../../design-portfolio/WWCCD/web-thumbnail-large.jpg',
+        //////////////////
+        description: 'In an effort to modernize their communication strategy, I worked with Walla Walla Conservation District to update their logo and online presence. The new website now meets accessibility standards, is far cleaner, and  prioritizes a responsive design for mobile use.<br><p class="subtext">WEBSITE: <a href="http://www.wwccd.net/">wwccd.net</a></p>',
+        //////////////////
+        image: ['../../design-portfolio/WWCCD/web1-2.jpg'],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','', '','','','','','','','', '','','','','','','']
+    },
+    
     {
         title: 'Illustration',
         id: 'illustration',
@@ -114,6 +134,24 @@ var ProjectList = [
         image: ['../../design-portfolio/illustrations/SheSaysMyNameInEnglish.jpg'],
         //////////////////
         imageSubtext: ['<br>Title: <b><u><a href="https://mangoprism.com/2019/06/18/she-says-my-name-in-english/" target="_blank">She says my name in English</a></b></u><br>Text: Rachel Glover<br>Illustration: Eric Rannestad<br><br>A few years ago, I stood in the afternoon shadows of my family’s kitchen, peering over my mother’s head as she—gripping a knife in her small, sun-spot-covered hands—reached into a paper bag in the sink, pulled out a large, newly-dead fish, grasped it by its tail, rinsed it. With quick, sure, sweeping movements, she showed me how to remove its scales with the back of the knife. I tried not to flinch as scales and flesh juices and residual saltwater sprayed across our clothes and faces, splattering the window and walls. She cut into its belly from anus to gills, and there was blood and egg, and the softness of intestines and stomach and heart. These innards of another creature felt both intimate and alien. “Don’t ever cut this one,” she said, her accent tilting the English as she prodded with her long fingernail some innocuous-looking organ. “You cut this, you ruin it.” <br><br> She sheared away the gills with kitchen scissors, dressed the fish with the fresh garlic and scapes and onion and ginger and salt, some green herbs from the Veranda Asian market (a dirty place, smelling faintly of bamboo and sweat, filled with hundred-pound bags of rice and piles of odd animal parts—beef tongue, chicken feet, pig ears wrapped in cellophane), and put it on a baking sheet. When the fish emerged from the oven, we tore into its smooth white flesh—I with bare fingers, she with chopsticks. Salt and ginger and the savor of meat. The pile of picked-over bones on the table grew, and when it was almost gone, I watched her pop each fish eye into her mouth, one at a time.<br><br>***<br><br>I spent much of the first five years of my life in the presence of my mother. I don’t remember much about her from that time; I cannot picture her face or her words or the way she moved. I don’t remember feeling like something was missing, the way I did when I got older...<br><br>','','','','','','', '','','','','','','','','','','']
+    },
+    
+    
+    
+    {
+        title: 'Print Are.na',
+        id: 'printArena',
+        client: 'Clement Valla Studio',
+        categories: ['Javascript, CSS'],
+        related: ['everythingIsGoingToHaveToBePutBack', 'forYourIdeas', 'exhibitionCatalog'],
+        date: '2018',
+        thumbnail:'../../design-portfolio/print-arena/arenaChannel4-2.jpg',
+        //////////////////
+        description: "Tool to make printable books from <a href='https://are.na' target='_blank'>Are.na</a> Channels. A modification of Evan Brooks' <a href='https://evanbrooks.info/bindery/' target='_blank'>Bindery.js</a> tool to print websites. Collaboration with Clement Valla. <p class='subtext'><br><a href='https://www.are.na/clement-valla/print-are-na-with-bindery-js'>Are.na Channel</a> | <a href='https://github.com/clementvalla/Are.na_Bindery.js'>Github Repository</a></p><p class='subtext'><br>The Print Are.na tool wraps stripped-down html with new wrappers. The included css file then styles the manipulated html for an easy, customizable, and print-friendly layout.</p>",
+        //////////////////
+        image: ['../../design-portfolio/print-arena/arenaChannel1-2.jpg','../../design-portfolio/print-arena/arenaChannel2-2.jpg','../../design-portfolio/print-arena/arenaChannel3-2.jpg','../../design-portfolio/print-arena/arenaChannel4-2.jpg'],
+        //////////////////
+        imageSubtext: ['','','','','','','','', '','','','','','','','', '','','','','','','']
     },
     
             {
