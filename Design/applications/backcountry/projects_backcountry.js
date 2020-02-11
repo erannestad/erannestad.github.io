@@ -1,6 +1,22 @@
 
 var ProjectList = [
-     {
+    {
+        title: 'Supplemental App Materials',
+        id: 'Supplement',
+        client: 'Backcountry.com',
+        categories: ['photoshoots and creative direction'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+        date: '2020',
+        thumbnail:'supplemental-imgs/paintings4.jpg',
+        //////////////////
+        description: 'As discussed, attached are photos that demonstrate my ability and experiencing photographing products. The provided examples are mainly art objects, but I think the goal of these photos are very similar to the Graphic Designer\'s photoshoot responsibilities. Because my art installations are often temporary -- installed for a show, disassembled, and stored -- the photograph becomes one of the most important components of the work. Once the show is down, the photograph is nearly as valuable as the artwork itself.',
+        //////////////////
+        image: ['supplemental-imgs/paintings4.jpg', 'supplemental-imgs/Rannestad_03.jpg', 'supplemental-imgs/Rannestad_21.jpg', 'supplemental-imgs/Full1.6.jpg', 'supplemental-imgs/long-exposure.jpg', 'supplemental-imgs/7.jpg','supplemental-imgs/11.jpg'],
+        //////////////////
+        imageSubtext: ['untitled I, II, III - 2019<br><br>','Market Box II, III - 2017<br><br>',"Firmament Arch - 2019 <br><br><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div><p class='subtext'>Firmament Arch - 2017<br><i>video details</i><br><br>",'Firmament Arch - 2019<br><br>','Where The Rain Seeps Through - 2018<br><br>','geothermal - 2017<br><br>','geothermal - 2017<br><i>detail</i><br><br>','','','','','','','','','','','','','']
+    },
+    
+    {
         title: 'Tour Booklet',
         id: 'tourBooklet',
         client: 'Walla Walla CD',
