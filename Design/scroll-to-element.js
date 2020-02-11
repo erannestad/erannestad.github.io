@@ -21,9 +21,8 @@ if (window.location.hash === '#info') {
       easing: 'easeInOutExpo'
     });
   });
-}
+};
 
-;
 
 
 
