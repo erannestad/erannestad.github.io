@@ -237,6 +237,23 @@ var ProjectList = [
     },
     
     
+        {
+        title: 'Mangoprism.com',
+        id: 'mangoprism',
+        client: 'mangoprism',
+        categories: ['web', 'graphic-design'],
+        related: ['', '', ''],
+        date: '2020',
+        thumbnail:'design-portfolio/mangoprism/mockup-home_1.jpg',
+        //////////////////
+        description: '',
+        //////////////////
+        image: ['design-portfolio/mangoprism/mockup-home_1.jpg'],
+        //////////////////
+        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+    },
+    
+    
     
     {
         title: 'Shipwreck',
@@ -401,19 +418,19 @@ var ProjectList = [
     },
     
     
-     {
-        title: 'Additional Application Materials',
-        id: 'Supplement',
-        client: 'Backcountry.com',
-        categories: ['photoshoots and creative direction'],
-        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
-        date: '2020',
-        thumbnail:'applications/backcountry/supplemental-imgs/paintings4.jpg',
-        //////////////////
-        description: 'As discussed, attached are photos that demonstrate my creative ability and photoshoot experience. The provided examples are mainly art objects, but the goal and process of capturing these images are very similar to the Graphic Design Position\'s photoshoot responsibilities. Because my art installations are often temporary -- installed for a show, disassembled, and stored -- the photograph becomes one of the most important components of the work. Once the show is down, the photograph becomes as important as artwork itself. Creative presentation and a knowledge of how my images will be viewed is essential to receiving project funding in the future. <br><br> As I mentioned to Paul, additional documentation can be viewed on my fine art website: <a href="www.ericrannestad.com">www.ericrannestad.com</a><br><br>Thank you for your consideration.',
-        //////////////////
-        image: ['applications/backcountry/supplemental-imgs/paintings4.jpg', 'applications/backcountry/supplemental-imgs/Rannestad_03.jpg', 'applications/backcountry/supplemental-imgs/Rannestad_21.jpg', 'applications/backcountry/supplemental-imgs/Full1.6.jpg', 'applications/backcountry/supplemental-imgs/long-exposure.jpg', 'applications/backcountry/supplemental-imgs/7.jpg','applications/backcountry/supplemental-imgs/11.jpg'],
-        //////////////////
-        imageSubtext: ['untitled I, II, III - 2019<br><br>','Market Box II, III - 2017<br><br>',"Firmament Arch - 2019 <br><br><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div><p class='subtext'>Firmament Arch - 2017<br><i>video details</i><br><br>",'Firmament Arch - 2019<br><br>','Where The Rain Seeps Through - 2018<br><br>','geothermal - 2017<br><br>','geothermal - 2017<br><i>detail</i><br><br>','','','','','','','','','','','','','']
-    },
+//     {
+//        title: 'Additional Application Materials',
+//        id: 'Supplement',
+//        client: 'Backcountry.com',
+//        categories: ['photoshoots and creative direction'],
+//        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+//        date: '2020',
+//        thumbnail:'applications/backcountry/supplemental-imgs/paintings4.jpg',
+//        //////////////////
+//        description: 'As discussed, attached are photos that demonstrate my creative ability and photoshoot experience. The provided examples are mainly art objects, but the goal and process of capturing these images are very similar to the Graphic Design Position\'s photoshoot responsibilities. Because my art installations are often temporary -- installed for a show, disassembled, and stored -- the photograph becomes one of the most important components of the work. Once the show is down, the photograph becomes as important as artwork itself. Creative presentation and a knowledge of how my images will be viewed is essential to receiving project funding in the future. <br><br> As I mentioned to Paul, additional documentation can be viewed on my fine art website: <a href="www.ericrannestad.com">www.ericrannestad.com</a><br><br>Thank you for your consideration.',
+//        //////////////////
+//        image: ['applications/backcountry/supplemental-imgs/paintings4.jpg', 'applications/backcountry/supplemental-imgs/Rannestad_03.jpg', 'applications/backcountry/supplemental-imgs/Rannestad_21.jpg', 'applications/backcountry/supplemental-imgs/Full1.6.jpg', 'applications/backcountry/supplemental-imgs/long-exposure.jpg', 'applications/backcountry/supplemental-imgs/7.jpg','applications/backcountry/supplemental-imgs/11.jpg'],
+//        //////////////////
+//        imageSubtext: ['untitled I, II, III - 2019<br><br>','Market Box II, III - 2017<br><br>',"Firmament Arch - 2019 <br><br><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div><p class='subtext'>Firmament Arch - 2017<br><i>video details</i><br><br>",'Firmament Arch - 2019<br><br>','Where The Rain Seeps Through - 2018<br><br>','geothermal - 2017<br><br>','geothermal - 2017<br><i>detail</i><br><br>','','','','','','','','','','','','','']
+//    },
 ];
