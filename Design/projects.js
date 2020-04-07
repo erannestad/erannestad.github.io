@@ -236,23 +236,23 @@ var ProjectList = [
         imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
     },
     
-    
-        {
-        title: 'Mangoprism.com',
-        id: 'mangoprism',
-        client: 'mangoprism',
-        categories: ['web', 'graphic-design'],
-        related: ['', '', ''],
-        date: '2020',
-        thumbnail:'design-portfolio/mangoprism/mockup-home_1.jpg',
-        //////////////////
-        description: '',
-        //////////////////
-        image: ['design-portfolio/mangoprism/mockup-home_1.jpg'],
-        //////////////////
-        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
-    },
-    
+//    
+//        {
+//        title: 'Mangoprism.com',
+//        id: 'mangoprism',
+//        client: 'mangoprism',
+//        categories: ['web', 'graphic-design'],
+//        related: ['', '', ''],
+//        date: '2020',
+//        thumbnail:'design-portfolio/mangoprism/mockup-home_1.jpg',
+//        //////////////////
+//        description: '',
+//        //////////////////
+//        image: ['design-portfolio/mangoprism/mockup-home_1.jpg'],
+//        //////////////////
+//        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+//    },
+//    
     
     
     {
