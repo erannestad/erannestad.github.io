@@ -307,13 +307,15 @@ text{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: antiquewhite;
 }
 
 .info-content {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 16px;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -671,7 +673,7 @@ div.next{
     }
     
      
-    .info-text, .landing-design, .landing-economics, .landing-art {
+    .landing-design, .landing-economics, .landing-art {
         grid-column: 1 / 6;
     }   
     
