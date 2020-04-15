@@ -27,7 +27,7 @@ var addItemOverview = function(loaded){
 
 
 
-var itemsToLoadOverview = 26;
+var itemsToLoadOverview = 28;
 var loadedOverview = 0;
 
 var loadOverview = function() {

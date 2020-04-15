@@ -11,7 +11,7 @@ var ProjectList = [
         //////////////////
         description: 'The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.',
         //////////////////
-        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],
+        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -54,6 +54,23 @@ var ProjectList = [
         //////////////////
         imageSubtext: ['','','',"<div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div>",'','','','', '','','','','','','','','','','']
     }, 
+    
+    
+    {
+        title: 'Mangoprism Website',
+        id: 'mangoprism',
+        client: 'Mangoprism',
+        categories: ['web', 'graphic-design'],
+        related: ['forYourIdeas', 'printArena', ''],
+        date: '2020',
+        thumbnail:'design-portfolio/mangoprism/website_home_thumbnail-small.jpg',
+        //////////////////
+        description: 'Wordpress website design and development project for online publication of creative essays. The wordpress theme and associated asset are designed and developed by hand. The site will go live in June.',
+        //////////////////
+        image: ['design-portfolio/mangoprism/website_home.jpg'],
+        //////////////////
+        imageSubtext: ['Landing page of the new mangoprism site <br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
+    },
     
     
     
@@ -236,24 +253,6 @@ var ProjectList = [
         imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
     },
     
-//    
-//        {
-//        title: 'Mangoprism.com',
-//        id: 'mangoprism',
-//        client: 'mangoprism',
-//        categories: ['web', 'graphic-design'],
-//        related: ['', '', ''],
-//        date: '2020',
-//        thumbnail:'design-portfolio/mangoprism/mockup-home_1.jpg',
-//        //////////////////
-//        description: '',
-//        //////////////////
-//        image: ['design-portfolio/mangoprism/mockup-home_1.jpg'],
-//        //////////////////
-//        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
-//    },
-//    
-    
     
     {
         title: 'Shipwreck',
@@ -434,3 +433,24 @@ var ProjectList = [
 //        imageSubtext: ['untitled I, II, III - 2019<br><br>','Market Box II, III - 2017<br><br>',"Firmament Arch - 2019 <br><br><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div><p class='subtext'>Firmament Arch - 2017<br><i>video details</i><br><br>",'Firmament Arch - 2019<br><br>','Where The Rain Seeps Through - 2018<br><br>','geothermal - 2017<br><br>','geothermal - 2017<br><i>detail</i><br><br>','','','','','','','','','','','','','']
 //    },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
