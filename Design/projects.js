@@ -65,7 +65,7 @@ var ProjectList = [
         date: '2020',
         thumbnail:'design-portfolio/mangoprism/website_home_thumbnail-small.jpg',
         //////////////////
-        description: 'Wordpress website design and development project for online publication of creative essays. The wordpress theme and associated asset are designed and developed by hand. The site will go live in June.',
+        description: 'Wordpress website design and development project for online publication of creative essays. The wordpress theme and associated assets are designed and developed by hand. The site goes live in June.',
         //////////////////
         image: ['design-portfolio/mangoprism/website_home.jpg'],
         //////////////////
@@ -86,9 +86,16 @@ var ProjectList = [
         //////////////////
         description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>feasability study </a>, which serves as a technical apendix to the atmospheric installation and infographic.</p>",
         //////////////////
-        image: ['design-portfolio/geothermal/new/geo-poster-mockup.jpg'],
-        //////////////////
-        imageSubtext: ["<br><br>The installation is a collaboration between Mercer Hanau and Eric Rannestad residing on the lower level of Fouts Center for Visual Art. The installation frames a feasibility study on geothermal energy in the West.<br><br><img style='width:calc(50% - 4px); margin-right: 8px;' src='design-portfolio/geothermal/geo7.jpg'><img style='width: calc(50% - 4px)' src='design-portfolio/geothermal/geo11.jpg'><div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/199297974' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div>",'','','','','','','', '','','','','','','','','','','']
+        image: ['design-portfolio/geothermal/new/geo-poster-mockup.jpg',
+                //'design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg',
+                //'design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_graph.jpg'
+               ],
+        //////////////////'design-portfolio/geothermal/RiskGraphs.gif', 'design-portfolio/geothermal/infographic1.gif'
+        imageSubtext: [
+                       "<img style='width:calc(50% - 4px); margin-right: 8px;' src='design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_graph.jpg'><img style='width: calc(50% - 4px)' src='design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg'><br><br>",
+                       '<div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/202665623" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>',
+                       "<img style='width:calc(50% - 4px); margin-right: 8px;' src='design-portfolio/geothermal/RiskGraphs.gif'><img style='width: calc(50% - 4px)' src='design-portfolio/geothermal/infographic1.gif'><br><br>",
+                       "<div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/199297974' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div>","<img style='width:calc(50% - 4px); margin-right: 8px;' src='design-portfolio/geothermal/geo7.jpg'><img style='width: calc(50% - 4px)' src='design-portfolio/geothermal/geo11.jpg'><p class='subtext'>The installation is a collaboration between Mercer Hanau and Eric Rannestad residing on the lower level of Fouts Center for Visual Art. The installation frames a feasibility study on geothermal energy in the West.<br><br>",'','','','', '','','','','','','','','','','']
     },
     
     
