@@ -113,7 +113,7 @@ var ProjectList = [
         //////////////////
         description: 'A logo and style redesign for the Walla Walla County Conservation District. <br><br>The goal of the project was to add a modern touch to the vague old logo -- a default for all conservation districts -- and turn it something unique for the Walla Walla region. The new logo incorperates the abstract simplicity of the old design, spinning the old "c" into a representation of the rolling agricultural landscape of Walla Walla County.',
         //////////////////
-        image: ['design-portfolio/WWCCD/WWCCDlogo/final/card-mockup.jpg','design-portfolio/WWCCD/WWCCDlogo/final/Logo_Full-Background.jpg','design-portfolio/WWCCD/WWCCDlogo/final/styleguide-Background.jpg'],
+        image: ['design-portfolio/WWCCD/branding3.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','']
     },
@@ -164,7 +164,7 @@ var ProjectList = [
         //////////////////
         description: 'A series of design and outreach material that promotes the new Voluntary Stewardship Program in Washington State. My role was to write,  design, and produce media that describes how the program works and why it is so crucial for landowners to enroll.',
         //////////////////
-        image: ['design-portfolio/WWCCD/VSP-Booklet12.jpg','design-portfolio/WWCCD/VSP-Booklet5.jpg','design-portfolio/WWCCD/VSP-Booklet1.jpg'],
+        image: ['design-portfolio/WWCCD/VSP-Booklet12.jpg','design-portfolio/WWCCD/VSP-Booklet5.jpg','design-portfolio/WWCCD/VSP-Booklet1.jpg','design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/WWCCD/VSP-CriticalAreas_WithBackground.png'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
@@ -245,7 +245,7 @@ var ProjectList = [
     
     
     {
-        title: 'Website',
+        title: 'Walla Walla CD Website',
         id: 'wwccdWebsite',
         client: 'Walla Walla CD',
         categories: ['web', 'graphic-design'],
@@ -257,7 +257,7 @@ var ProjectList = [
         //////////////////
         image: ['design-portfolio/WWCCD/web1-2.jpg'],
         //////////////////
-        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+        imageSubtext: ['<div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>','','','','','','','', '','','','','','','','','','','']
     },
     
     
@@ -270,7 +270,7 @@ var ProjectList = [
         date: '2019',
         thumbnail:'design-portfolio/maps/pan1_background-thumbnail.gif',
         //////////////////
-        description: '<p><b><i>Shipwreck</i></b> is an <a href="http://erannestad.com/my_EverythingMustBePutBack/map5/index.php" target="_blank" >interactive art project</a>.</p><p>The online artwork uses the format of a tilemap to address and reflect on what is irreversably lost as our natural systems fail. In this instance the map is disassembled and its traditional function altered. Words from past visitors are adrift across the fragmented system, and new visitors can opt to contribute their own.What is irreversably lost as vast and interconnected natural systems fail? How do you unchop a tree?<br> <p class="subtext" style="margin-left:20px; margin-right:20px;">"Start with the leaves, the small twigs, and the nests that have been shaken, ripped, or broken off by the fall; these must be gathered and attached once again to their respective places. It is not arduous work, unless major limbs have been smashed or mutilated. If the fall was carefully and correctly planned, the chances of anything of the kind happening will have been reduced. Again, much depends upon the size, age, shape, and species of the tree. Still, you will be lucky if you can get through this stages without having to use machinery. Even in the best of circumstances it is a labor that will make you wish often that you had won the favor of the universe of ants, the empire of mice, or at least a local tribe of squirrels, and could enlist their labors and their talents. But no, they leave you to it. They have learned, with time. This is men\'s work."<br><a href="https://designobserver.com/feature/unchopping-a-tree/7857" target="_blank" >- <i>Unchopping A Tree</i>, by M.S. Merwin</a></p> <br><br><div><img style="width:calc(50% - 4px); margin-right: 8px;" src="design-portfolio/maps/pan1_background.gif"><img style="width: calc(50% - 4px)" src="design-portfolio/maps/pan2_background.gif"></div>',
+        description: '<p><b><i>Shipwreck</i></b> is an <a href="http://erannestad.com/my_EverythingMustBePutBack/map5/index.php" target="_blank" >interactive art project</a>.</p><p>The online artwork uses the format of a tilemap to address and reflect on what is irreversably lost as our natural systems fail. In this instance the map is disassembled and its traditional function altered. Words from past visitors are adrift across the fragmented system, and new visitors can opt to contribute their own. What is irreversably lost as vast and interconnected natural systems fail? How do you unchop a tree?<br> <p class="subtext" style="margin-left:20px; margin-right:20px;">"Start with the leaves, the small twigs, and the nests that have been shaken, ripped, or broken off by the fall; these must be gathered and attached once again to their respective places. It is not arduous work, unless major limbs have been smashed or mutilated. If the fall was carefully and correctly planned, the chances of anything of the kind happening will have been reduced. Again, much depends upon the size, age, shape, and species of the tree. Still, you will be lucky if you can get through this stages without having to use machinery. Even in the best of circumstances it is a labor that will make you wish often that you had won the favor of the universe of ants, the empire of mice, or at least a local tribe of squirrels, and could enlist their labors and their talents. But no, they leave you to it. They have learned, with time. This is men\'s work."<br><a href="https://designobserver.com/feature/unchopping-a-tree/7857" target="_blank" >- <i>Unchopping A Tree</i>, by M.S. Merwin</a></p> <br><br><div><img style="width:calc(50% - 4px); margin-right: 8px;" src="design-portfolio/maps/pan1_background.gif"><img style="width: calc(50% - 4px)" src="design-portfolio/maps/pan2_background.gif"></div>',
         //////////////////
         image: ['design-portfolio/maps/images/map_img1.jpg','design-portfolio/maps/images/map_img2.jpg','design-portfolio/maps/images/map_img3.jpg','design-portfolio/maps/images/map_img4.jpg'],
         //////////////////
@@ -335,21 +335,21 @@ var ProjectList = [
     
     
     
-    {
-        title: 'Posters: VSP',
-        id: 'posters',
-        client: 'Walla Walla CD',
-        categories: ['graphic-design',' print'],
-        related: ['exhibitionCatalog', 'conservationVideos', 'wwccdInfographics'],
-        date: '2017',
-        thumbnail:'design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_thumbnail.png',
-        //////////////////
-        description:'',
-        //////////////////
-        image: ['design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/WWCCD/VSP-CriticalAreas_WithBackground.png'],
-        //////////////////
-        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
-    },
+//    {
+//        title: 'Posters: VSP',
+//        id: 'posters',
+//        client: 'Walla Walla CD',
+//        categories: ['graphic-design',' print'],
+//        related: ['exhibitionCatalog', 'conservationVideos', 'wwccdInfographics'],
+//        date: '2017',
+//        thumbnail:'design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_thumbnail.png',
+//        //////////////////
+//        description:'',
+//        //////////////////
+//        image: ['design-portfolio/WWCCD/VSP-WorkPlan_WithBackground_web.png', 'design-portfolio/WWCCD/VSP-CriticalAreas_WithBackground.png'],
+//        //////////////////
+//        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+//    },
     
     
     
@@ -371,57 +371,57 @@ var ProjectList = [
     
     
     
-    {
-        title: 'Market Box',
-        id: 'marketBox',
-        client: 'Glasgow School of Art',
-        categories: ['art'],
-        related: ['WTRST', 'firmamentArch'],
-        date: '2017',
-        thumbnail:'design-portfolio/market-box/market-box-closeup-thumbnail.jpg',
-        //////////////////
-        description:'The Market Box embodies a systematic quantification of the world\'s natural resources. Monetary values are assigned to anything -- even that which is not bought or sold within a market. We assign prices to a standing forests, the watershed services they provide, and quantify the value public land. These values are tangible to capitalist decision-making but ignore the ethical nuances and complications that arise when describing the world through money and an inherently anthropocentric perspective.',
-        //////////////////
-        image: ['design-portfolio/market-box/market-box-installation.jpg'],
-        //////////////////
-        imageSubtext: ['Glasgow School of Art, 2017','','','','','','', '','','','','','','','','','','']
-    },
+//    {
+//        title: 'Market Box',
+//        id: 'marketBox',
+//        client: 'Glasgow School of Art',
+//        categories: ['art'],
+//        related: ['WTRST', 'firmamentArch'],
+//        date: '2017',
+//        thumbnail:'design-portfolio/market-box/market-box-closeup-thumbnail.jpg',
+//        //////////////////
+//        description:'The Market Box embodies a systematic quantification of the world\'s natural resources. Monetary values are assigned to anything -- even that which is not bought or sold within a market. We assign prices to a standing forests, the watershed services they provide, and quantify the value public land. These values are tangible to capitalist decision-making but ignore the ethical nuances and complications that arise when describing the world through money and an inherently anthropocentric perspective.',
+//        //////////////////
+//        image: ['design-portfolio/market-box/market-box-installation.jpg'],
+//        //////////////////
+//        imageSubtext: ['Glasgow School of Art, 2017','','','','','','', '','','','','','','','','','','']
+//    },
     
     
     
-    {
-        title: 'Select Paintings',
-        id: 'paintings',
-        client: 'Eric Rannestad Art',
-        categories: ['art'],
-        related: ['maretBox', 'firmamentArch'],
-        date: '2019',
-        thumbnail:'design-portfolio/paintings/paintings2.jpg',
-        //////////////////
-        description:'',
-        //////////////////
-        image: ['design-portfolio/paintings/firmament_I.jpg', 'design-portfolio/paintings/paintings2.jpg', 'design-portfolio/paintings/geodome2.jpg'],
-        //////////////////
-        imageSubtext: ['Vermont Studio Center, 2019 <br><br>','Shell House Arts, 2019 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
-    },
+//    {
+//        title: 'Select Paintings',
+//        id: 'paintings',
+//        client: 'Eric Rannestad Art',
+//        categories: ['art'],
+//        related: ['maretBox', 'firmamentArch'],
+//        date: '2019',
+//        thumbnail:'design-portfolio/paintings/paintings2.jpg',
+//        //////////////////
+//        description:'',
+//        //////////////////
+//        image: ['design-portfolio/paintings/firmament_I.jpg', 'design-portfolio/paintings/paintings2.jpg', 'design-portfolio/paintings/geodome2.jpg'],
+//        //////////////////
+//        imageSubtext: ['Vermont Studio Center, 2019 <br><br>','Shell House Arts, 2019 <br><br>','Brasserie Four, 2018','','','','', '','','','','','','','','','','']
+//    },
     
     
     
-    {
-        title: 'Bell Creek Science Logo',
-        id: 'bellCreek',
-        client: 'Bell Creek Science ',
-        categories: ['graphic-design'],
-        related: ['wwccdLogo', ''],
-        date: '2019',
-        thumbnail:'design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg',
-        //////////////////
-        description:'',
-        //////////////////
-        image: ['design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg'],
-        //////////////////
-        imageSubtext: ['','','','','', '','','','','','','','','','','']
-    },
+//    {
+//        title: 'Bell Creek Science Logo',
+//        id: 'bellCreek',
+//        client: 'Bell Creek Science ',
+//        categories: ['graphic-design'],
+//        related: ['wwccdLogo', ''],
+//        date: '2019',
+//        thumbnail:'design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg',
+//        //////////////////
+//        description:'',
+//        //////////////////
+//        image: ['design-portfolio/bell-creek/bell-creek-science-logo-grey.jpg'],
+//        //////////////////
+//        imageSubtext: ['','','','','', '','','','','','','','','','','']
+//    },
     
     
 //     {
