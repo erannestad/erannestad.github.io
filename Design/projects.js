@@ -84,7 +84,7 @@ var ProjectList = [
         date: '2017',
         thumbnail:'design-portfolio/geothermal/new/geo-poster_mockup8_thumbnail.jpg',
         //////////////////
-        description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and <a href='../../design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>feasability study </a>, which serves as a technical apendix to the atmospheric installation and infographic.</p>",
+        description: "<b><i>Geothermal</i></b> is a multimedia design and research project that examines the untapped potential of  geothermal energy production in the Western United States. Final materials include a projection mapped installation, kinetic infographic, and <a href='../../Design/design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast.pdf' target='_blank'>feasability study </a>, which serves as a technical apendix to the atmospheric installation and infographic.</p>",
         //////////////////
         image: ['design-portfolio/geothermal/new/geo-poster-mockup.jpg',
                 //'design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg',
