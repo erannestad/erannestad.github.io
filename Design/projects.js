@@ -57,23 +57,6 @@ var ProjectList = [
     
     
     {
-        title: 'Mangoprism Website',
-        id: 'mangoprism',
-        client: 'Mangoprism',
-        categories: ['web', 'graphic-design'],
-        related: ['forYourIdeas', 'printArena', ''],
-        date: '2020',
-        thumbnail:'design-portfolio/mangoprism/website_home_thumbnail-small.jpg',
-        //////////////////
-        description: 'Wordpress website design and development project for online publication of creative essays. The wordpress theme and associated assets are designed and developed by hand. The site goes live in June.',
-        //////////////////
-        image: ['design-portfolio/mangoprism/website_home.jpg'],
-        //////////////////
-        imageSubtext: ['Landing page of the new mangoprism site <br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
-    },
-    
-    
-    {
         title: 'Terry for Texas',
         id: 'terry',
         client: 'Terry Meza Campaign',
@@ -152,6 +135,22 @@ var ProjectList = [
         image: ['design-portfolio/WWCCD/Conservation-Plans-Infographic.jpg','design-portfolio/WWCCD/Conservation-Plans_WithBackground.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
+    },
+    
+        {
+        title: 'Mangoprism Website',
+        id: 'mangoprism',
+        client: 'Mangoprism',
+        categories: ['web', 'graphic-design'],
+        related: ['forYourIdeas', 'printArena', ''],
+        date: '2020',
+        thumbnail:'design-portfolio/mangoprism/website_home_thumbnail-small.jpg',
+        //////////////////
+        description: 'Wordpress website design and development project for online publication of creative essays. The wordpress theme and associated assets are designed and developed by hand. The site goes live in June.',
+        //////////////////
+        image: ['design-portfolio/mangoprism/website_home.jpg'],
+        //////////////////
+        imageSubtext: ['Landing page of the new mangoprism site <br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
     
         {
