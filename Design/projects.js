@@ -73,6 +73,24 @@ var ProjectList = [
     },
     
     
+    {
+        title: 'Terry for Texas',
+        id: 'terry',
+        client: 'Terry Meza Campaign',
+        categories: ['web', 'graphic-design'],
+        related: ['wwccd', 'mangoprism', ''],
+        date: '2020',
+        thumbnail:'design-portfolio/terry-meza/terry-meza_landing_thumbnail.jpg',
+        //////////////////
+        description: "Terry Meza, HD105 incumbent, will have a competitive race this fall, and therefore has the need to grow awareness and visibility of her campaign. The website is the primary place where people go to learn about Terry and her priorities. The goal of the website\'s design is to convey Terry\'s commitment and compassion for HD105 and drive awareness around important issues, ultimately motivating and rallying people to vote and get involved. Content should show Terry as honest, compassionate, approachable, and committed to helping this community. <br><br>",
+        //////////////////
+        image: ['design-portfolio/terry-meza/terry-meza_landing.jpg'],
+        //////////////////
+        imageSubtext: ['Landing page of the new mangoprism site <br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
+    },
+    
+    
+    
     
     
     {
