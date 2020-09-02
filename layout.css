@@ -234,7 +234,9 @@ img {
 /*    background-color: powderblue;*/
 }
 
-
+#portrait {
+    max-width: 500px !important;
+}
 
 /*
  Style the tab 
@@ -432,14 +434,16 @@ li.footer{
 
 
 
+/*
 
 
-/******* On screens that are 1000px or larger ******/
+****** On screens that are 1000px or larger *****
 @media screen and (min-width: 1000px) {
     #portrait {
         max-width: 50%;
     }
 }
+*/
 
 
 
