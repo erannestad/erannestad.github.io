@@ -1,5 +1,8 @@
 
 var ProjectList = [
+    
+    
+    
         {
         title: 'Tour Booklet',
         id: 'tourBooklet',
@@ -36,7 +39,21 @@ var ProjectList = [
     },
     
     
-    
+    {
+        title: 'Mangoprism Website',
+        id: 'mangoprism',
+        client: 'Mangoprism',
+        categories: ['web', 'graphic-design'],
+        related: ['forYourIdeas', 'printArena', ''],
+        date: '2020',
+        thumbnail:'design-portfolio/mangoprism/home-background_thumbnail.gif',
+        //////////////////
+        description: 'Mangoprism is an online publication for emerging writers and veterans who want to try something new.Mangoprism articles span cultural criticism, personal essays, interviews and reportage. New work is released bi-weekly on a seasonal basis. <br><br> Wordpress theme and art direction.  Theme developed by Automatic\'s _s. Visit the website at <a href="www.mangoprism.com">www.mangoprism.com</a>',
+        //////////////////
+        image: [''],
+        //////////////////
+        imageSubtext: ['<div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/466084460?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
+    },
     
     
     {
@@ -52,7 +69,7 @@ var ProjectList = [
         //////////////////
         image: ['design-portfolio/VSC/Full1.2.jpg', 'design-portfolio/VSC/foreshorten1.jpg', 'design-portfolio/VSC/arduino1.jpg','design-portfolio/VSC/plants1.jpg'],
         //////////////////
-        imageSubtext: ['','','',"<div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581' allow='autoplay; fullscreen' allowfullscreen=''></iframe></div>",'','','','', '','','','','','','','','','','']
+        imageSubtext: ['','','',"<div class='resp-container'><iframe class='resp-iframe' src='https://player.vimeo.com/video/333263581?autoplay=1' fullscreen' allowfullscreen=''></iframe></div>",'','','','', '','','','','','','','','','','']
     }, 
     
     
@@ -72,6 +89,9 @@ var ProjectList = [
         imageSubtext: ['Landing page of the website<br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
     
+    
+    
+     
     
     
     
@@ -137,21 +157,7 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
     
-        {
-        title: 'Mangoprism Website',
-        id: 'mangoprism',
-        client: 'Mangoprism',
-        categories: ['web', 'graphic-design'],
-        related: ['forYourIdeas', 'printArena', ''],
-        date: '2020',
-        thumbnail:'design-portfolio/mangoprism/website_home_thumbnail-small.jpg',
-        //////////////////
-        description: 'Wordpress website design and development project for online publication of creative essays. The wordpress theme and associated assets are designed and developed by hand. The site goes live in June.',
-        //////////////////
-        image: ['design-portfolio/mangoprism/website_home.jpg'],
-        //////////////////
-        imageSubtext: ['Landing page of the new mangoprism site <br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
-    },
+   
     
         {
         title: 'Portfolio Website',
