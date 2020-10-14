@@ -48,7 +48,7 @@ var ProjectList = [
         date: '2020',
         thumbnail:'design-portfolio/mangoprism/home-background_thumbnail.gif',
         //////////////////
-        description: 'Mangoprism is an online publication for emerging writers and veterans who want to try something new.Mangoprism articles span cultural criticism, personal essays, interviews and reportage. New work is released bi-weekly on a seasonal basis. <br><br> Wordpress theme and art direction.  Theme developed by Automatic\'s _s. Visit the website at <a href="www.mangoprism.com">www.mangoprism.com</a>',
+        description: 'Mangoprism is an online publication for emerging writers and veterans who want to try something new.Mangoprism articles span cultural criticism, personal essays, interviews and reportage. New work is released bi-weekly on a seasonal basis. <br><br> Wordpress theme and art direction.  Theme developed by Automatic\'s _s. Visit the website at <a href="https://mangoprism.com/">www.mangoprism.com</a>',
         //////////////////
         image: [''],
         //////////////////
@@ -82,7 +82,7 @@ var ProjectList = [
         date: '2020',
         thumbnail:'design-portfolio/terry-meza/terry-meza_landing_thumbnail.jpg',
         //////////////////
-        description: "Terry Meza, HD105 incumbent, will have a competitive race this fall, and needed to grow awareness and visibility of her 2020 campaign. The website is the primary place where voters go to learn about Terry and her priorities. The goal of the website\'s design is to convey Terry\'s commitment and compassion for HD105 and drive awareness around important issues, ultimately motivating and rallying people to vote and get involved. Content should show Terry as honest, compassionate, approachable, and committed to helping this community. <br><br>View the website: <a href='https://www.https://terrymeza.com'>www.terrymeza.com</a><br><br>",
+        description: "Terry Meza, HD105 incumbent, will have a competitive race this fall, and needed to grow awareness and visibility of her 2020 campaign. The website is the primary place where voters go to learn about Terry and her priorities. The goal of the website\'s design is to convey Terry\'s commitment and compassion for HD105 and drive awareness around important issues, ultimately motivating and rallying people to vote and get involved. Content should show Terry as honest, compassionate, approachable, and committed to helping this community. <br><br>View the website: <a href='https://terrymeza.com'>www.terrymeza.com</a><br><br>",
         //////////////////
         image: ['design-portfolio/terry-meza/terry-meza_landing.jpg'],
         //////////////////
