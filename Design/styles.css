@@ -412,7 +412,7 @@ img.overview:after {
 #menu-side{
     grid-column: 1/2; 
     height: auto;
-    display: block;
+    display: none;
     position: fixed;
     margin-left: 0px;
     z-index: 10;

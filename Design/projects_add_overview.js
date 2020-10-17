@@ -27,12 +27,13 @@ var addItemOverview = function(loaded){
 
 
 
-var itemsToLoadOverview = 28;
-var loadedOverview = 0;
+
 
 var loadOverview = function() {
+    var itemsToLoadOverview = 28;
+    var loadedOverview = 0;
     content.innerHTML = '';
-    content.innerHTML = "<div id='tagContainer'></div>";
+//    content.innerHTML = "<div id='tagContainer'></div>";
     for (i=loadedOverview; i < itemsToLoadOverview; i++){
         addItemOverview(i);
     };

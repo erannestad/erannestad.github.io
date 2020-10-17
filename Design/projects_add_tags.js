@@ -3,10 +3,26 @@
 var tags = ['all','art','print', 'web', 'graphic-design'];
 console.log(tags)
 
-var tagContainer = document.querySelector("#tagContainer");
+var contentHeader = document.querySelector("#content-header");
+
+var tagContainer = document.createElement('div');
+tagContainer.classList.add("tagContainer");
+contentHeader.appendChild(tagContainer);
+
 
 for (var i=0; i < tags.length; i++) {
-    tagContainer.innerHTML += "<a href='#' id='" + tags[i] + "' onclick= 'tagFilter(\"" + tags[i] + "\")' class='tag'>" + tags[i] + "</a>"
+    tagContainer.innerHTML += "<a href='#' id='" + tags[i] + "'onclick= 'tagFilter(\"" + tags[i] + "\")' class='tag mono'>" + tags[i] + "</a>"
+//    tag = document.createElement('a');
+    //tag.href = 'projects.html#'+tags[i];
+//    tag.onclick = function() {
+//        window.location.replace('projects.html#' + tag.id );
+//    };
+//    tag.id = tags[i];
+//    tag.setAttribute("onclick", "window.location.replace('projects.html#"+ String(tags[i]) + "');");
+//    tag.setAttribute("onclick", "navigateTag("+String(tags[i])+");");
+//    tag.className = 'tag mono';
+//    tag.innerHTML = tags[i];
+//    tagContainer.appendChild(tag);
 }
 
 
@@ -30,3 +46,12 @@ function tagFilter(tagQuery){
         };
     };
 };
+
+//function navigateTag() {
+//    console.log('click');
+//    window.location.href.split('#')[0];
+//    console.log('cleared hash');
+//    var content = document.querySelector("#content");
+//    content.innerHTML == "";
+//    //;loadOverview();
+//}
