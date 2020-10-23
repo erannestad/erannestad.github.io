@@ -11,7 +11,7 @@ contentHeader.appendChild(tagContainer);
 
 
 for (var i=0; i < tags.length; i++) {
-    tagContainer.innerHTML += "<a href='#' id='" + tags[i] + "'onclick= 'tagFilter(\"" + tags[i] + "\")' class='tag mono'>" + tags[i] + "</a>"
+    tagContainer.innerHTML += "<a id='" + tags[i] + "' href='#"+ tags[i] +"' onclick= 'reloadandfilter(\"" + tags[i] + "\")' class='tag mono'>" + tags[i] + "</a>"
 //    tag = document.createElement('a');
     //tag.href = 'projects.html#'+tags[i];
 //    tag.onclick = function() {
@@ -29,7 +29,9 @@ for (var i=0; i < tags.length; i++) {
 //tag functionality
 var items = document.getElementsByTagName('item');
 console.log(items);
+
 function tagFilter(tagQuery){
+    console.log('tagQuery: '+ tagQuery);
     if (tagQuery == 'all') { 
         console.log('all')
         for (var i = 0; i < items.length; i++){
@@ -46,6 +48,15 @@ function tagFilter(tagQuery){
         };
     };
 };
+
+function reloadandfilter(tagQuery){
+    
+    loadOverview();
+    //setTimeout(tagFilter(tagQuery), 500);
+    tagFilter(tagQuery);
+}
+
+
 
 //function navigateTag() {
 //    console.log('click');

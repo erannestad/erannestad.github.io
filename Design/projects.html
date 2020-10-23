@@ -21,7 +21,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.1/markdown-it.min.js"></script>-->
     
+    <!-- https://zerodevx.github.io/zero-md/ -->
+    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <!-- Load the element definition -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
  
     <script src='projects.js'></script>
     <script src='mobile-menu.js'></script>
@@ -92,10 +99,7 @@
 <wrapper class="project-content">
     
     <div id='content-header'>
-        <a href="projects.html" onclick="closeNav(); loadOverview();" class="mono overview active"> OVERVIEW</a>
-        <script src="projects_add_tags.js"></script>
-    </div>
-    
+        <a href="projects.html" onclick="closeNav(); loadOverview();" class="mono overview active"> OVERVIEW</a>    </div>    
     <div id='content'> 
 <!--      content appears here      -->
 <!--        <script src='projects_add.js'></script>-->       
@@ -103,6 +107,7 @@
         <script src="projects_add_overview.js"></script>
         <script>loadOverview();</script>
         <script src="applications/projects_applications_add_specific-item.js"></script>
+        <script src="projects_add_tags.js"></script>
         
         <script>addSpecificHighlight();</script>
     </div>

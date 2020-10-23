@@ -20,7 +20,7 @@ var addItemOverview = function(loaded){
     
     ///write inner html
    
-    content.innerHTML += "<item class='overview transition " + tags + "' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='mono overview'>" + iObj.title + "<br>" + iObj.client + "</p></item>";
+    content.innerHTML += "<item class='overview  " + tags + "' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='mono overview'>" + iObj.title + "<br>" + iObj.client + "</p></item>";
     
     $("img[src='undefined']").remove();
 };
@@ -30,13 +30,17 @@ var addItemOverview = function(loaded){
 
 
 var loadOverview = function() {
-    var itemsToLoadOverview = 28;
+    
+    var itemsToLoadOverview = ProjectList.length;
     var loadedOverview = 0;
     content.innerHTML = '';
+    
 //    content.innerHTML = "<div id='tagContainer'></div>";
     for (i=loadedOverview; i < itemsToLoadOverview; i++){
         addItemOverview(i);
+        console.log(i);
     };
+//    console.log('run');
 };
 
 

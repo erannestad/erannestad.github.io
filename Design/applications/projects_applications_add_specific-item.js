@@ -27,9 +27,11 @@ function loadThis(itemName) {
     
     var imagesAndSubtitles = "<img src='" + iObj.image[0] + "'><p class='subtext'>" + iObj.imageSubtext[0] + "</p><img src='" + iObj.image[1] + "'><p class='subtext'>" + iObj.imageSubtext[1] + "</p><img src='" + iObj.image[2] + "'><p class='subtext'>" + iObj.imageSubtext[2] + "</p><img src='" + iObj.image[3] + "'><p class='subtext'>" + iObj.imageSubtext[3] + "</p><img src='" + iObj.image[4] + "'><p class='subtext'>" + iObj.imageSubtext[4] + "</p><img src='" + iObj.image[5] + "'><p class='subtext'>" + iObj.imageSubtext[5] + "</p><img src='" + iObj.image[6] + "'><p class='subtext'>" + iObj.imageSubtext[6] + "</p><img src='" + iObj.image[7] + "'><p class='subtext'>" + iObj.imageSubtext[7] + "</p><img src='" + iObj.image[8] + "'><p class='subtext'>" + iObj.imageSubtext[8] + "</p><img src='" + iObj.image[9] + "'><p class='subtext'>" + iObj.imageSubtext[9] + "</p><img src='" + iObj.image[10] + "'><p class='subtext'>" + iObj.imageSubtext[10] + "</p><img src='" + iObj.image[11] + "'><p class='subtext'>" + iObj.imageSubtext[11] + "</p><img src='" + iObj.image[12] + "'><p class='subtext'>" + iObj.imageSubtext[12] + "</p><img src='" + iObj.image[13] + "'><p class='subtext'>" + iObj.imageSubtext[13] + "</p><img src='" + iObj.image[14] + "'><p class='subtext'>" + iObj.imageSubtext[14] + "</p><img src='" + iObj.image[15] + "'><p class='subtext'>" + iObj.imageSubtext[15] + "</p>"; //add content
 
-    content.innerHTML = "<item class='full-project'><h4>" + iObj.title + "<p class='mono'>" + iObj.client + br + allCatagories + " | " + iObj.date + "</p></h4> <p>" + iObj.description + "</p>" + imagesAndSubtitles + "</item>"; //add next and previous items
-    //        var a = fruits.indexOf("Apple");
-
+    content.innerHTML = "<item class='full-project'><h4>" + iObj.title + "<p class='mono'>" + iObj.client + br + allCatagories + " | " + iObj.date + "</p></h4> <p>" + iObj.description + "</p>" + imagesAndSubtitles + "</item>"; 
+    
+    //Header
+//    content.innerHTML = "<item class='full-project'><h4>" + iObj.title + "<p class='mono'>" + iObj.client + br + allCatagories + " | " + iObj.date + "</p></h4><zero-md src='" + iObj.markdown + "'></zero-md> </item>"; 
+    
     var currentItem = ProjectList.indexOf(iObj);
     var previousItem = currentItem - 1;
     var nextItem = currentItem + 1; //        console.log(previousItem) 
