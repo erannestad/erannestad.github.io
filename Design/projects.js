@@ -224,22 +224,22 @@ var ProjectList = [
     
     
     
-    {
-        title: 'For Your Ideas',
-        id: 'forYourIdeas',
-        client: 'Student Project',
-        categories: ['print'],
-        related: ['printArena', 'exhibitionCatalog', ''],
-        date: '2016',
-        thumbnail:'design-portfolio/journals/all-spines_thumbnail.jpg',
-        //////////////////
-        markdown: 'markdown/forYourIdeas.md',
-        description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound. <br><br>Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.",
-        //////////////////
-        image: ['design-portfolio/journals/orange.jpg','design-portfolio/journals/brown2.jpg','design-portfolio/journals/brown.jpg','design-portfolio/journals/arrangement.jpg','design-portfolio/journals/all-spines.jpg'],
-        //////////////////
-        imageSubtext: ["", '','','','','','','','', '','','','','','','','','','','']
-    },
+//    {
+//        title: 'For Your Ideas',
+//        id: 'forYourIdeas',
+//        client: 'Student Project',
+//        categories: ['print'],
+//        related: ['printArena', 'exhibitionCatalog', ''],
+//        date: '2016',
+//        thumbnail:'design-portfolio/journals/all-spines_thumbnail.jpg',
+//        //////////////////
+//        markdown: 'markdown/forYourIdeas.md',
+//        description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound. <br><br>Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.",
+//        //////////////////
+//        image: ['design-portfolio/journals/orange.jpg','design-portfolio/journals/brown2.jpg','design-portfolio/journals/brown.jpg','design-portfolio/journals/arrangement.jpg','design-portfolio/journals/all-spines.jpg'],
+//        //////////////////
+//        imageSubtext: ["", '','','','','','','','', '','','','','','','','','','','']
+//    },
     
     
     
