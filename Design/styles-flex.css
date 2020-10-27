@@ -95,9 +95,31 @@ h2 {
     margin-bottom: 2em;
 }
 
+h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+    font-weight: normal;
+/*    margin-bottom: 2em;*/
+}
+
 h4{
     font-family: 'Source Serif Pro', serif;
     font-size: 32px;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom:;
+}
+
+a {
+    color: #3D9970;
+}
+
+a.black-link {
+    color: black;
 }
 
 .menu-header {
@@ -178,23 +200,10 @@ body{
     margin-top: 100px;
 }
 
-p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 18px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-a {
-    color: #3D9970;
-}
-
-a.black-link {
-    color: black;
-}
 
 img{
     width: 100%;
+    margin-bottom: 18px;
 }
 
 
@@ -204,6 +213,11 @@ img{
 }
 
 .subtext{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 12px;
+}
+
+h6{
     font-family: 'Source Serif Pro', serif;
     font-size: 12px;
 }
@@ -365,6 +379,27 @@ text{
     opacity: 1;
 }
 
+
+
+
+/*content layout*/
+/****************/
+
+.marked-body .flex {
+    display: flex;   
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between
+}
+.col2 > * {
+    width: calc(50% - 9px);
+    align-self: flex-start;
+}
+
+.col3 > * {
+    width: calc(33.33% - 12px);
+    align-self: flex-start;
+}
 
 
 
@@ -622,6 +657,7 @@ div.next{
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
+    margin-bottom: 18px;
 }
     
 .resp-iframe {
