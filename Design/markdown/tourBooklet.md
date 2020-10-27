@@ -6,4 +6,4 @@ The Tour booklet was printed and distributed to various state lawmakers, local p
 
 <!--image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],-->
 
-<!--https://css-tricks.com/little-stuff-markdown-always-forget-google/-->
+<!--https://css-tricks.com/little-stuff-markdown-always-forget-google/--> 
