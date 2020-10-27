@@ -21,13 +21,20 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.1/markdown-it.min.js"></script>-->
+    
+    <!-- marked.js markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     
     <!-- https://zerodevx.github.io/zero-md/ -->
     <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-    <!-- Load the element definition -->
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js">
+    </script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
+    
+    <!-- slideshow library -->
+    <script src="siema/dist/siema.min.js"></script>
 
  
     <script src='projects.js'></script>
@@ -38,6 +45,8 @@
     <!--GREENSOCK-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="animation.js"></script>
+    
+    <script src="header-script.js"></script>
 </head>
     
     
@@ -99,19 +108,20 @@
 <wrapper class="project-content">
     
     <div id='content-header'>
-        <a href="projects.html" onclick="closeNav(); loadOverview();" class="mono overview active"> OVERVIEW</a>    </div>    
-    <div id='content'> 
-<!--      content appears here      -->
-<!--        <script src='projects_add.js'></script>-->       
-        
-        <script src="projects_add_overview.js"></script>
-        <script>loadOverview();</script>
-        <script src="applications/projects_applications_add_specific-item.js"></script>
-        <script src="projects_add_tags.js"></script>
-        
-        <script>addSpecificHighlight();</script>
-    </div>
+        <a href="projects.html" onclick="closeNav(); loadOverview();" class="mono overview active"> OVERVIEW</a>  
+    </div>  
     
+    <div id="marked"></div>
+    
+<!--
+    <zero-md class='markdown-header' src="markdown/overview.md">
+    </zero-md>
+-->
+    
+    <div id='content'> 
+        <!-- content appears here -->      
+    </div>
+
 </wrapper>
 
 
@@ -122,18 +132,17 @@
     <ul class="footer-header"><a href="index.html#info">info</a></ul>
     </div>
     <p class="subtext" style="text-align: left">website designed by Eric Rannestad  |  hosted by Github </p>
+    
+    <!-- My Scripts-->
+    <script src="projects_add_overview.js"></script>
+    <script>loadOverview();</script>
+    <script src="applications/projects_applications_add_specific-item.js"></script>
+    <script src="projects_add_tags.js"></script>
+    <script>addSpecificHighlight();</script>
+    <script src="footer-script.js"></script>
 </footer>
 
-<!--
-<script>
-  function loadMore() {
-    event.preventDefault();
-    itemsToLoad++;
-    loaded++;
-    addAllItems();
-}
-</script>
--->
+
 
 </body>
 </html>
