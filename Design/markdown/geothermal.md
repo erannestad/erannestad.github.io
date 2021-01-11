@@ -6,7 +6,7 @@
     <img src='design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_graph.jpg'>
     <img src='design-portfolio/geothermal/Geothermal-Along-the-Pacific-Coast_cover.jpg'>
 </div>
-    
+
 <div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/202665623" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
 
 

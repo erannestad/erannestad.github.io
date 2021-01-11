@@ -8,8 +8,7 @@ The Tour booklet was printed and distributed to various state lawmakers, local p
 <div class="flex col2"> 
 <img src="design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg">
 
-The conservation district system is unique in that each district level office is governed by a local board and sets its own priorities and programs -- meaning that each conservation district is unique to the area that it serves. The Walla Walla County Conservation District wanted to reflect this by developing a unique brand system. While unique, it was also important that the design system be compatible and compliant with other conservation district styling.
-
+The conservation district system is unique in that each district level office is governed by a local board and sets its own priorities and programs -- meaning that each conservation district is unique to the area that it serves. The Walla Walla County Conservation District wanted to reflect this by developing a unique brand system. While unique, it was also important that the design system be compatible and compliant with other conservation district styling. 
 </div> 
     
 

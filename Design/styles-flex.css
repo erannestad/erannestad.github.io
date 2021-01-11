@@ -142,6 +142,29 @@ a.black-link {
 
 ul{
     padding: 0px;
+    
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: 'Space Mono', serif;
+    font-size: 16px;
+    padding: 6px;
+    background-color: #3D9970;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    margin: auto;
+}
+
+button a {
+    color: white;
 }
 
     
@@ -370,9 +393,26 @@ text{
 
 .info-content {
     max-width: 1200px;
+    width: 100%;
     margin: 16px;
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+.contact-container{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3D9970;}
+.contact-content{
+    max-width: 1200px;
+    width: 100%;
+    margin: 16px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: white;
 }
 
 .landing-img{
@@ -385,12 +425,22 @@ text{
 /*content layout*/
 /****************/
 
+#content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, .body-align {
+    max-width: 800px;
+}
+
+.full-project p, .full-project h1, .full-project h2, .full-project h3, .full-project h4, .full-project h5, .full-project h6 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .marked-body .flex {
     display: flex;   
     width: 100%;
     flex-direction: row;
     justify-content: space-between
 }
+
 .col2 > * {
     width: calc(50% - 9px);
     align-self: flex-start;
@@ -426,6 +476,7 @@ text{
             max-width: 1200px;
             width: 100%;
             margin-bottom: 2em;
+            margin-top: 2em;
         }
 
         item.overview {
@@ -603,7 +654,6 @@ item.full-project{
 }
 
 p.subtext {
-    margin: 0px;
 }
 
 #content > img {
@@ -692,8 +742,25 @@ div.next{
     z-index: 100;
 }
 
+.info p, .info h1, .info h2, .info h3, .info h4, .info h5, .info h6 {
+    max-width: 800px;
+    margin-right: auto;
+}
+
+.landing-content p, .landing-content h1, .landing-content h2, .landing-content h3, .landing-content h4, .landing-content h5, .landing-content h6, .body-align {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
+.landing-content h2 {
+/*    border-bottom: solid 2px black;*/
+/*    text-decoration: underline;*/
+/*    font-weight: bold;*/
+/*    font-size: 48px;*/
+    
+}
 
 
 
