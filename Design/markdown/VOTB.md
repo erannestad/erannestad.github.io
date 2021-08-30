@@ -2,7 +2,7 @@
 
 *Voices of the Blues* intends to offer resources and advice for people who are looking to manage their own land and join this network of collaboration.
 
-[Website]: https://experience.arcgis.com/experience/eb26ef8dbfd24823b0da88f5350c596a/
+[Website]: https://experience.arcgis.com/experience/eb26ef8dbfd24823b0da88f5350c596a/	"Voices of the Blues"
 
 ![VOTB_full-map_lighter-background](/Design/design-portfolio/VOTB/VOTB_full-map_lighter-background.jpg)
 
