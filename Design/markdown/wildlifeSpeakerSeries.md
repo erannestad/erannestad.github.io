@@ -2,12 +2,13 @@ Ruby Valley Conservation District and their partners commissioned a series of po
 
 Printed 11"x17" by Action Print in Helena, MT.
 
-![WildlifeSpeakerSeries_full](/Users/EricRannestad/Sites/erannestad.github.io/Design/design-portfolio/wildlife-speaker-series/WildlifeSpeakerSeries_full.jpg)
+![WildlifeSpeakerSeries_full](/design-portfolio/wildlife-speaker-series/WildlifeSpeakerSeries_full.jpg)
 
-![grayling_full](/Users/EricRannestad/Sites/erannestad.github.io/Design/design-portfolio/wildlife-speaker-series/grayling_full.jpg)
+![grayling_full](/design-portfolio/wildlife-speaker-series/grayling_full.jpg)
 
-![pollinators_full](/Users/EricRannestad/Sites/erannestad.github.io/Design/design-portfolio/wildlife-speaker-series/pollinators_full.jpg)
+![pollinators_full](/design-portfolio/wildlife-speaker-series/pollinators_full.jpg)
 
-![swans_full](/Users/EricRannestad/Sites/erannestad.github.io/Design/design-portfolio/wildlife-speaker-series/swans_full.jpg)
+![swans_full](/design-portfolio/wildlife-speaker-series/swans_full.jpg)
 
-![overview_full](/Users/EricRannestad/Sites/erannestad.github.io/Design/design-portfolio/wildlife-speaker-series/overview_full.jpg)
+![overview_full](/design-portfolio/wildlife-speaker-series/overview_full.jpg)
+
