@@ -232,6 +232,24 @@ var ProjectList = [
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
+
+
+    {   
+        title: 'Consumer Impact of WA Carbon Tax',
+        id: 'carbon-tax-impact',
+        client: 'Student Project',
+        categories: [, 'graphic-design'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+        date: '2020',
+        thumbnail:'design-portfolio/carbon-tax-impact/BIG-MAP_2021_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/carbonTaxImpact.md',
+        description: 'Mapping the impact of a carbon tax on Washington State consumers.',
+        //////////////////
+        image: [''],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+    },
     
     
     
