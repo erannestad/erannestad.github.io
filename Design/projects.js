@@ -65,7 +65,7 @@ var ProjectList = [
         categories: ['web', 'graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2021',
-        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
+        thumbnail:'design-portfolio/VOTB/VOTB_full-map_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/VOTB.md',
         description: 'The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.',
@@ -83,7 +83,7 @@ var ProjectList = [
         categories: ['illustration', 'graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2021',
-        thumbnail:'design-portfolio/WWCCD/wildlife-speaker-series/WildlifeSpeakerSeries_thumbnail.jpg.jpg',
+        thumbnail:'design-portfolio/wildlife-speaker-series/WildlifeSpeakerSeries_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/wildlifeSpeakerSeries.md',
         description: 'A series of illustrated posters for the 2021 Wildlife Speaker Series.',
