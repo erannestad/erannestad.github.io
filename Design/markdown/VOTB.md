@@ -4,9 +4,9 @@
 
 [Website]: https://experience.arcgis.com/experience/eb26ef8dbfd24823b0da88f5350c596a/
 
-![VOTB_full-map_lighter-background](/design-portfolio/VOTB/VOTB_full-map_lighter-background.jpg)
+![VOTB_full-map_lighter-background](/Design/design-portfolio/VOTB/VOTB_full-map_lighter-background.jpg)
 
-![VOTB_story-map_lighter-background.jpg](/design-portfolio/VOTB/VOTB_story-map_lighter-background.jpg.jpg)
+![VOTB_story-map_lighter-background.jpg](/Design/design-portfolio/VOTB/VOTB_story-map_lighter-background.jpg.jpg)
 
-![VOTB_splash-screen_lighter-background.jpg](/design-portfolio/VOTB/VOTB_splash-screen_lighter-background.jpg.jpg)
+![VOTB_splash-screen_lighter-background.jpg](/Design/design-portfolio/VOTB/VOTB_splash-screen_lighter-background.jpg.jpg)
 
