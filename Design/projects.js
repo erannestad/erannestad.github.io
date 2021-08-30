@@ -57,6 +57,23 @@ var ProjectList = [
         //////////////////
         imageSubtext: ['<div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/466084460?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
+
+    {   
+        title: 'Voices of the Blues',
+        id: 'VOTB',
+        client: 'My Blue Mountain Woodland',
+        categories: ['web', 'graphic-design'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+        date: '2021',
+        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/VOTB.md',
+        description: 'The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.',
+        //////////////////
+        image: [''],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+    },
     
     
     {
@@ -93,11 +110,7 @@ var ProjectList = [
         //////////////////
         imageSubtext: ['Landing page of the website<br><br>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
-    
-    
-    
-     
-    
+        
     
     
     

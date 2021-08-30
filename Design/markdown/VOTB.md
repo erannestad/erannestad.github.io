@@ -1,0 +1,3 @@
+*Voices of the Blues* is a multimedia webmapping project commissioned by *My Blue Mountains Woodland* and *Wallowa Resources*. Voices of the Blues maps the various narratives of forest landowners across the Blue Mountains in Northeast Oregon. The collaborative mapping project assembles the diverse voices engaged with forestry in Northeast Oregon. These stories from landowners, foresters, and public/private partnerships offer a landscape-scale view of forestry in the region.
+
+*Voices of the Blues* intends to offer resources and advice for people who are looking to manage their own land and join this network of collaboration.
