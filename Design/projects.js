@@ -83,7 +83,7 @@ var ProjectList = [
         categories: ['illustration', 'graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2021',
-        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
+        thumbnail:'design-portfolio/WWCCD/wildlife-speaker-series/WildlifeSpeakerSeries_thumbnail.jpg.jpg',
         //////////////////
         markdown: 'markdown/wildlifeSpeakerSeries.md',
         description: 'A series of illustrated posters for the 2021 Wildlife Speaker Series.',
