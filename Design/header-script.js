@@ -2,7 +2,7 @@
 function renderMarkdown(MD_body_location, md_target_El)  {
     
     // MD_body_location is a rel link passed as a parameter to the renderMarkdown function.
-    //var body_location = 'markdown/overview.md';
+    // var body_location = 'markdown/overview.md';
 
     function getText(myUrl){
         var result = null;

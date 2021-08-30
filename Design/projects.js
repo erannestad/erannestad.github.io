@@ -75,6 +75,24 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
     
+
+    {   
+        title: 'Wildlife Speaker Series',
+        id: 'WildlifeSpeakerSeries',
+        client: 'Ruby Valley Conservation District',
+        categories: ['illustration', 'graphic-design'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+        date: '2021',
+        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/wildlifeSpeakerSeries.md',
+        description: 'A series of illustrated posters for the 2021 Wildlife Speaker Series.',
+        //////////////////
+        image: [''],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+    },
+
     
     {
         title: 'Firmament Arch',
