@@ -10,3 +10,9 @@
 
 ![VOTB_splash-screen_lighter-background.jpg](/Design/design-portfolio/VOTB/VOTB_splash-screen_lighter-background.jpg.jpg)
 
+<img src="/Design/design-portfolio/VOTB/VOTB_full-map_lighter-background.jpg">
+
+<img src="/Design/design-portfolio/VOTB/VOTB_story-map_lighter-background.jpg">
+
+<img src="/Design/design-portfolio/VOTB/VOTB_splash-screen_lighter-background.jpg">
+

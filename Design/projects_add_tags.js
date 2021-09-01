@@ -1,6 +1,6 @@
 //add tags to DOM
 
-var tags = ['all','art','print', 'web', 'graphic-design'];
+var tags = ['all','art','print', 'web', 'graphic-design', 'maps'];
 console.log(tags)
 
 var contentHeader = document.querySelector("#content-header");
