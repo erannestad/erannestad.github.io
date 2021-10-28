@@ -470,7 +470,6 @@ text{
             }
         #content-highlights {
             display: flex;
-            float: right;
             flex-wrap: wrap;
             justify-content: space-between;
             max-width: 1200px;
