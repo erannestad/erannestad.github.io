@@ -235,7 +235,8 @@ img {
 }
 
 #portrait {
-    max-width: 500px !important;
+    max-height: 300px !important;
+    width: auto;
 }
 
 /*
