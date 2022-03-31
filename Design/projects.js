@@ -1,7 +1,22 @@
 
 var ProjectList = [
     
-    
+    {
+        title: 'Mangozine',
+        id: 'mangozine',
+        client: 'Mangoprism',
+        categories: ['print', 'graphic-design'],
+        related: ['mangoprism', 'exhibitionCatalog'],
+        date: '2022',
+        thumbnail:'design-portfolio/mangozine/juice-1_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/tourBooklet.md',
+        description: 'There has not been a harder time in memory to break into media. Newbies find a ladder pulled up higher than ever. Mangoprism is a humble effort to make this world more welcoming and accessible. We partner with emerging writers, many of whom have never before been paid for their work—or even received a close edit. And we give veteran writers the chance to experiment with new styles and forms. <br /><br />We do this with an abiding commitment to our founding editorial standard: reading a Mangoprism article must be at least as enjoyable as eating a morsel of mango, the most succulent of fruits. <br /><br />This magazine you are holding—the first of many to come—represents an assertion of our belief in the value of physical media and a culmination of 18 months of contributions. Mangozine Issue 1 is a rich smorgasbord of cultural criticism, short fiction, personal essays and other selections from the first five seasons of Mangoprism, which date from 2019 through the summer of 2022. <br /><p class="subtext">Mangoprism<br />Editors: Andrew Schwartz, Danny Schwartz<br /><br />Art and Design<br />Art Direction: Eric Rannestad<br />Layout and Design: Eric Rannestad<br />Printing: Seattle Printworks<br />Typefaces: Mangotype, URW DIN, Lora<br /><br />Season 04 Illustrator: Tywen Kelly<br />Season 05 Illustrator: Isabelle Marshall<br /><br />Cover Art: Tywen Kelly<br /><br />All original artwork by Eric Rannestad unless otherwise noted. </p>',
+        //////////////////
+        image: ['design-portfolio/mangozine/TOC-1.jpg','design-portfolio/mangozine/spine-1.jpg','design-portfolio/mangozine/SSMNIE-1.jpg','design-portfolio/mangozine/cover-1.jpg','design-portfolio/mangozine/voyager-1.jpg','design-portfolio/mangozine/opening-1.jpg'],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+    },
     
         {
         title: 'Tour Booklet',
