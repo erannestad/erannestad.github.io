@@ -11,7 +11,7 @@ var ProjectList = [
         thumbnail:'design-portfolio/mangozine/juice-1_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/tourBooklet.md',
-        description: 'There has not been a harder time in memory to break into media. Newbies find a ladder pulled up higher than ever. Mangoprism is a humble effort to make this world more welcoming and accessible. We partner with emerging writers, many of whom have never before been paid for their work—or even received a close edit. And we give veteran writers the chance to experiment with new styles and forms. <br /><br />We do this with an abiding commitment to our founding editorial standard: reading a Mangoprism article must be at least as enjoyable as eating a morsel of mango, the most succulent of fruits. <br /><br />This magazine you are holding—the first of many to come—represents an assertion of our belief in the value of physical media and a culmination of 18 months of contributions. Mangozine Issue 1 is a rich smorgasbord of cultural criticism, short fiction, personal essays and other selections from the first five seasons of Mangoprism, which date from 2019 through the summer of 2022. <br /><p class="subtext">Mangoprism<br />Editors: Andrew Schwartz, Danny Schwartz<br /><br />Art and Design<br />Art Direction: Eric Rannestad<br />Layout and Design: Eric Rannestad<br />Printing: Seattle Printworks<br />Typefaces: Mangotype, URW DIN, Lora<br /><br />Season 04 Illustrator: Tywen Kelly<br />Season 05 Illustrator: Isabelle Marshall<br /><br />Cover Art: Tywen Kelly<br /><br />All original artwork by Eric Rannestad unless otherwise noted. </p>',
+        description: 'There has not been a harder time in memory to break into media. Newbies find a ladder pulled up fer than ever. Mangoprism is a humble effort to make this world more welcoming and accessible. We partner with emerging writers, many of whom have never before been paid for their work,or even received a close edit. And we give veteran writers the chance to experiment with new styles and forms. <br /><br />We do this with an abiding commitment to our founding editorial standard: reading a Mangoprism article must be at least as enjoyable as eating a morsel of mango, the most succulent of fruits. <br /><br />This magazine you are holding, the first of many to come, represents an assertion of our belief in the value of physical media and a culmination of 18 months of contributions. Mangozine Issue 1 is a rich smorgasbord of cultural criticism, short fiction, personal essays and other selections from the first five seasons of Mangoprism, which date from 2019 through the summer of 2022. <br /><p class="subtext">Mangoprism<br />Editors: Andrew Schwartz, Danny Schwartz<br /><br />Art and Design<br />Art Direction: Eric Rannestad<br />Layout and Design: Eric Rannestad<br />Printing: Seattle Printworks<br />Typefaces: Mangotype, URW DIN, Lora<br /><br />Season 04 Illustrator: Tywen Kelly<br />Season 05 Illustrator: Isabelle Marshall<br /><br />Cover Art: Tywen Kelly<br /><br />All original artwork by Eric Rannestad unless otherwise noted. </p>',
         //////////////////
         image: ['design-portfolio/mangozine/TOC-1.jpg','design-portfolio/mangozine/spine-1.jpg','design-portfolio/mangozine/SSMNIE-1.jpg','design-portfolio/mangozine/cover-1.jpg','design-portfolio/mangozine/voyager-1.jpg','design-portfolio/mangozine/opening-1.jpg'],
         //////////////////
@@ -28,7 +28,7 @@ var ProjectList = [
         thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/tourBooklet.md',
-        description: 'The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.',
+        description: "The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo\’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.",
         //////////////////
         image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],
         //////////////////
@@ -66,9 +66,9 @@ var ProjectList = [
         thumbnail:'design-portfolio/mangoprism/home-background_thumbnail.gif',
         //////////////////
         markdown: 'markdown/mangoprism.md',
-        description: 'Mangoprism is an online publication for emerging writers and veterans who want to try something new.Mangoprism articles span cultural criticism, personal essays, interviews and reportage. New work is released bi-weekly on a seasonal basis. <br><br> Wordpress theme and art direction.  Theme developed by Automatic\'s _s. Visit the website at <a href="https://mangoprism.com/">www.mangoprism.com</a>',
+        description: 'Mangoprism is an online publication for emerging writers and veterans who want to try something new. Mangoprism articles span cultural criticism, personal essays, interviews and reportage. New work is released bi-weekly on a seasonal basis. <br><br> Wordpress theme and art direction.  Custom theme and plugin developement by Eric Rannestad. Visit the website at <a href="https://mangoprism.com/">www.mangoprism.com</a>',
         //////////////////
-        image: [''],
+        image: ['','design-portfolio/mangoprism/mangoprism-presentation_bottomAlt.jpg'],
         //////////////////
         imageSubtext: ['<div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/466084460?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>', '','','','','','','','', '','','','','','','','','','','','','','','','','']
     },
@@ -83,9 +83,9 @@ var ProjectList = [
         thumbnail:'design-portfolio/VOTB/VOTB_full-map_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/VOTB.md',
-        description: 'The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.',
+        description: '<i>Voices of the Blues</i> is a multimedia webmapping project commissioned by <em>My Blue Mountains Woodland</em> and <em>Wallowa Resources</em>. Voices of the Blues maps the various narratives of forest landowners across the Blue Mountains in Northeast Oregon. The collaborative mapping project assembles the diverse voices engaged with forestry in Northeast Oregon. These stories from landowners, foresters, and public/private partnerships offer a landscape-scale view of forestry in the region.<br><br><em>Voices of the Blues</em> intends to offer resources and advice for people who are looking to manage their own land and join this network of collaboration<br><br><a href="https://experience.arcgis.com/experience/eb26ef8dbfd24823b0da88f5350c596a/" target="_blank">Voices of the Blues</a>',
         //////////////////
-        image: [''],
+        image: ['design-portfolio/VOTB/VOTB_full-map.jpg','design-portfolio/VOTB/VOTB_story-map_lighter-background.jpg', 'design-portfolio/VOTB/VOTB_splash-screen_lighter-background.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -101,9 +101,9 @@ var ProjectList = [
         thumbnail:'design-portfolio/wildlife-speaker-series/WildlifeSpeakerSeries_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/wildlifeSpeakerSeries.md',
-        description: 'A series of illustrated posters for the 2021 Wildlife Speaker Series.',
+        description: '<p>Ruby Valley Conservation District and their partners commissioned a series of posters to publicize their annual wildlife speaker series. I provided custom illustrations specific to each event, layout design, and production services. <br><br>Printed 11&quot;x17&quot; by Action Print in Helena, MT',
         //////////////////
-        image: [''],
+        image: ['design-portfolio/wildlife-speaker-series/WildlifeSpeakerSeries_full.jpg','design-portfolio/wildlife-speaker-series/grayling_full.jpg', 'design-portfolio/wildlife-speaker-series/pollinators_full.jpg', 'design-portfolio/wildlife-speaker-series/swans_full.jpg', 'design-portfolio/wildlife-speaker-series/overview_full.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -119,7 +119,7 @@ var ProjectList = [
         thumbnail:'design-portfolio/VSC/Full1.2_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/firmamentArch.md',
-        description: 'Firmament Arch is part of a growing series of work about the constructed qualities of climate change and our relationship to the natural world in the face of ecological collapse. <p class="subtext">The series reimagines cosmological structures of the past: the pillars of heaven, the firmament, the great deep, the ocean of heaven, etc. as architectural backbones of our future infrastructure and defining forces in our relationship to nature. <br><br> In religious cosmology, the sky was conceptualized as a physical structure – a firmament – that separated earth from the oceans of heavens. Firmament Arch references the architecture of our increasingly necessary biodomes and greenhouses and reimagines them as the firmament structures of tomorrow. The curved backbone of the work houses a network of tanks, tubes, pumps, and nozzles that form an aeroponic growing environment, allowing plants to grow in irregular and confined spaces with minimal water waste or reliance on natural light.</p>',
+        description: 'Firmament Arch is part of a growing series of work about the constructed qualities of climate change and our relationship to the natural world in the face of ecological collapse. <p class="subtext">The series reimagines cosmological structures of the past: the pillars of heaven, the firmament, the great deep, the ocean of heaven, etc. as architectural backbones of our future infrastructure and defining forces in our relationship to nature. <br><br> In religious cosmology, the sky was conceptualized as a physical structure, a firmament, that separated earth from the oceans of heavens. Firmament Arch references the architecture of our increasingly necessary biodomes and greenhouses and reimagines them as the firmament structures of tomorrow. The curved backbone of the work houses a network of tanks, tubes, pumps, and nozzles that form an aeroponic growing environment, allowing plants to grow in irregular and confined spaces with minimal water waste or reliance on natural light.</p>',
         //////////////////
         image: ['design-portfolio/VSC/Full1.2.jpg', 'design-portfolio/VSC/foreshorten1.jpg', 'design-portfolio/VSC/arduino1.jpg','design-portfolio/VSC/plants1.jpg'],
         //////////////////
@@ -259,9 +259,9 @@ var ProjectList = [
         thumbnail:'design-portfolio/carbon-tax-impact/BIG-MAP_2021_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/carbonTaxImpact.md',
-        description: 'Mapping the impact of a carbon tax on Washington State consumers.',
+        description: 'This project modeled the distributional impact of a carbon tax on Washington State consumers. I used spending patterns associated with a range of demographics to model how a price on carbon would impact different communities across the state.',
         //////////////////
-        image: [''],
+        image: ['design-portfolio/carbon-tax-impact/BIG-MAP_2021.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
