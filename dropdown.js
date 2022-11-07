@@ -13,7 +13,29 @@ $(window).load(function () {
 });
 
 
+function dropdown(controllerElement, classToToggle, showText, hideText) {
 
+   if(controllerElement.classList.contains("show")) {
+      controllerElement.innerHTML = hideText;
+      controllerElement.classList.remove("show");
+      controllerElement.classList.add("hide");
+   } else if (controllerElement.classList.contains("hide")) {
+      controllerElement.innerHTML = showText;
+      controllerElement.classList.add("show");
+      controllerElement.classList.remove("hide");
+   }
+
+   var toggleElements = document.querySelectorAll("." + classToToggle);
+   for (i=0; i < toggleElements.length; i++) {
+      if (toggleElements[i].classList.contains("toggleVisible")) {
+         toggleElements[i].classList.remove("toggleVisible");
+         toggleElements[i].classList.add("toggleHide");
+      } else {
+         toggleElements[i].classList.add("toggleVisible");
+         toggleElements[i].classList.remove("toggleHide");
+      }
+   }
+}
 
 
 

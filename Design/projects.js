@@ -288,22 +288,22 @@ var ProjectList = [
     
     
     
-    {
-        title: 'For Your Ideas',
-        id: 'forYourIdeas',
-        client: 'Student Project',
-        categories: ['print'],
-        related: ['printArena', 'exhibitionCatalog', ''],
-        date: '2016',
-        thumbnail:'design-portfolio/journals/all-spines_thumbnail.jpg',
-        //////////////////
-        markdown: 'markdown/forYourIdeas.md',
-        description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound. <br><br>Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.",
-        //////////////////
-        image: ['design-portfolio/journals/orange.jpg','design-portfolio/journals/brown2.jpg','design-portfolio/journals/brown.jpg','design-portfolio/journals/arrangement.jpg','design-portfolio/journals/all-spines.jpg'],
-        //////////////////
-        imageSubtext: ["", '','','','','','','','', '','','','','','','','','','','']
-    },
+    // {
+    //     title: 'For Your Ideas',
+    //     id: 'forYourIdeas',
+    //     client: 'Student Project',
+    //     categories: ['print'],
+    //     related: ['printArena', 'exhibitionCatalog', ''],
+    //     date: '2016',
+    //     thumbnail:'design-portfolio/journals/all-spines_thumbnail.jpg',
+    //     //////////////////
+    //     markdown: 'markdown/forYourIdeas.md',
+    //     description: "For Your Ideas was a project of 33 hand-bound journals. Each journal was sold for $6 at the Colville Street Patisserie over the summer months of 2016. The journals were digitally printed and hand-bound. <br><br>Each journal was designed around a nurse log theme. A nurse log is a decaying fallen log or stump that helps provide nutrients, shade, and other helpful ecological factors to plants and animals that have started to grow or live there. It was my hope that, like a nurse log, these journals provide nutrients, shelter, and a surface for its owner's ideas to grow.",
+    //     //////////////////
+    //     image: ['design-portfolio/journals/orange.jpg','design-portfolio/journals/brown2.jpg','design-portfolio/journals/brown.jpg','design-portfolio/journals/arrangement.jpg','design-portfolio/journals/all-spines.jpg'],
+    //     //////////////////
+    //     imageSubtext: ["", '','','','','','','','', '','','','','','','','','','','']
+    // },
     
     
     
@@ -326,22 +326,22 @@ var ProjectList = [
     
     
     
-    {
-        title: 'Conservation Videos',
-        id: 'conservationVideos',
-        client: 'Walla Walla CD',
-        categories: ['video'],
-        related: ['wwccdLogo', 'wwccdWebsite', 'infographic'],
-        date: '2018',
-        thumbnail:'design-portfolio/WWCCD/StreamRestorationThumbnail.gif',
-        //////////////////
-        markdown: 'markdown/conservationVideos.md',
-        description: '<div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>',
-        //////////////////
-        image: [''],
-        //////////////////
-        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
-    },
+    // {
+    //     title: 'Conservation Videos',
+    //     id: 'conservationVideos',
+    //     client: 'Walla Walla CD',
+    //     categories: ['video'],
+    //     related: ['wwccdLogo', 'wwccdWebsite', 'infographic'],
+    //     date: '2018',
+    //     thumbnail:'design-portfolio/WWCCD/StreamRestorationThumbnail.gif',
+    //     //////////////////
+    //     markdown: 'markdown/conservationVideos.md',
+    //     description: '<div class="resp-container"><br><iframe class="resp-iframe" src="https://player.vimeo.com/video/309347685" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/309361701" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>',
+    //     //////////////////
+    //     image: [''],
+    //     //////////////////
+    //     imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+    // },
     
     
     
@@ -382,22 +382,22 @@ var ProjectList = [
     
     
     
-    {
-        title: 'Virtual Birthday Card',
-        id: 'birthday',
-        client: 'Personal Project',
-        categories: ['web', 'illustration'],
-        related: ['wwccdWebsite', 'forYourIdeas', ''],
-        date: '2019',
-        thumbnail:'design-portfolio/happy-birthday-website/full-screenshot_thumbnail.jpg',
-        //////////////////
-        markdown: 'markdown/birthday.md',
-        description:'',
-        //////////////////
-        image: ['design-portfolio/happy-birthday-website/iphone-screenshot.jpg', 'design-portfolio/happy-birthday-website/opening.gif'],
-        //////////////////
-        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
-    },
+    // {
+    //     title: 'Virtual Birthday Card',
+    //     id: 'birthday',
+    //     client: 'Personal Project',
+    //     categories: ['web', 'illustration'],
+    //     related: ['wwccdWebsite', 'forYourIdeas', ''],
+    //     date: '2019',
+    //     thumbnail:'design-portfolio/happy-birthday-website/full-screenshot_thumbnail.jpg',
+    //     //////////////////
+    //     markdown: 'markdown/birthday.md',
+    //     description:'',
+    //     //////////////////
+    //     image: ['design-portfolio/happy-birthday-website/iphone-screenshot.jpg', 'design-portfolio/happy-birthday-website/opening.gif'],
+    //     //////////////////
+    //     imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+    // },
     
     
     
@@ -420,22 +420,22 @@ var ProjectList = [
     
     
     
-    {
-        title: 'Geothermal Kinetic Infographic',
-        id: 'infographic',
-        client: 'Student Project',
-        categories: ['infographic','  video', ' data-visualization'],
-        related: ['geothermal', 'conservationVideos', 'wwccdInfographics'],
-        date: '2017',
-        thumbnail:'design-portfolio/geothermal/infographic1.gif',
-        //////////////////
-        markdown: 'markdown/infographic.md',
-        description:'<div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/202665623" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>',
-        //////////////////
-        image: ['design-portfolio/geothermal/RiskGraphs.gif', 'design-portfolio/geothermal/infographic1.gif'],
-        //////////////////
-        imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
-    },
+    // {
+    //     title: 'Geothermal Kinetic Infographic',
+    //     id: 'infographic',
+    //     client: 'Student Project',
+    //     categories: ['infographic','  video', ' data-visualization'],
+    //     related: ['geothermal', 'conservationVideos', 'wwccdInfographics'],
+    //     date: '2017',
+    //     thumbnail:'design-portfolio/geothermal/infographic1.gif',
+    //     //////////////////
+    //     markdown: 'markdown/infographic.md',
+    //     description:'<div class="resp-container"><iframe class="resp-iframe" src="https://player.vimeo.com/video/202665623" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>',
+    //     //////////////////
+    //     image: ['design-portfolio/geothermal/RiskGraphs.gif', 'design-portfolio/geothermal/infographic1.gif'],
+    //     //////////////////
+    //     imageSubtext: ['','','','','','','','', '','','','','','','','','','','']
+    // },
     
     
     
