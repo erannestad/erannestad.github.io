@@ -299,8 +299,9 @@ img {
 }
 
 #portrait {
-    max-height: 200px !important;
-    width: auto;
+
+/*    max-height: 200px !important;*/
+    width: 100%;
 }
 
 /*
