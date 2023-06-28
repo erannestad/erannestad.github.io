@@ -204,13 +204,7 @@ a:hover {
 
 /*************************************************/
 /********************* Thank You *********************/
-#ThankYou {
-    position: inherit;
-    text-align: left;
-/*
-    margin-left: 50%;
-    margin-top: 50%;
-*/
+.thank-you-section {
 }
 
 
@@ -220,6 +214,9 @@ a:hover {
 body {
     color: #989898;
     line-height: 16px;
+    padding: 8px;
+    margin: 0px;
+    min-height: 100vh;
 }
 
 h1 {
@@ -420,6 +417,7 @@ row-2 {
 /* Middle column */
 .main-content-container {
 /*    background-color: bisque;*/
+    min-height: 100%;
     float: right;
     width: 100%;
     margin-left: 100px;
