@@ -15,6 +15,7 @@ var menu = Object.assign(
                <li><a href="about.html">About</a></li>
                <br>
                
+               <li><a href="truss.html">Truss</a></li>
                <li><a href="Arch.html">Firmament Arch</a></li>
                <li><a href="Where-the-Rain-Seeps-Through.html">Where The Rain Seeps Through</a></li>
                <li><a href="Market-Box.html">Market Box</a></li>
