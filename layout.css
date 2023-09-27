@@ -256,9 +256,20 @@ a {
 	font-weight: 500;
 }
 
+.subtext a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #989898;
+    text-decoration: underline !important;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight:400;
+    font-size: 10px
+}
+
 .subtext {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 10px;
+	font-size: 10px !important;
 	font-style: normal;
 	font-variant: normal;
 	font-weight:400;
@@ -278,7 +289,7 @@ a:hover {
 
 a:link {
     text-decoration: none;
-    font-size: 12px
+/*    font-size: 12px*/
 }
 
 
