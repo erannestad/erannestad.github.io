@@ -1,4 +1,6 @@
 
+       
+
 var ProjectList = [
     
     {
@@ -11,11 +13,11 @@ var ProjectList = [
         thumbnail:'design-portfolio/semiconductors/gmf-screenshot-EU_thumb.jpg',
         //////////////////
         markdown: 'markdown/...md',
-        description: '',
+        description: '<p><a href="https://www.gmfus.org/" target=""_blank">The German Marshal Fund</a> identified the need for a centralized repository to track and compare semiconductor investments in the United States and Europe beginning in 2020. The resulting dataset includes the location, investment amount, type of fab/chip, and estimated number of jobs, both direct and related. As subsidies are attributed through the respective CHIPs Acts, these figures are added to the map.</p><p><a href="https://gmfdigital.github.io/semiconductor-investments-map/" target="_blank">View the Semiconductor Investments Map</a></p><p>The project uses Mapbox GL and custom Mapbox vector styles. The project also has an <a href="https://gmfdigital.github.io/semiconductor-investments-map/libre" target="_blank"> an all open-source version</a> that avoids the usage limits of the Mapbox stack. This version uses MapLibre.js and free raster tilesets. The map\'s spatial data is maintained by GMF staff via Mapbox Datasets and distributed with the Mapbox Datasets API.</p>',
         //////////////////
         image: ['design-portfolio/semiconductors/gmf-screenshot-EU.png'],
         //////////////////
-        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+        imageSubtext: ['<p><a href="https://gmfus-my.sharepoint.com/personal/jtrehu_gmfus_org/_layouts/15/Doc.aspx?sourcedoc=%7B0c7c7fcf-0997-4e3b-a5b9-48a5be3f14b5%7D&action=default&slrid=ec12e0a0-7078-4000-44cd-0f172e9c94a9&originalPath=aHR0cHM6Ly9nbWZ1cy1teS5zaGFyZXBvaW50LmNvbS86eDovZy9wZXJzb25hbC9qdHJlaHVfZ21mdXNfb3JnL0VjOV9mQXlYQ1R0T3BibElwYjRfRkxVQnlzZHpvcTdna1NDaTQzX3BpYzN4a3c_cnRpbWU9SEtodU13N0QyMGc&cid=55d9388f-5b89-4a45-8493-1f8839da349a&_SRM=0:G:77"</a>The Chips Investment Tracker dataset</a> is continuously updated by the GMF Digital team to reflect new announcements from companies or governments in the US and Europe. The dataset behind the interactive map is based on open-source information and announcements published in the media and company press releases. Figures are therefore subject to change as estimated costs are revised and compared with subsequent investment figures, including the impact of subsidies. The map is a living document, and we welcome feedback, insights, or corrections with further documentation in order to keep it as up-to-date and accurate as possible.</p>', '','','','','','','','','','','','','','','','','']
     },
 
     {
@@ -28,9 +30,9 @@ var ProjectList = [
         thumbnail:'design-portfolio/ruleset-painting-tool/gif-3_800x560_background.gif',
         //////////////////
         markdown: 'markdown/....md',
-        description: '',
+        description: '<p><a href="https://ericrannestad.com/ruleset-painting-tool/">The Ruleset Painting Tool</a> exists as an accessible method of exploring the way decentralized systems interact and compound.</p> <p>Specifically, this tool allows the user to design and arrange different <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automata</a> \- systems of computation where a group of entities (cells) each follow simple rules based on the state of their neighboring entities (cells). While the individual rules are simple, collectively cellular automata systems can exhibit complex and unpredictable behavior.</p><p>The interface aims to create a real-time environment for playing/editing/drawing with these simple systems in the browser.</p>',
         //////////////////
-        image: ['design-portfolio/ruleset-painting-tool/gif-3_1600x1120.gif'],
+        image: ['design-portfolio/ruleset-painting-tool/gif-3_1600x1120.gif','design-portfolio/ruleset-painting-tool/ruleset-painting-tool_screenshot-canvas.png', 'design-portfolio/ruleset-painting-tool/mp-screenshots/juice.png', 'design-portfolio/ruleset-painting-tool/mp-screenshots/fiction-3.png', 'design-portfolio/ruleset-painting-tool/mp-screenshots/chronicles-1.png',  ],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -45,9 +47,26 @@ var ProjectList = [
         thumbnail:'design-portfolio/conservation-district-map/cd-map-screenshot-lake_thumb-800.jpg',
         //////////////////
         markdown: 'markdown/....md',
-        description: '',
+        description: '<a href="https://macdnet.org/conservation-district-map/" target="_blank">The Montana Conservation Districts Map</a> is a visual directory for the 58 conservation districts in the state of Montana. The map serves as an easy tool for finding one\'s nearby district, reading recent conservation stories around the State, and offering contact information to users.</p><p>The map uses a custom Netlify CMS that allows each district to edit and update information on the map, leaflet.js is used as the mapping library for the application, and Eleventy.js is used as the static site generator for the project.</p>',
         //////////////////
         image: ['design-portfolio/conservation-district-map/cd-map-screenshot-lake.png', 'design-portfolio/conservation-district-map/cd-map-screenshot-CMS.png'],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+    },
+
+    {
+        title: 'Mangozine',
+        id: 'mangozine',
+        client: 'Mangoprism',
+        categories: ['print', 'graphic-design'],
+        related: ['mangoprism', 'exhibitionCatalog'],
+        date: '2022',
+        thumbnail:'design-portfolio/mangozine/juice-1_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/tourBooklet.md',
+        description: 'There has not been a harder time in memory to break into media. Newbies find a ladder pulled up fer than ever. Mangoprism is a humble effort to make this world more welcoming and accessible. We partner with emerging writers, many of whom have never before been paid for their work,or even received a close edit. And we give veteran writers the chance to experiment with new styles and forms. <br /><br />We do this with an abiding commitment to our founding editorial standard: reading a Mangoprism article must be at least as enjoyable as eating a morsel of mango, the most succulent of fruits. <br /><br />This magazine you are holding, the first of many to come, represents an assertion of our belief in the value of physical media and a culmination of 18 months of contributions. Mangozine Issue 1 is a rich smorgasbord of cultural criticism, short fiction, personal essays and other selections from the first five seasons of Mangoprism, which date from 2019 through the summer of 2022. <br /><p class="subtext">Mangoprism<br />Editors: Andrew Schwartz, Danny Schwartz<br /><br />Art and Design<br />Art Direction: Eric Rannestad<br />Layout and Design: Eric Rannestad<br />Printing: Seattle Printworks<br />Typefaces: Mangotype, URW DIN, Lora<br /><br />Season 04 Illustrator: Tywen Kelly<br />Season 05 Illustrator: Isabelle Marshall<br /><br />Cover Art: Tywen Kelly<br /><br />All original artwork by Eric Rannestad unless otherwise noted. </p>',
+        //////////////////
+        image: ['design-portfolio/mangozine/TOC-1.jpg','design-portfolio/mangozine/spine-1.jpg','design-portfolio/mangozine/SSMNIE-1.jpg','design-portfolio/mangozine/cover-1.jpg','design-portfolio/mangozine/voyager-1.jpg','design-portfolio/mangozine/opening-1.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -69,7 +88,7 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
     
-        {
+    {
         title: 'Tour Booklet',
         id: 'tourBooklet',
         client: 'Walla Walla CD',
@@ -85,8 +104,6 @@ var ProjectList = [
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
-    
-    
     
     
     {
@@ -141,7 +158,7 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
 
-    
+
 
     {   
         title: 'Consumer Impact of WA Carbon Tax',
