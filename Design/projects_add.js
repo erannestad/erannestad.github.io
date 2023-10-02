@@ -53,26 +53,6 @@ var addAllItems = function() {
     }
 }
 
-//addAllItems();
-//loaded = 2;
-
-
-
-
-
-// backcountry.com supplemental url
-
-function urlCheck() {
-if(
-window.location.href=="https://ericrannestad.com/Design/applications/backcountry/projects_backcountry.html#Supplement"
-)
-{
-loadThis(Supplement);
-}else{
-console.log('test-backcountry')
-}
-}
-urlCheck()
 
 
 

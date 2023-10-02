@@ -1,3 +1,16 @@
+
+function locationHashChanged() {
+  if (location.hash) {
+    console.log("true: hash exists: " + location.hash);
+    var removeHash = location.hash.substring(1);
+    loadThis(removeHash)
+  } else if (location.hash === '') {
+    console.log('no hash')
+    loadOverview();
+  }
+}
+window.onhashchange = locationHashChanged;
+
 // ADD ALL ITEMS
 //var content = document.querySelector("#content");
 //content.innerHTML += "<div id='tag-container'><a href='projects.html' onclick='closeNav(); loadOverview();' class='tag'>art</a></div>";
@@ -23,9 +36,7 @@ var addItemOverview = function(loaded){
     content.innerHTML += "<item class='overview  " + tags + "' onclick= 'loadThis(\"" + iObj.id + "\");'><img class='overview' src='" + iObj.thumbnail + "'><p class='mono overview'>" + iObj.title + "<br>" + iObj.client + "</p></item>";
     
     $("img[src='undefined']").remove();
-};
-
-
+}; 
 
 
 
@@ -76,5 +87,8 @@ var loadOverview = function() {
 //            }
 //
 //        };
+
+
+
 
         

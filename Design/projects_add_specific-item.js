@@ -1,3 +1,7 @@
+
+
+
+
 //ADD SPECIFIC ITEM
 function loadThis(itemName) {
     document.documentElement.scrollTop = 0;
@@ -99,4 +103,6 @@ $('a.project' ).on( 'click', function() {
     $('a.active').removeClass( 'active' );
     $( this ).addClass( 'active' );
     });
+
+
 
