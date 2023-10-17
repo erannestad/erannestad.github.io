@@ -384,7 +384,7 @@ text{
 
 .info-container{
     width: 100%;
-    min-height: 100vh;
+/*    min-height: 100vh;*/
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -921,7 +921,7 @@ div.next{
     }
     
     .info-content {
-        margin-top: 30%;
+/*        margin-top: 30%;*/
     }
     
     .margin-top-mobile {
