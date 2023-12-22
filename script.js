@@ -35,9 +35,8 @@ var menu = Object.assign(
                <li><a href="field-notes.html">Field Notes</a></li>
                
                <br>
-               <li class="footer"><a href="Design/index.html">Design Website</a></li>
+               <li class="footer"><a href="Design/projects">Design Website</a></li>
            </ul>    
-           
       `
     }
   )
