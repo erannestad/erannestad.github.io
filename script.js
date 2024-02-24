@@ -23,7 +23,7 @@ var menu = Object.assign(
                <br>
                
                <li><a href="plotsgridsmodels.html">Plots, Grids, Models</a></li>
-               <li><a href="Firmament.html">Firmament</a></li>
+               <!-- <li><a href="Firmament.html">Firmament</a></li> -->
                <!-- <li><a href="Great-Deep.html">The Great Deep</a></li> -->
                <br>
 
@@ -32,7 +32,7 @@ var menu = Object.assign(
                <!-- <li><a href="Mapping-The-Firmament.html">Mapping the Firmament</a></li> -->
                <li><a href="http://erannestad.com/shipwreck/map/index.php" target="_blank">Shipwreck</a></li>
                <li>
-               <li><a href="field-notes.html">Field Notes</a></li>
+               <!-- <li><a href="field-notes.html">Field Notes</a></li>  -->
                
                <br>
                <li class="footer"><a href="Design/projects">Design Website</a></li>
