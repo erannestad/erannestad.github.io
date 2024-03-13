@@ -212,7 +212,8 @@ a:hover {
 /********************* Fonts *********************/
 
 body {
-    color: #989898;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #797979;
     line-height: 16px;
     padding: 8px;
     margin: 0px;
@@ -220,7 +221,7 @@ body {
 }
 
 h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -228,7 +229,7 @@ h1 {
 }
 
 h2, h3, h4 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -236,7 +237,7 @@ h2, h3, h4 {
 }
 
 p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-size: 12px;
 	font-style: normal;
 	font-variant: normal;
@@ -249,15 +250,21 @@ i {
 
 a {
     color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-size: 12px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 }
 
+.menu-category {
+    letter-spacing: 1px;
+    /* font-weight: 200; */
+/*    border-bottom: solid 1px #797979;*/
+    font-size: 9px !important;
+}
+
 .subtext a {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #989898;
     text-decoration: underline !important;
     font-size: 10px;
@@ -268,8 +275,8 @@ a {
 }
 
 .subtext {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 10px !important;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-size: 10px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight:400;
