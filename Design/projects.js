@@ -167,12 +167,12 @@ var ProjectList = [
         categories: ['maps', 'graphic-design'],
         related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
         date: '2020',
-        thumbnail:'design-portfolio/carbon-tax-impact/BIG-MAP_2021_thumbnail.jpg',
+        thumbnail:'design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/carbonTaxImpact.md',
         description: 'This project modeled the distributional impact of a carbon tax on Washington State consumers. I used spending patterns associated with a range of demographics to model how a price on carbon would impact different communities across the state.',
         //////////////////
-        image: ['design-portfolio/carbon-tax-impact/BIG-MAP_2021.jpg'],
+        image: ['design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_medium.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
