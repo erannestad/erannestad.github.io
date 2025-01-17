@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>New Paintings: Plots, Grids, Models</title>
-    <link>https://ericrannestad.com/plotsgridsmodels.html</link>
-    <description>Plots, grids, models explores the feedback loops, histories, and efficacy of models used to control the built environment and its component networks of built and natural systems. This series explores how the ‘model,’ like a painting, can be a means of abstraction and artistic expression; with the artist as modeler and the painting as model.
-    </description>
+    <title>Your Website Title</title>
+    <link>https://ericrannestad.com/</link>
+    <description> Eric Rannestad (b. 1996 - Chester, Connecticut) is a Montana-based artist making work about the systems and technology that humans use to compartmentalize, measure, and model the world. The current work speculates on the infrastructure of the built environment through sculpture, painting, and digital media.
+                  Informed by the economic, natural resource, and architectural models shaping our built environment, these projects contemplate the ‘model’ as an attempt to control the compounding crises of our present moment, and as an act of imagination. Pre-scientific cosmologies, market frameworks, and mapping technology inform the work’s medium, imagery, and form.
+                  Eric received a BA in Studio Art and a BA in Economics from Whitman College and is currently a Master of Design Studies (MDes) candidate at the Harvard Graduate School of Design. He has attended fellowships at the Vermont Studio Center and I-Park Foundation and has attended residencies at Centrum, Sitka Center for Art and Ecology, Shell House Arts, and more. Eric also completed a certificate in GIS + Design from Pratt Institute and was a participant in the 2018 New York Arts Practicum. His commercial projects in cartography and graphic design are a significant influence in his art practice.</description>
     <language>en-us</language>
     <pubDate>2025</pubDate>
 
     <!-- Individual Items -->
+    <item>
+      <title>New Paintings: Plots, Grids, Models</title>
+      <link>https://ericrannestad.com/plotsgridsmodels.html</link>
+      <description>Plots, grids, models explores the feedback loops, histories, and efficacy of models used to control the built environment and its component networks of built and natural systems. This series explores how the ‘model,’ like a painting, can be a means of abstraction and artistic expression; with the artist as modeler and the painting as model.</description>
+      <pubDate>2025</pubDate>
+    </item>
+
     <item>
       <title>Issue 174: West 2024 — New American Paintings</title>
       <link>https://ericrannestad.com/index.html</link>
