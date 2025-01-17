@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>New Paintings: Plots, Grids, Models</title>
+    <link>https://ericrannestad.com/plotsgridsmodels.html</link>
+    <description>Plots, grids, models explores the feedback loops, histories, and efficacy of models used to control the built environment and its component networks of built and natural systems. This series explores how the ‘model,’ like a painting, can be a means of abstraction and artistic expression; with the artist as modeler and the painting as model.
+    </description>
+    <language>en-us</language>
+    <pubDate>2025</pubDate>
+
+    <!-- Individual Items -->
+    <item>
+      <title>Issue 174: West 2024 — New American Paintings</title>
+      <link>https://ericrannestad.com/index.html</link>
+      <description>Released in Spring 2025</description>
+      <pubDate>2024</pubDate>
+    </item>
+
+    <item>
+      <title>Initial Conditions — Emerson Center for the Arts</title>
+      <link>https://ericrannestad.com/initial-conditions</link>
+      <description>Initial Conditions consists of two conceptually similar, but materially different, series of work. Brought together to show for the first time, these paintings and a sculptural installation speculate on the future infrastructure of the built environment and explore the human (in)ability to model and control complex natural systems.</description>
+      <pubDate>2023</pubDate>
+    </item>
+  </channel>
+</rss>
