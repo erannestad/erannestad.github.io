@@ -10,14 +10,14 @@ var ProjectList = [
         categories: ['web', 'maps'],
         related: ['carbon-tax-impact', 'exhibitionCatalog'],
         date: '2023',
-        thumbnail:'design-portfolio/semiconductors/gmf-screenshot-EU_thumb.jpg',
+        thumbnail:'design-portfolio/semiconductors/semiconductors1.png',
         //////////////////
         markdown: 'markdown/...md',
-        description: '<p><a href="https://www.gmfus.org/" target=""_blank">The German Marshal Fund</a> identified the need for a centralized repository to track and compare semiconductor investments in the United States and Europe beginning in 2020. The resulting dataset includes the location, investment amount, type of fab/chip, and estimated number of jobs, both direct and related. As subsidies are attributed through the respective CHIPs Acts, these figures are added to the map.</p><p><a href="https://gmfdigital.github.io/semiconductor-investments-map/" target="_blank">View the Semiconductor Investments Map</a></p><p>The project uses Mapbox GL and custom Mapbox vector styles. The project also has an <a href="https://gmfdigital.github.io/semiconductor-investments-map/libre" target="_blank"> an all open-source version</a> that avoids the usage limits of the Mapbox stack. This version uses MapLibre.js and free raster tilesets. The map\'s spatial data is maintained by GMF staff via Mapbox Datasets and distributed with the Mapbox Datasets API.</p>',
+        description: '<p><a href="https://www.gmfus.org/" target=""_blank">The German Marshal Fund</a> identified the need for a centralized repository to track and compare semiconductor investments in the United States and Europe beginning in 2020. The resulting dataset includes the location, investment amount, type of fab/chip, and estimated number of jobs, both direct and related. As subsidies are attributed through the respective CHIPs Acts, these figures are added to the map.</p><p><a href="https://gmftechnology.github.io/semiconductor-investments-map/" target="_blank">View the Semiconductor Investments Map</a></p><p>The project uses Mapbox GL and custom Mapbox vector styles. The project also has an all open-source version that avoids the usage limits of the Mapbox stack. This version uses MapLibre.js and free raster tilesets. The map\'s spatial data is maintained by GMF staff via Mapbox Datasets and distributed with the Mapbox Datasets API.</p>',
         //////////////////
-        image: ['design-portfolio/semiconductors/gmf-screenshot-EU.png'],
+        image: ['design-portfolio/semiconductors/semiconductors1.png'],
         //////////////////
-        imageSubtext: ['<p><a href="https://gmfus-my.sharepoint.com/personal/jtrehu_gmfus_org/_layouts/15/Doc.aspx?sourcedoc=%7B0c7c7fcf-0997-4e3b-a5b9-48a5be3f14b5%7D&action=default&slrid=ec12e0a0-7078-4000-44cd-0f172e9c94a9&originalPath=aHR0cHM6Ly9nbWZ1cy1teS5zaGFyZXBvaW50LmNvbS86eDovZy9wZXJzb25hbC9qdHJlaHVfZ21mdXNfb3JnL0VjOV9mQXlYQ1R0T3BibElwYjRfRkxVQnlzZHpvcTdna1NDaTQzX3BpYzN4a3c_cnRpbWU9SEtodU13N0QyMGc&cid=55d9388f-5b89-4a45-8493-1f8839da349a&_SRM=0:G:77"</a>The Chips Investment Tracker dataset</a> is continuously updated by the GMF Digital team to reflect new announcements from companies or governments in the US and Europe. The dataset behind the interactive map is based on open-source information and announcements published in the media and company press releases. Figures are therefore subject to change as estimated costs are revised and compared with subsequent investment figures, including the impact of subsidies. The map is a living document, and we welcome feedback, insights, or corrections with further documentation in order to keep it as up-to-date and accurate as possible.</p>', '','','','','','','','','','','','','','','','','']
+        imageSubtext: ['<p><a href="https://www.gmfus.org/gmf-technology-semiconductor-investment-tracker"</a>The Chips Investment Tracker </a> is continuously updated by the GMF Digital team to reflect new announcements from companies or governments in the US and Europe. The dataset behind the interactive map is based on open-source information and announcements published in the media and company press releases. Figures are therefore subject to change as estimated costs are revised and compared with subsequent investment figures, including the impact of subsidies. The map is a living document, and we welcome feedback, insights, or corrections with further documentation in order to keep it as up-to-date and accurate as possible.</p>', '','','','','','','','','','','','','','','','','']
     },
 
     {
@@ -33,6 +33,23 @@ var ProjectList = [
         description: '<p><a href="https://ericrannestad.com/ruleset-painting-tool/">The Ruleset Painting Tool</a> exists as an accessible method of exploring the way decentralized systems interact and compound.</p> <p>Specifically, this tool allows the user to design and arrange different <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automata</a> \- systems of computation where a group of entities (cells) each follow simple rules based on the state of their neighboring entities (cells). While the individual rules are simple, collectively cellular automata systems can exhibit complex and unpredictable behavior.</p><p>The interface aims to create a real-time environment for playing/editing/drawing with these simple systems in the browser.</p>',
         //////////////////
         image: ['design-portfolio/ruleset-painting-tool/gif-3_1600x1120.gif','design-portfolio/ruleset-painting-tool/ruleset-painting-tool_screenshot-canvas.png', 'design-portfolio/ruleset-painting-tool/mp-screenshots/juice.png', 'design-portfolio/ruleset-painting-tool/mp-screenshots/fiction-3.png', 'design-portfolio/ruleset-painting-tool/mp-screenshots/chronicles-1.png',  ],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+    },
+
+    {   
+        title: 'Consumer Impact of WA Carbon Tax',
+        id: 'carbon-tax-impact',
+        client: 'Student Project',
+        categories: ['maps', 'graphic-design'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+        date: '2020',
+        thumbnail:'design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/carbonTaxImpact.md',
+        description: 'This project modeled the distributional impact of a carbon tax on Washington State consumers. I used spending patterns associated with a range of demographics to model how a price on carbon would impact different communities across the state.',
+        //////////////////
+        image: ['design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_medium.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
@@ -88,22 +105,7 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
     
-    {
-        title: 'Tour Booklet',
-        id: 'tourBooklet',
-        client: 'Walla Walla CD',
-        categories: ['print', 'graphic-design'],
-        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
-        date: '2019',
-        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
-        //////////////////
-        markdown: 'markdown/tourBooklet.md',
-        description: "The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo\’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.",
-        //////////////////
-        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],
-        //////////////////
-        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
-    },
+    
     
     
     {
@@ -158,24 +160,6 @@ var ProjectList = [
         imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
 
-
-
-    {   
-        title: 'Consumer Impact of WA Carbon Tax',
-        id: 'carbon-tax-impact',
-        client: 'Student Project',
-        categories: ['maps', 'graphic-design'],
-        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
-        date: '2020',
-        thumbnail:'design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_thumbnail.jpg',
-        //////////////////
-        markdown: 'markdown/carbonTaxImpact.md',
-        description: 'This project modeled the distributional impact of a carbon tax on Washington State consumers. I used spending patterns associated with a range of demographics to model how a price on carbon would impact different communities across the state.',
-        //////////////////
-        image: ['design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_medium.jpg'],
-        //////////////////
-        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
-    },
     
 
     {   
@@ -353,6 +337,23 @@ var ProjectList = [
         image: ['design-portfolio/The-Nature-Conservancy/TNC_Infographic-poster-mockup2.jpg','design-portfolio/The-Nature-Conservancy/Market-Analysis-Report.jpg'],
         //////////////////
         imageSubtext: ['', '','','','','','','','', '','','','','','','','','','','']
+    },
+
+    {
+        title: 'Tour Booklet',
+        id: 'tourBooklet',
+        client: 'Walla Walla CD',
+        categories: ['print', 'graphic-design'],
+        related: ['wwccdLogo', 'wwccdWebsite', 'conservationVideos', 'infographic', 'precisionRestoration'],
+        date: '2019',
+        thumbnail:'design-portfolio/WWCCD/tour-booklet/cover2_thumbnail.jpg',
+        //////////////////
+        markdown: 'markdown/tourBooklet.md',
+        description: "The Tour booklet was printed and distributed to various state lawmakers, local press, and participating landowners at the Walla Walla County Conservation District’s bi-annual tour. This 22 page booklet served as a schedule and guide for that event, showcasing the organization’s recent conservation projects. The cover design references the organization’s new logo. The logo\’s woven motif is expanded and abstracted to illustrate the rolling wheat fields of Walla Walla County.",
+        //////////////////
+        image: ['design-portfolio/WWCCD/tour-booklet/cover2.jpg','design-portfolio/WWCCD/tour-booklet/cover5_thumbnail.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/8.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/2.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/10.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/12.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/22.jpg','design-portfolio/WWCCD/tour-booklet/screenshots/24.jpg'],
+        //////////////////
+        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
     },
     
     
