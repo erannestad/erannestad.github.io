@@ -38,7 +38,7 @@ var ProjectList = [
     },
 
     {   
-        title: 'Consumer Impact of WA Carbon Tax',
+        title: 'Spatial Impact of Carbon Tax on Washington Consumers',
         id: 'carbon-tax-impact',
         client: 'Student Project',
         categories: ['maps', 'graphic-design'],
@@ -51,7 +51,7 @@ var ProjectList = [
         //////////////////
         image: ['design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_medium.jpg'],
         //////////////////
-        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+        imageSubtext: ['<a src="design-portfolio/carbon-tax-impact/Big-Map_2023_18x12_medium.jpg" target="_blank"></a>View Full Image', '','','','','','','','','','','','','','','','','']
     },
 
     {
@@ -153,11 +153,11 @@ var ProjectList = [
         thumbnail:'design-portfolio/VOTB/VOTB_full-map_thumbnail.jpg',
         //////////////////
         markdown: 'markdown/VOTB.md',
-        description: '<i>Voices of the Blues</i> is a multimedia webmapping project commissioned by <em>My Blue Mountains Woodland</em> and <em>Wallowa Resources</em>. Voices of the Blues maps the various narratives of forest landowners across the Blue Mountains in Northeast Oregon. The collaborative mapping project assembles the diverse voices engaged with forestry in Northeast Oregon. These stories from landowners, foresters, and public/private partnerships offer a landscape-scale view of forestry in the region.<br><br><em>Voices of the Blues</em> intends to offer resources and advice for people who are looking to manage their own land and join this network of collaboration<br><br><a href="https://experience.arcgis.com/experience/eb26ef8dbfd24823b0da88f5350c596a/" target="_blank">Voices of the Blues</a>',
+        description: "<i>Voices of the Blues</i> is a multimedia webmapping project commissioned by <em>My Blue Mountains Woodland</em> and <em>Wallowa Resources</em>. Voices of the Blues maps the various narratives of forest landowners across the Blue Mountains in Northeast Oregon. The collaborative mapping project assembles the diverse voices engaged with forestry in Northeast Oregon. These stories from landowners, foresters, and public/private partnerships offer a landscape-scale view of forestry in the region.<br><br><em>Voices of the Blues</em> intends to offer resources and advice for people who are looking to manage their own land and join this network of collaboration<br><br><a href='https://www.mybluemountainswoodland.org/stories' target='_blank'>Voices of the Blues</a> <div class='resp-container'><iframe class='resp-iframe' src='https://www.youtube.com/embed/HFyfSJ3CJV8?si=8A52FWvmF76w0z7W?autoplay=1' fullscreen' allowfullscreen=''></iframe></div>",
         //////////////////
         image: ['design-portfolio/VOTB/VOTB_full-map.jpg','design-portfolio/VOTB/VOTB_story-map_lighter-background.jpg', 'design-portfolio/VOTB/VOTB_splash-screen_lighter-background.jpg'],
         //////////////////
-        imageSubtext: ['', '','','','','','','','','','','','','','','','','']
+        imageSubtext: ["", '','','','','','','','','','','','','','','','','']
     },
 
     

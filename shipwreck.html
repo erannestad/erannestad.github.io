@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruleset Painting Tool</title>
+            <!-- meta tags -->
+            <div>
+                <meta name="about" content="Eric Rannestad (b. 1996 - Chester, Connecticut) is a Montana-based artist making work about the systems and technology that humans use to compartmentalize, measure, and model the natural world. The current work speculates on the infrastructure of the built environment through sculpture, painting, and digital media. References to atmosphere, biodomes, market systems, mapping and modeling suggest that our natural and built worlds are intertwined in a precarious system of control.
+
+                Eric received his BA in Studio Art and BA in Economics from Whitman College. He has attended fellowships and residencies at Centrum, Sitka Center for Art and Ecology, the Vermont Studio Center, North Cascades Institute, New York Arts Practicum, and Shell House Arts. Eric completed a certificate in GIS + Design from the Pratt Institute. Eric works across the cartographic and graphic/web design space. His ongoing work in these areas are an important influence in his art practice.
+                ">
+                <meta name="keywords" content="Eric Rannestad, Environmental Art, Environmental Art, Art and Technology, Subjective Mapping, Whitman College, New Contemporaries">
+                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="author" content="Eric Rannestad">
+            </div>
+        <!-- meta tags -->
+    
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-122918514-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+    
+        <link href="layout.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="mobile-menu.js"></script>
+        <meta name="google-site-verification" content="9C4bRPPu4BLuUTCJN37Bf55NKq8vgVlwFvdEZ6YcVsY" />
+        <meta charset="utf-8">
+
+        <!-- LOAD JQUERY-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        </script>
+        <!-- LOAD JQUERY-->
+    
+         <!-- TOGGLE FUNCTION -->
+        <script src="dropdown.js"></script>
+        <!-- TOGGLE FUNCTION -->
+</head>
+
+<body>
+    
+  <div id="row" class="row">
+        
+<!-- MENU-->
+    <div class="container" onclick="myFunction(this); openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <div id="Menu" class="column-left">
+         <!-- JS MENU HERE -->
+    </div>
+
+    <!-- ** CONTENT ** -->
+    <div class="main-content-container">
+        <section class="flex-columns">
+            <div class="col-right">
+                <div class="">
+                    <p><b>Ruleset Painting</b><br>
+                    2023</p>
+                </div>
+                <div class="text-toggle content toggle-container">
+                        <a onclick="dropdown(this, 'dropdown-text', '+ show statement', '- hide statement');" class="show">+ show statement</a></br>
+                        <a href="http://erannestad.com/shipwreck/map/index.php" target="_blank"><span style="font-size: 8px; line-height: 14px;">↗</span> website</a>
+                    </div>
+                    <hr>    
+                </div>
+            
+            <div class="col-left">
+                <div class="description-text dropdown-text toggleHide"> 
+                    <p>
+                        The project takes the form of a webmap that pieces together satellite imagery, vector data, html canvas tiles, and user-submitted text into fragmented and scrollable layers.
+                    </p> 
+                </div>
+        </section>  
+        <section class="flex-columns caption collapse-secondary">            
+            <div class="col-right">
+                <div class="">
+                    <p><b>Shipwreck</b></br>
+                    <a href="http://ericrannestad.com/shipwreck/" target="_blank">http://erannestad.com/shipwreck/map/index.php <span style="font-size: 8px; line-height: 14px;">↗</span></a></br>
+                    Web Application</br>    
+                    2023</p>
+                </div>
+            </div>
+            <div class="col-left">
+                <div style="padding-top: 66.67% !important;" class="iframe-container"><iframe src="https://www.youtube.com/embed/43PUh1tgRP8?si=aPXndqA3C3pjeWbr&autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe> </div>
+            </div>
+        </section>  
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

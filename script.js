@@ -31,9 +31,8 @@ var menu = Object.assign(
 
                <li class="subtext menu-category">DIGITAL MEDIA</li>
                <li><a href="ruleset-painting.html">Ruleset Painting Tool</a></li>
+               <li><a href="shipwreck.html">Shipwreck</a></li>
                <!-- <li><a href="Mapping-The-Firmament.html">Mapping the Firmament</a></li> -->
-               <li><a href="http://erannestad.com/shipwreck/map/index.php" target="_blank">Shipwreck</a></li>
-               <li>
                <!-- <li><a href="field-notes.html">Field Notes</a></li>  -->
                
                <br>
