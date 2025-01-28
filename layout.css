@@ -70,6 +70,28 @@ body {
     text-align: justify
 }
 
+.two-col-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.two-col-container {
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Ensures content wraps if needed */
+    gap: 16px; /* Optional: Adds space between columns */
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+.two-col-container img {
+    flex: 1; /* Each column takes up equal space */
+    width: calc(50% - 8px); /* 50% of parent width minus half the gap */
+    /* min-width: 200px; Ensures columns don’t shrink too much */
+    box-sizing: border-box; /* Includes padding and border in width/height */
+}
+
 
 /******************************************************/
 /********************** Show Hide *********************/
