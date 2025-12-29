@@ -16,6 +16,7 @@ var menu = Object.assign(
                <br>
                
                <li class="subtext menu-category">SCULPTURE</li>
+               <li><a href="tailings.html">Tailings</a></li>
                <li><a href="truss.html">Truss</a></li>
                <li><a href="Arch.html">Firmament Arch</a></li>
                <li><a href="Where-the-Rain-Seeps-Through.html">Builtscape</a></li>
@@ -23,8 +24,8 @@ var menu = Object.assign(
                <br>
                
                <li class="subtext menu-category">PAINTING</li>
+               <li><a href="2025-2026.html">2025 - 2026</a></li>
                <li><a href="plotsgridsmodels.html">Plots, Grids, Models</a></li>
-               <li><a href="Market-Box.html">Market Box</a></li>
                <!-- <li><a href="Firmament.html">Firmament</a></li> -->
                <!-- <li><a href="Great-Deep.html">The Great Deep</a></li> -->
                <br>
