@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shipwreck — fullscreen</title>
+    <link rel="stylesheet" href="leaflet.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+        wrapper {
+            display: block;
+            padding: 0;
+            gap: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .map-wrapper {
+            width: 100vw;
+            height: 100vh;
+        }
+        #map {
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+        .controls-wrapper,
+        .map-bottom {
+            display: none !important;
+        }
+        #esc-hint {
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            z-index: 1000;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10px;
+            color: var(--grey-1, #a0a0a0);
+            background: rgba(0, 0, 0, 0.35);
+            padding: 4px 8px;
+            border-radius: 3px;
+            pointer-events: none;
+            opacity: 0.7;
+            transition: opacity 1s ease;
+        }
+        #esc-hint.fade {
+            opacity: 0;
+        }
+    </style>
+
+    <script src="perlin.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="leaflet-src.js"></script>
+    <script src="unchopping-a-tree.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>console.log('test')</script>
+
+    <!-- Static replacement for userInput.php (no database in static build) -->
+    <script>
+        var userInput = [];
+        var tree2 = Array(270).fill(' ');
+        var finalArray = tree2.concat(userInput);
+        console.log(finalArray);
+    </script>
+
+    <wrapper>
+        <div class="map-wrapper">
+            <div id="map"></div>
+            <div class="map-bottom">
+                <div class="coords-container">
+                    <p id="latContainer"></p>
+                    <p id="longContainer"></p>
+                </div>
+                <div class="meta-container">
+                    <p id="title"><i>Shipwreck</i>, 2022<br>
+                        <a href="https://ericrannestad.com/" target="_blank">Eric Rannestad</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="controls-wrapper">
+            <div id="custom-map-controls">
+                <div id='zoom-container'></div><br>
+            </div>
+            <div class="right-controls">
+                <button id="new-path">new location</button>
+                <div id="text-controls">
+                    <button class="text" id="toggle-text-button">text</button>
+                    <div class="toggle-container" id="toggle-text-container">
+                        <p class="text">words from...
+                            <a href="https://designobserver.com/feature/unchopping-a-tree/7857" class="text" id='unchopping-a-tree'><i>Unchopping A Tree</i>, M.S. Merwin </a>
+                        </p>
+                    </div>
+                </div>
+                <div id="option-controls">
+                    <button class="text" id="toggle-options-button">options</button>
+                    <div class="toggle-container" id="toggle-options-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </wrapper>
+
+    <div id="esc-hint">press esc to exit</div>
+
+    <script>
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' || e.keyCode === 27) {
+                window.location.href = 'index.html';
+            }
+        });
+
+        setTimeout(function () {
+            var hint = document.getElementById('esc-hint');
+            if (hint) hint.classList.add('fade');
+        }, 4000);
+    </script>
+
+</body>
+
+<script>
+
+var options = {
+    "mapOptions": {
+        "pan": false,
+        "mapCenter": {
+            "x": 78,
+            "y": -162.90
+        }
+    },
+    "uiSettings": {
+        "hideControls": true
+    }
+}
+
+const s = p => {
+
+        // initialize the map
+            var map = L.map('map', {
+                center: [78, -162.90],
+                zoom: 8,
+                zoomControl: false
+            });
+
+            var center = map.getCenter();
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            };
+            function newPath() {
+                // console.log('newPath')
+                var randomLat = getRandomInt(30, 82);
+                var randomLng = getRandomInt(-180, 0);
+                map.setZoom(8);
+                map.panTo([randomLat, randomLng]);
+            };
+            var newPathButton = document.querySelector('#new-path');
+            newPathButton.addEventListener('click', newPath);
+
+            function toggleDropdown(buttonElem, targetElem) {
+                console.log(targetElem.classList)
+                if (targetElem.classList.contains('show')) {
+                    targetElem.classList.remove('show')
+                } else {
+                    targetElem.classList.add('show')
+                }
+                console.log(targetElem);
+                if (buttonElem.classList.contains('expanded')){
+                    buttonElem.classList.remove('expanded')
+                } else {
+                    buttonElem.classList.add('expanded')
+                }
+            };
+            var toggleTextButton = document.querySelector('#toggle-text-button');
+            var textToggleContainer = document.querySelector('#toggle-text-container')
+            toggleTextButton.addEventListener('click', function() {
+                toggleDropdown(toggleTextButton, textToggleContainer)
+            });
+            var toggleOptionsButton = document.querySelector('#toggle-options-button');
+            var optionsToggleContainer = document.querySelector('#toggle-options-container')
+            toggleOptionsButton.addEventListener('click', function() {
+                toggleDropdown(toggleOptionsButton, optionsToggleContainer)
+            });
+
+
+            function updateUI() {
+                    var controlsWrapper = document.querySelector('.controls-wrapper');
+                    var mapBottom = document.querySelector('.map-bottom');
+
+                    function showhideControls() {
+                        controlsArray = [
+                            controlsWrapper,
+                            mapBottom
+                        ]
+                            for (i=0; i < controlsArray.length; i++) {
+                                if (options.uiSettings.hideControls == true || options.uiSettings.hideControls == 'true') {
+                                    controlsArray[i].classList.add('hideUI');
+                                } else {
+                                    controlsArray[i].classList.remove('hideUI');
+                                }
+                            }
+                    }
+                    showhideControls();
+            }
+
+
+            optionsToggleContainer.innerHTML = `
+                <form id="options-form" name="options" onsubmit=" updateOptionsObj()">
+                    <div class="row">
+                        <label for="pan-selection">pan map:</label>
+                        <select id="pan-selection">
+                            <option selected value="true">on</option>
+                            <option value="false">off</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="hide-controls-selection">hide controls:</label>
+                        <select id="hide-controls-selection">
+                            <option value="false">show</option>
+                            <option selected value="true">hide</option>
+                        </select>
+                    </div>
+                </form>`
+
+            form = document.querySelector('#options-form')
+
+            form.querySelector('#pan-selection').addEventListener("change", function(event) { updateOptionsObj(); });
+            form.querySelector('#hide-controls-selection').addEventListener("change", function(event) { updateOptionsObj(); });
+
+            function updateOptionsObj() {
+                options.mapOptions.pan = form.querySelector('#pan-selection').value;
+                options.uiSettings.hideControls = form.querySelector('#hide-controls-selection').value;
+
+                console.log(options)
+                updateUI();
+            }
+            updateOptionsObj();
+
+
+
+            // Random Int Utility
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+             ////////// tile url of 1st tile     http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}
+             ////////// tile url of 1st tile     src="http://mt0.google.com/vt/lyrs=s&x=4956&y=6060&z=14"
+             ///UPDATED tile url of 1st tile     a.google.com/vt/lyrs=s&x=4956&y=6060&z=13:1
+             ///UPDATED tile url of 1st tile     c.google.com/vt/lyrs=s&x=2478&y=3029&z=13:1
+
+
+
+                L.TileLayer.NewURL = L.TileLayer.extend({
+                getTileUrl: function(coords) {
+
+                    // console.log(`cords1: ${coords.x},  ${coords.y}` )
+
+                    function getRandomInt(min, max) {
+                        min = Math.ceil(min);
+                        max = Math.floor(max);
+                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                    }
+
+                    var i = getRandomInt(0, 1);
+                    var j = getRandomInt(0, 0);
+
+                    // increment our x/y coords by 1 so they match our tile naming scheme
+                    coords.x = coords.x + i;
+                    coords.y = coords.y + j;
+
+                    // globalcoords.x = coords.x;
+                    // globalcoords.y = coords.y;
+
+                    var randomBitsNoise = getRandomInt(0,100)
+                    // console.log(randomBitsNoise)
+                    if (randomBitsNoise < 4) {
+                        coords.x = coords.x + getRandomInt(0, 50);
+                        coords.y = coords.y + getRandomInt(0, 50);
+                    }
+
+                    // pass the new coords on through the original getTileUrl
+                    // see http://leafletjs.com/examples/extending/extending-1-classes.html
+                    // for calling parent methods
+                    return L.TileLayer.prototype.getTileUrl.call(this, coords);
+                }
+            });
+
+            //// static factory as recommended by http://leafletjs.com/reference-1.0.3.html#class
+            L.tileLayer.NewURL = function(templateUrl, options) {
+                return new L.TileLayer.NewURL(templateUrl, options);
+            }
+
+
+
+            L.TileLayer.NewURL2 = L.TileLayer.extend({
+
+                getTileUrl2: function(coords) {
+
+                    // console.log(`cords2: ${coords.x}, ${coords.y}` )
+
+                    var initRand = getRandomInt(0, 3);
+                    var i = getRandomInt(0, 3);
+                    var j = getRandomInt(0, 2);
+
+                    if (initRand < 1) {
+                        coords.x = coords.x + i;
+                        coords.y = coords.y + j;
+                    }
+
+
+                    var randomBitsNoise = getRandomInt(0,100)
+                    // console.log(randomBitsNoise)
+                    if (randomBitsNoise < 2) {
+                        coords.x = coords.x + getRandomInt(0, 6);
+                        coords.y = coords.y + getRandomInt(0, 6);
+                    }
+
+                    // pass the new coords on through the original getTileUrl
+                    // see http://leafletjs.com/examples/extending/extending-1-classes.html
+                    // for calling parent methods
+                    return L.TileLayer.prototype.getTileUrl2.call(this, coords);
+                }
+            });
+
+            //// static factory as recommended by http://leafletjs.com/reference-1.0.3.html#class
+            L.tileLayer.NewURL2 = function(templateUrl, options) {
+                return new L.TileLayer.NewURL(templateUrl, options);
+            }
+
+
+
+            // create the layer
+            var bottomTiles = L.tileLayer.NewURL('http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&tilesize={tileSize}', {
+                tms: false,
+                detectRetina: true,
+                continuousWorld: 'true',
+                noWrap: true,
+                tileSize: 256, // adjust zoomOffset
+                zoomOffset: -1, // adjust when changing tile size
+                defaultRadius:1,
+            });
+
+            var setTileBlur = function(tileObj, threshold) {
+                tileObj.randomInt = getRandomInt(0,100);
+                tileObj.tile.dataset.randomInt = tileObj.randomInt
+                if (tileObj.randomInt > threshold) {
+
+                    // add 'blur' class
+                    tileObj.tile.classList.add('blur')
+
+                    // create wrapper container
+                    var wrapper = document.createElement('div');
+                    wrapper.className = 'tile-wrapper'
+                    // insert wrapper before el in the DOM tree
+                    tileObj.tile.parentNode.insertBefore(wrapper,  tileObj.tile);
+                    // move el into wrapper
+                    wrapper.appendChild(tileObj.tile);
+                }
+            }
+
+            bottomTiles.on('tileload', function (tileObj) {
+                setTileBlur(tileObj, 98);
+            });
+
+            bottomTiles.addTo(map);
+
+
+            ////////////////////////////
+            // Hide top layer's tiles //
+
+            // PERLIN NOISE SPACE
+            // var noiseSpace = 100;
+            function generateNoise(x,y) {
+                noiseVal = p.noise(x, y)
+                // console.log(noiseVal)
+                return noiseVal
+            }
+
+            var setTileVisibility = function(tileObj, threshold) {
+                tileObj.tile.dataset.tileNoiseValue = generateNoise(tileObj.tile._leaflet_pos.x/700, tileObj.tile._leaflet_pos.y/500)
+                if (tileObj.tile.dataset.tileNoiseValue > threshold) {
+                    tileObj.tile.classList.add('above-threshold')
+                    tileObj.tile.classList.remove('below-threshold')
+                } else {
+                    tileObj.tile.classList.remove('above-threshold')
+                    tileObj.tile.classList.add('below-threshold')
+                }
+                // console.log(tileObj)
+            }
+
+
+            // create the layer and add it to the map
+            var middleTiles = L.tileLayer.NewURL2('http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&tilesize={tileSize}', {
+                tms: false,
+                detectRetina: true,
+                continuousWorld: 'true',
+                noWrap: true,
+                tileSize: 128/2, // adjust zoomOffset
+                zoomOffset: 1, // adjust when changing tile size
+                defaultRadius:1,
+            })
+            middleTiles.on('tileload', function (tileObj) {
+                setTileVisibility(tileObj, .5);
+            });
+            middleTiles.addTo(map);
+
+
+            var mapboxTiles = L.tileLayer.NewURL2(
+            'https://api.mapbox.com/styles/v1/erannestad/clqbuzzbz007d01ql3dx2bnhl/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZXJhbm5lc3RhZCIsImEiOiJjamp4dHp3N2ExaHp1M3FycnJsamZ4cGpuIn0.Z3DvBItGT21xpbhnIbJLBg', {
+                tms: false,
+                detectRetina: true,
+                continuousWorld: 'true',
+                noWrap: true,
+                tileSize: 256*2,
+                zoomOffset: -2,
+                defaultRadius:1,
+            });
+            mapboxTiles.addTo(map);
+
+            // // create the layer and add it to the map
+            // var topTiles = L.tileLayer.NewURL('http://mt0.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&tilesize={tileSize}', {
+            //     tms: false,
+            //     detectRetina: true,
+            //     continuousWorld: 'true',
+            //     noWrap: true,
+            //     tileSize: 256, // adjust zoomOffset
+            //     zoomOffset: -1, // adjust when changing tile size
+            //     defaultRadius:1,
+            // })
+
+            // topTiles.on('tileload', function (tileObj) {
+            //     setTileVisibility(tileObj, .6);
+            // });
+            // topTiles.addTo(map);
+
+
+            setInterval(function(){
+
+
+
+                center = map.getCenter();
+                var latString = center.lat.toString(); //convert lat to string
+                var latTRIM = latString.substring(0,9)  // cut six first character
+                var lngString = center.lng.toString(); //convert lat to string
+                var lngTRIM = lngString.substring(0,9)  // cut six first character
+                var latTRIMint = parseInt(latTRIM); // convert it to a number
+                var lngTRIMint = parseInt(latTRIM); // convert it to a number
+                latContainer.innerHTML = "latitude: " + latTRIM + "<br>longitude: " + lngTRIM;
+
+                if (options.mapOptions.pan == false || options.mapOptions.pan == "false" ) {
+                        return; // turn off
+                        map.panBy([0, 0], {
+                            animate: false,
+                            duration: 1
+                        });
+
+                    }
+
+                map.panBy([50, 50], {
+                    animate: true,
+                    duration: 5});
+            //        console.log(panX + ' ' + panY)
+
+
+                if (center.lat < 0) {
+                    map.panTo([90, -128]);
+                };
+            }, 1000);
+
+
+            // update tiles
+
+            var timeElapsed = 0
+
+            setInterval(function() {
+
+                var tileContainerArray = document.querySelector('.leaflet-tile-pane > div:nth-child(2) .leaflet-tile-container').children;
+
+                for (i = 0 ; i < tileContainerArray.length; i++) {
+                     tileContainerArray
+
+                     if (timeElapsed < 10) {
+                        tileContainerArray[i].dataset.tileNoiseValue = tileContainerArray[i].dataset.tileNoiseValue - .003
+                    } else {
+                        timeElapsed = 0
+                        tileContainerArray[i].dataset.tileNoiseValue = tileContainerArray[i].dataset.tileNoiseValue + .003
+                    }
+
+
+                   if (tileContainerArray[i].dataset.tileNoiseValue > .5) {
+                        tileContainerArray[i].classList.add('above-threshold')
+                        tileContainerArray[i].classList.remove('below-threshold')
+                    } else {
+                        tileContainerArray[i].classList.remove('above-threshold')
+                        tileContainerArray[i].classList.add('below-threshold')
+                    }
+                }
+
+                timeElapsed = 0 + 1
+
+            }, 1000 )
+
+            ////////////////////////////
+
+            ////////////////////////////
+
+            var tiles = new L.GridLayer();
+            tiles.createTile = function(coords) {
+              var tile = L.DomUtil.create('canvas', 'leaflet-tile');
+              var ctx = tile.getContext('2d');
+              var size = this.getTileSize()
+              tile.width = size.x
+              tile.height = size.y
+
+              // calculate projection coordinates of top left tile pixel
+              var nwPoint = coords.scaleBy(size)
+
+              // calculate geographic coordinates of top left tile pixel
+              var nw = map.unproject(nwPoint, coords.z)
+
+                    var a = getRandomInt(0, 256);
+                    var b = getRandomInt(0, 256);
+                    var c = getRandomInt(0, 256);
+                    var d = getRandomInt(0, 256);
+                    var e = getRandomInt(0, 300);
+
+                      ctx.strokeStyle = 'white';
+                      ctx.beginPath();
+                      ctx.moveTo(a, b);
+                      ctx.lineTo(c, d);
+                //          ctx.lineTo(size.x, size.y);
+                //          ctx.lineTo(0, size.y);
+                      ctx.closePath();
+                      ctx.stroke();
+
+                      ////////////////////////
+
+                      ctx.font = 'normal 10px Roboto Mono';
+                      ctx.fillStyle = 'white';
+                      ctx.fillText(finalArray[e], 5, a);
+
+              return tile;
+            }
+
+            tiles.addTo(map);
+
+            ////////////////////////////////////////////
+            ////////////////////////////////////////////
+
+            var mapbuttons_div = L.DomUtil.create('div', 'mapbuttons leaflet-bar leaflet-control');
+            var newParent = document.getElementById('zoom-container');
+            var zoom = L.control.zoom(
+                {
+                    position: 'topleft'
+                 }
+            );
+            zoom.addTo(map);
+            newParent.appendChild(zoom.getContainer()); // works
+
+
+            var latContainer = document.getElementById('latContainer');
+            var longContainer = document.getElementById('longContainer');
+
+            //    var lat = coord.lat;
+            //    var lng = coord.lng;
+
+            ///////////////////////////////////////////
+
+
+
+    }
+
+    new p5(s); // invoke p5
+
+    </script>
+
+
+</html>

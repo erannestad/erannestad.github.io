@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipwreck — autoencoder</title>
+
+    <link rel="stylesheet" href="leaflet.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --grey-1: #a0a0a0;
+            --grey-2: gainsboro;
+            --blue-1: #182758;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10px;
+            color: var(--grey-1);
+        }
+        #map {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+        }
+        .leaflet-tile {
+            image-rendering: auto;
+        }
+        #hud {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 6px 10px;
+            border-radius: 3px;
+            white-space: pre;
+            line-height: 1.5;
+            pointer-events: none;
+        }
+        #esc-hint {
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 4px 8px;
+            border-radius: 3px;
+            opacity: 0.7;
+            transition: opacity 1s ease;
+            pointer-events: none;
+        }
+        #esc-hint.fade { opacity: 0; }
+
+        .leaflet-control-zoom {
+            margin: 12px !important;
+        }
+        .leaflet-control-attribution { display: none; }
+    </style>
+
+    <script src="leaflet-src.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="hud">initializing model…</div>
+    <div id="esc-hint">esc: exit · o: overlay raw tiles · s: switch source · drag/scroll to explore</div>
+
+    <script>
+    (async function () {
+        const INPUT_SIZE = 64;
+        const LATENT_DIM = 32;
+        const TRAIN_INTERVAL_MS = 1500;
+        const REFRESH_INTERVAL_MS = 3000;
+        const BATCH_SIZE = 8;
+        const BUFFER_LIMIT = 80;
+
+        const MAPBOX_TOKEN = 'pk.eyJ1IjoiZXJhbm5lc3RhZCIsImEiOiJjamp4dHp3N2ExaHp1M3FycnJsamZ4cGpuIn0.Z3DvBItGT21xpbhnIbJLBg';
+
+        const TILE_SOURCES = {
+            esri: {
+                name: 'esri world imagery (satellite)',
+                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                tileSize: 256,
+                maxNativeZoom: 19,
+            },
+            mapbox_satellite: {
+                name: 'mapbox satellite',
+                url: 'https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x.jpg90?access_token=' + MAPBOX_TOKEN,
+                tileSize: 512,
+                maxNativeZoom: 19,
+            },
+            mapbox_custom: {
+                name: 'shipwreck custom mapbox style (mostly transparent)',
+                url: 'https://api.mapbox.com/styles/v1/erannestad/clqbuzzbz007d01ql3dx2bnhl/tiles/256/{z}/{x}/{y}@2x?access_token=' + MAPBOX_TOKEN,
+                tileSize: 512,
+                maxNativeZoom: 18,
+            },
+        };
+        const SOURCE_ORDER = ['esri', 'mapbox_satellite', 'mapbox_custom'];
+        let currentSourceKey = 'esri';
+        let overlayVisible = false;
+        let lastErrorReason = null;
+        let lastPixelMean = NaN;
+
+        const hud = document.getElementById('hud');
+        let totalSteps = 0;
+        let lastLoss = NaN;
+        let renderCount = 0;
+        const tileBuffer = new Map();
+
+        function updateHud(extra) {
+            const srcLabel = TILE_SOURCES[currentSourceKey].name;
+            const overlayLabel = overlayVisible ? 'ON' : 'off';
+            const errLine = lastErrorReason
+                ? `\nlast error      : ${lastErrorReason.slice(0, 80)}` : '';
+            hud.textContent =
+                `source [s]      : ${srcLabel}\n` +
+                `raw overlay [o] : ${overlayLabel}\n` +
+                `tiles in buffer : ${tileBuffer.size}\n` +
+                `train steps     : ${totalSteps}\n` +
+                `last loss       : ${isFinite(lastLoss) ? lastLoss.toFixed(5) : '—'}\n` +
+                `batch pixel avg : ${isFinite(lastPixelMean) ? lastPixelMean.toFixed(4) : '—'}\n` +
+                `renders         : ${renderCount}` +
+                errLine +
+                (extra ? `\n${extra}` : '');
+        }
+        updateHud();
+
+        await tf.ready();
+        try { await tf.setBackend('webgl'); } catch (_) { /* fall back */ }
+
+        const model = (function buildAutoencoder() {
+            const input = tf.input({ shape: [INPUT_SIZE, INPUT_SIZE, 3] });
+
+            let x = tf.layers.conv2d({ filters: 16, kernelSize: 3, strides: 2, padding: 'same', activation: 'relu' }).apply(input);
+            x = tf.layers.conv2d({ filters: 32, kernelSize: 3, strides: 2, padding: 'same', activation: 'relu' }).apply(x);
+            x = tf.layers.conv2d({ filters: 64, kernelSize: 3, strides: 2, padding: 'same', activation: 'relu' }).apply(x);
+            x = tf.layers.flatten().apply(x);
+            const latent = tf.layers.dense({ units: LATENT_DIM, activation: 'relu', name: 'latent' }).apply(x);
+
+            x = tf.layers.dense({ units: 8 * 8 * 64, activation: 'relu' }).apply(latent);
+            x = tf.layers.reshape({ targetShape: [8, 8, 64] }).apply(x);
+            x = tf.layers.upSampling2d({ size: [2, 2] }).apply(x);
+            x = tf.layers.conv2d({ filters: 32, kernelSize: 3, padding: 'same', activation: 'relu' }).apply(x);
+            x = tf.layers.upSampling2d({ size: [2, 2] }).apply(x);
+            x = tf.layers.conv2d({ filters: 16, kernelSize: 3, padding: 'same', activation: 'relu' }).apply(x);
+            x = tf.layers.upSampling2d({ size: [2, 2] }).apply(x);
+            const out = tf.layers.conv2d({ filters: 3, kernelSize: 3, padding: 'same', activation: 'sigmoid' }).apply(x);
+
+            const m = tf.model({ inputs: input, outputs: out });
+            m.compile({ optimizer: tf.train.adam(0.002), loss: 'meanSquaredError' });
+            return m;
+        })();
+
+        const map = L.map('map', {
+            center: [78, -162.90],
+            zoom: 6,
+            zoomControl: true,
+            preferCanvas: true,
+            attributionControl: false,
+        });
+
+        function coordKey(c) { return `${c.z}/${c.x}/${c.y}`; }
+
+        function imageToInputTensor(img) {
+            const c = document.createElement('canvas');
+            c.width = INPUT_SIZE;
+            c.height = INPUT_SIZE;
+            c.getContext('2d').drawImage(img, 0, 0, INPUT_SIZE, INPUT_SIZE);
+            return tf.tidy(() =>
+                tf.browser.fromPixels(c).toFloat().div(255)
+            );
+        }
+
+        async function renderReconstruction(entry) {
+            const { canvas, img, tileSize } = entry;
+            if (!img.complete || img.naturalWidth === 0) return;
+
+            const reconTensor = tf.tidy(() => {
+                const x = imageToInputTensor(img).expandDims(0);
+                const y = model.predict(x);
+                return y.squeeze(0).clipByValue(0, 1);
+            });
+
+            const small = document.createElement('canvas');
+            small.width = INPUT_SIZE;
+            small.height = INPUT_SIZE;
+            try {
+                await tf.browser.toPixels(reconTensor, small);
+            } finally {
+                reconTensor.dispose();
+            }
+
+            const ctx = canvas.getContext('2d');
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(small, 0, 0, canvas.width, canvas.height);
+
+            renderCount++;
+        }
+
+        function fillError(canvas, label) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#3a0a0a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#ff8080';
+            ctx.font = '10px monospace';
+            ctx.fillText(label, 6, 14);
+        }
+
+        const AETileLayer = L.GridLayer.extend({
+            createTile: function (coords, done) {
+                const tileSize = this.getTileSize();
+                const canvas = L.DomUtil.create('canvas', 'leaflet-tile');
+                canvas.width = tileSize.x;
+                canvas.height = tileSize.y;
+
+                const src = TILE_SOURCES[currentSourceKey];
+                const baseUrl = L.Util.template(src.url, {
+                    x: coords.x,
+                    y: coords.y,
+                    z: coords.z,
+                });
+                const url = baseUrl + (baseUrl.indexOf('?') >= 0 ? '&' : '?') + 'aecache=1';
+
+                const img = new Image();
+                img.crossOrigin = 'anonymous';
+
+                const key = coordKey(coords);
+                const entry = { canvas, img, tileSize, key };
+
+                img.onload = async () => {
+                    if (tileBuffer.size >= BUFFER_LIMIT) {
+                        const oldestKey = tileBuffer.keys().next().value;
+                        tileBuffer.delete(oldestKey);
+                    }
+                    tileBuffer.set(key, entry);
+
+                    try {
+                        await renderReconstruction(entry);
+                    } catch (err) {
+                        lastErrorReason = String(err && err.message || err);
+                        fillError(canvas, 'cors/read err');
+                        console.warn('tile render error', err);
+                    }
+                    updateHud();
+                    done(null, canvas);
+                };
+
+                img.onerror = () => {
+                    lastErrorReason = 'image failed to load';
+                    fillError(canvas, 'load err');
+                    done(null, canvas);
+                };
+
+                img.src = url;
+
+                return canvas;
+            },
+        });
+
+        let aeLayer = null;
+        let overlayLayer = null;
+
+        function buildAELayer() {
+            const src = TILE_SOURCES[currentSourceKey];
+            return new AETileLayer({
+                tileSize: src.tileSize,
+                maxNativeZoom: src.maxNativeZoom,
+                noWrap: true,
+                keepBuffer: 4,
+            });
+        }
+
+        function buildOverlayLayer() {
+            const src = TILE_SOURCES[currentSourceKey];
+            return L.tileLayer(src.url, {
+                tileSize: src.tileSize,
+                maxNativeZoom: src.maxNativeZoom,
+                noWrap: true,
+                opacity: 1.0,
+                zIndex: 500,
+                crossOrigin: false,
+            });
+        }
+
+        function rebuildLayers() {
+            if (aeLayer) {
+                aeLayer.off('tileunload');
+                map.removeLayer(aeLayer);
+            }
+            if (overlayLayer) map.removeLayer(overlayLayer);
+            tileBuffer.clear();
+
+            aeLayer = buildAELayer();
+            aeLayer.on('tileunload', (e) => {
+                const c = e.coords;
+                if (c) tileBuffer.delete(coordKey(c));
+            });
+            aeLayer.addTo(map);
+
+            if (overlayVisible) {
+                overlayLayer = buildOverlayLayer();
+                overlayLayer.addTo(map);
+            }
+            updateHud();
+        }
+
+        rebuildLayers();
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' || e.keyCode === 27) {
+                window.location.href = 'index.html';
+                return;
+            }
+            if (e.key === 'o' || e.key === 'O') {
+                overlayVisible = !overlayVisible;
+                if (overlayVisible) {
+                    overlayLayer = buildOverlayLayer();
+                    overlayLayer.addTo(map);
+                } else if (overlayLayer) {
+                    map.removeLayer(overlayLayer);
+                    overlayLayer = null;
+                }
+                updateHud();
+            }
+            if (e.key === 's' || e.key === 'S') {
+                const idx = SOURCE_ORDER.indexOf(currentSourceKey);
+                currentSourceKey = SOURCE_ORDER[(idx + 1) % SOURCE_ORDER.length];
+                rebuildLayers();
+            }
+        });
+        setTimeout(() => document.getElementById('esc-hint').classList.add('fade'), 6000);
+
+        async function trainStep() {
+            if (tileBuffer.size < 2) return;
+            const entries = Array.from(tileBuffer.values()).filter(e =>
+                e.img.complete && e.img.naturalWidth > 0
+            );
+            if (entries.length < 2) return;
+
+            const k = Math.min(BATCH_SIZE, entries.length);
+            const sample = [];
+            const used = new Set();
+            while (sample.length < k) {
+                const idx = Math.floor(Math.random() * entries.length);
+                if (used.has(idx)) continue;
+                used.add(idx);
+                sample.push(entries[idx]);
+            }
+
+            const xs = tf.tidy(() => tf.stack(sample.map(e => imageToInputTensor(e.img))));
+
+            lastPixelMean = xs.mean().dataSync()[0];
+            if (totalSteps < 3) {
+                console.log(`[ae] train step ${totalSteps}: batch pixel mean = ${lastPixelMean.toFixed(4)}, shape = ${xs.shape}`);
+            }
+
+            if (lastPixelMean === 0) {
+                console.warn('[ae] batch pixels are all zero — canvas is likely tainted (CORS). skipping.');
+                xs.dispose();
+                updateHud('⚠ pixels all zero');
+                return;
+            }
+
+            try {
+                const result = await model.trainOnBatch(xs, xs);
+                if (result instanceof tf.Tensor) {
+                    lastLoss = result.dataSync()[0];
+                    result.dispose();
+                } else {
+                    lastLoss = Array.isArray(result) ? result[0] : Number(result);
+                }
+                totalSteps++;
+                if (totalSteps <= 3) console.log(`[ae] loss = ${lastLoss}`);
+            } catch (err) {
+                console.warn('train step failed', err);
+            } finally {
+                xs.dispose();
+            }
+            updateHud();
+        }
+
+        async function refreshAllTiles() {
+            const entries = Array.from(tileBuffer.values());
+            for (const entry of entries) {
+                try { await renderReconstruction(entry); } catch (_) { /* ignore */ }
+            }
+            updateHud();
+        }
+
+        setInterval(trainStep, TRAIN_INTERVAL_MS);
+        setInterval(refreshAllTiles, REFRESH_INTERVAL_MS);
+    })();
+    </script>
+</body>
+</html>
