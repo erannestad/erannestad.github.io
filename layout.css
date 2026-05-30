@@ -104,6 +104,11 @@ body {
     display: none;
 }
 
+/* Add pre-expanded to dropdown-text to show description on page load */
+.dropdown-text.pre-expanded {
+    display: block;
+}
+
 
 /*************************************************/
 /********************** MENU *********************/

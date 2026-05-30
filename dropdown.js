@@ -5,12 +5,33 @@ $(document).ready(function(){
    $('.show-more').toggle();
    $('.show-less').toggle();
    });
+
+   initPreExpandedDescriptions();
 });
         
 $(window).load(function () {
     
     $('.load-me-later').load('/script');
 });
+
+
+function initPreExpandedDescriptions() {
+   var preExpanded = document.querySelectorAll('.dropdown-text.pre-expanded');
+   for (var i = 0; i < preExpanded.length; i++) {
+      preExpanded[i].classList.remove('toggleHide');
+      preExpanded[i].classList.add('toggleVisible');
+
+      var section = preExpanded[i].closest('section');
+      if (section) {
+         var toggleLink = section.querySelector('.text-toggle a');
+         if (toggleLink) {
+            toggleLink.innerHTML = '- hide statement';
+            toggleLink.classList.remove('show');
+            toggleLink.classList.add('hide');
+         }
+      }
+   }
+}
 
 
 function dropdown(controllerElement, classToToggle, showText, hideText) {
