@@ -109,6 +109,10 @@ body {
     display: block;
 }
 
+.dropdown-text.pre-expanded.toggleHide {
+    display: none;
+}
+
 
 /*************************************************/
 /********************** MENU *********************/

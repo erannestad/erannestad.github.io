@@ -1,3 +1,12 @@
+function runOnReady(fn) {
+   if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+   } else {
+      fn();
+   }
+}
+
+runOnReady(initPreExpandedDescriptions);
 
 $(document).ready(function(){
    $('.toggler').click(function() {
@@ -5,8 +14,6 @@ $(document).ready(function(){
    $('.show-more').toggle();
    $('.show-less').toggle();
    });
-
-   initPreExpandedDescriptions();
 });
         
 $(window).load(function () {
@@ -23,7 +30,7 @@ function initPreExpandedDescriptions() {
 
       var section = preExpanded[i].closest('section');
       if (section) {
-         var toggleLink = section.querySelector('.text-toggle a');
+         var toggleLink = section.querySelector('.text-toggle a[onclick*="dropdown"]');
          if (toggleLink) {
             toggleLink.innerHTML = '- hide statement';
             toggleLink.classList.remove('show');
@@ -46,7 +53,10 @@ function dropdown(controllerElement, classToToggle, showText, hideText) {
       controllerElement.classList.remove("hide");
    }
 
-   var toggleElements = document.querySelectorAll("." + classToToggle);
+   var section = controllerElement.closest('section');
+   var toggleElements = section
+      ? section.querySelectorAll("." + classToToggle)
+      : document.querySelectorAll("." + classToToggle);
    for (i=0; i < toggleElements.length; i++) {
       if (toggleElements[i].classList.contains("toggleVisible")) {
          toggleElements[i].classList.remove("toggleVisible");
