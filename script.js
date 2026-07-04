@@ -17,9 +17,7 @@ var menu = Object.assign(
                
                <li class="subtext menu-category">SCULPTURE</li>
                <li><a href="tailings.html">Tailings</a></li>
-               <li><a href="truss.html">Truss</a></li>
-               <li><a href="Arch.html">Firmament Arch</a></li>
-               <li><a href="Where-the-Rain-Seeps-Through.html">Builtscape</a></li>
+               <li><a href="firmaments.html">Firmaments</a></li>
                <li><a href="forms.html">Forms</a></li>
                <br>
                
@@ -31,11 +29,14 @@ var menu = Object.assign(
                <br>
 
                <li class="subtext menu-category">DIGITAL MEDIA</li>
-               <li><a href="ruleset-painting.html">Ruleset Painting Tool</a></li>
                <li><a href="tiles.html">Map Tiles</a></li>
                <!-- <li><a href="Mapping-The-Firmament.html">Mapping the Firmament</a></li> -->
                <!-- <li><a href="field-notes.html">Field Notes</a></li>  -->
                
+               <br>
+               <li class="subtext menu-category">INSTALLATION</li>
+               <li><a href="strata.html">STRATA</a></li>
+               <li><a href="weather-forecasting.html">On Weather Forecasting</a></li>
                <br>
                <li class="footer"><a href="Design/projects">Design Website</a></li>
            </ul>    
